@@ -17,7 +17,7 @@ An AI-powered application designed to generate mock Computer Science exams for U
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v16.0.0 or higher)
-- OpenAI API Key
+- Qwen API Key
 
 ### Installation
 
@@ -33,9 +33,9 @@ An AI-powered application designed to generate mock Computer Science exams for U
    ```
 
 3. **Environment Setup:**
-   Create a `.env` file in the root directory and add your OpenAI API key:
+   Create a `.env` file in the root directory and add your Qwen API key:
    ```env
-   OPENAI_API_KEY=your_api_key_here
+   QWEN_API_KEY=your_api_key_here
    ```
 
 4. **Run the application:**
