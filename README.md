@@ -60,6 +60,16 @@ An AI-powered application designed to generate mock Computer Science exams for U
 - `course_info.json`: Database of available CS courses.
 - `prompts.js`: Optimized AI prompt templates.
 
+## 🚀 Deployment
+
+### Deploying to Vercel
+
+1. **Push to GitHub**: Ensure your latest changes are pushed to your repository.
+2. **Import Project**: Go to [Vercel](https://vercel.com), click **Add New > Project**, and import this repository.
+3. **Configure Environment Variables**: In the Vercel dashboard, go to your project settings and add:
+   - `QWEN_API_KEY`: Your DashScope/Qwen API key.
+4. **Deploy**: Click **Deploy**. Vercel will automatically detect the `vercel.json` and set up the serverless functions and static hosting.
+
 ---
 
 Built with ❤️ for Waterloo CS Students.
