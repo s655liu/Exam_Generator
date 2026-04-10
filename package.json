@@ -1,0 +1,28 @@
+{
+  "name": "cs-exam-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s655liu/Exam_Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s655liu/Exam_Generator/issues"
+  },
+  "homepage": "https://github.com/s655liu/Exam_Generator#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.1",
+    "express": "^5.2.1",
+    "openai": "^6.34.0"
+  }
+}

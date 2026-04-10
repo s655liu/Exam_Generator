@@ -1,0 +1,2192 @@
+{
+    "university": "University of Waterloo",
+    "calendar_year": "2023-2024",
+    "department": "David R. Cheriton School of Computer Science",
+    "courses": [
+        {
+            "code": "CS 100",
+            "name": "Introduction to Computing Through Applications",
+            "has_exam": true,
+            "exam_format": [
+                "final"
+            ],
+            "topics": [
+                "Spreadsheets: cells, formulas, functions, relative/absolute references, charts, data sorting/filtering",
+                "Internet: history, infrastructure, protocols (HTTP, FTP, SMTP), IP addresses, DNS",
+                "WWW: web pages, hyperlinks, browsers, URLs, web servers",
+                "HTML: tags, elements, attributes, headings, paragraphs, links, images, lists, tables, forms",
+                "XML: syntax, elements, attributes, well-formed documents, namespaces, schemas, XSLT",
+                "Web Search Engines: crawling, indexing, ranking algorithms (PageRank), boolean queries, relevance feedback",
+                "Wikis: collaborative editing, version history, talk pages, wiki markup, MediaWiki",
+                "Data Collaboration: version control concepts, simultaneous editing, conflict resolution, cloud collaboration tools"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 105",
+            "name": "Introduction to Computer Programming 1",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Variables: naming conventions, data types (int, float, str, bool), assignment statements, type conversion",
+                "Conditionals: if, elif, else statements, comparison operators, logical operators (and, or, not), nested conditionals",
+                "Loops: while loops, for loops, range function, break, continue, nested loops, loop invariants",
+                "Functions: definition, parameters, return values, scope, local vs global variables, function composition, docstrings",
+                "Arrays: lists, indexing, slicing, appending, inserting, deleting, list comprehensions, mutability",
+                "Coding Style: PEP 8, naming conventions, indentation, comments, code organization, readability",
+                "Testing: unit tests, test cases, edge cases, assertions, debugging output, test-driven development basics",
+                "Debugging: print debugging, rubber duck debugging, systematic error isolation, common error types (syntax, runtime, logic)",
+                "2D Graphics: turtle graphics, coordinate systems, drawing shapes, colors, pen control, screen setup",
+                "Animation: frame-based animation, motion, timers, simple game loops, collision detection basics",
+                "Image Processing: pixel manipulation, RGB colors, brightness/contrast adjustment, simple filters (grayscale, invert, blur)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 106",
+            "name": "Introduction to Computer Programming 2",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Text Processing: string methods (split, join, replace, find, strip), regular expressions (patterns, matching, substitution), parsing structured text (CSV, JSON)",
+                "Image Manipulation: pixel-level operations, color spaces (RGB, HSV), convolution filters (edge detection, sharpening, blur), image transformations (rotate, scale, crop)",
+                "Sound Processing: waveforms, sampling, amplitude, frequency, sound synthesis (sine, square, sawtooth), effects (echo, reverb, volume), spectrograms",
+                "Data Visualization: matplotlib, line plots, bar charts, scatter plots, histograms, customizing axes, labels, legends, colormaps, saving figures",
+                "User Interfaces: GUI frameworks, event-driven programming, buttons, text inputs, sliders, menus, layout managers, callbacks",
+                "Physical Simulation: Newtonian physics, gravity, friction, collision detection, particle systems, Euler integration, bouncing balls",
+                "Object-Oriented Programming: classes, objects, attributes, methods, constructors, encapsulation, inheritance, polymorphism, method overriding",
+                "Libraries: importing modules, package management (pip), documentation reading, API usage, third-party libraries (numpy, pillow, pygame)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 114",
+            "name": "Principles of Computing for Science",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Functions: parameter passing, return values, scope, recursion, lambda functions, higher-order functions, function as first-class objects",
+                "Flow Control: conditionals, loops, exception handling (try/except), context managers, short-circuit evaluation",
+                "Lists: creation, indexing, slicing, list methods (append, extend, insert, remove, pop, sort), list comprehensions, nested lists",
+                "Arrays: numpy arrays, array operations (element-wise, broadcasting), reshaping, slicing, indexing, boolean masking",
+                "Numerical Accuracy: floating-point representation (IEEE 754), rounding errors, catastrophic cancellation, machine epsilon, comparing floats",
+                "Data Analysis: pandas DataFrames, Series, data cleaning, filtering, grouping, aggregation, merging, joining, pivot tables",
+                "Algorithms: searching (linear, binary), sorting (bubble, insertion, selection, merge, quick), algorithm complexity (Big-O, Big-Ω, Big-Θ)",
+                "Object-Oriented Programming Concepts: classes, objects, attributes, methods, inheritance, encapsulation, polymorphism, abstract classes"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 115",
+            "name": "Introduction to Computer Science 1",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Functional Programming: pure functions, no side effects, immutability, first-class functions, higher-order functions (map, filter, fold), function composition",
+                "Function Definition: lambda calculus influence, define syntax, parameters, function bodies, recursive definitions, conditional expressions (cond, if)",
+                "Recursion: base case, recursive case, structural recursion, generative recursion, tail recursion, recursion on numbers, lists, trees",
+                "Design & Testing: problem analysis, data definitions, function signatures, purpose statements, examples, test cases (check-expect, check-within)",
+                "Lists: empty list, cons (first/rest), list operations (length, append, reverse), list recursion, list abstraction",
+                "Trees: leaf nodes, internal nodes, tree recursion, tree traversal (pre-order, in-order, post-order), binary trees, n-ary trees",
+                "Data Abstraction: struct definitions, constructors, selectors, predicates, representation independence, opaque types, encapsulation"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 116",
+            "name": "Introduction to Computer Science 2",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Generative Recursion: divide and conquer, backtracking, recursion that doesn't follow structure, termination arguments, examples (quicksort, GCD, binary search)",
+                "Structural Recursion: recursion following data definitions, natural recursion pattern, accumulator-style recursion, examples (list processing, tree traversal)",
+                "Mutation: mutable data structures, assignment statements, set! operations, mutable lists, side effects, imperative updates",
+                "Imperative Language: Python syntax, statements vs expressions, sequential execution, state changes, assignment semantics, reference semantics",
+                "Primitive Types: integers, floats, strings, booleans, None, type conversion, type checking, type hints",
+                "I/O: print function, input function, string formatting (f-strings, format method), command-line arguments",
+                "Sequencing: statement ordering, compound statements, semicolons (vs newlines), block structure",
+                "Selection: if, elif, else, conditional expressions (ternary operator), nested conditionals, switch/match statements",
+                "Looping: while loops, for loops, range iteration, enumerate, zip, break, continue, else clause on loops, loop invariants",
+                "File I/O: open function, read modes (r, w, a, r+), read, readline, readlines, write, writelines, close, with context manager, file paths"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 135",
+            "name": "Designing Functional Programs",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Functional Programming: referential transparency, no side effects, expression evaluation, substitution model, pure functions",
+                "Syntax & Semantics: Racket syntax (S-expressions), parentheses, quote, quasiquote, unquote, evaluation rules, lexical scope",
+                "Substitution Model: beta-reduction, name binding, environment passing, substitution rules, lambda calculus basis",
+                "Design Recipes: data definitions, function signatures, purpose statements, examples, test cases, templates, coding from design",
+                "Testing: check-expect, check-within, test suites, test-driven development, property-based testing, random testing",
+                "Linear & Nonlinear Data Structures: lists (linear), trees (binary, general, n-ary), graphs, DAGs, hash tables, sets",
+                "Recursive Data Definitions: self-referential definitions, constructors, selectors, predicates, well-formed data, generative recursion",
+                "Abstraction: higher-order functions (map, filter, foldl, foldr), lambda abstraction, functional composition, parametric polymorphism",
+                "Encapsulation: modules, provide, require, information hiding, opaque types, interfaces, signatures",
+                "Generative Recursion: divide and conquer, backtracking, branch and bound, examples (quicksort, merge sort, Sudoku solver)",
+                "Historical Context: lambda calculus (Church), Lisp (McCarthy), Scheme, Racket, evolution of functional programming"
+            ],
+            "has_coding": true,
+            "has_proofs": true,
+            "proof_types": [
+                "structural_induction",
+                "program_correctness"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 136",
+            "name": "Elementary Algorithm Design and Data Abstraction",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Algorithm Design & Analysis: asymptotic analysis (Big-O, Ω, Θ), worst-case vs average-case, complexity classes (constant, logarithmic, linear, quadratic, exponential)",
+                "Imperative Programming: C programming, statements, expressions, control flow, mutable state, pointer semantics, memory model",
+                "Iterative & Recursive Sorting: insertion sort (iterative), selection sort, bubble sort, merge sort (recursive divide/conquer), quicksort (in-place partitioning)",
+                "Lists: singly linked lists, node structure (data, next), list traversal, insertion, deletion, reversal, searching",
+                "Stacks: LIFO operations (push, pop, top), array-based implementation, linked-list implementation, applications (balanced parentheses, expression evaluation)",
+                "Queues: FIFO operations (enqueue, dequeue, front), array-based (circular buffer), linked-list implementation (head/tail pointers)",
+                "Trees: binary trees, tree traversal (pre-order, in-order, post-order, level-order), binary search trees (insert, search, delete, min, max)",
+                "Abstract Data Types: interface specification, implementation hiding, invariants, representation invariants, abstraction functions",
+                "Memory Management: malloc, free, calloc, realloc, dynamic allocation, memory leaks, dangling pointers, garbage collection concepts, stack vs heap"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 136L",
+            "name": "Tools and Techniques for Software Development",
+            "has_exam": false,
+            "exam_format": [],
+            "topics": [
+                "Linux Command Line: navigation (cd, ls, pwd), file operations (cp, mv, rm, touch, mkdir, rmdir), file permissions (chmod, chown), processes (ps, kill, top), pipes (|), redirection (> , <, >>), grep, find, man pages",
+                "Shell Scripting: bash scripts, shebang (#!), variables, command substitution, conditionals (if, test), loops (for, while), functions, exit codes, debugging scripts",
+                "Version Control (Git): init, add, commit, status, log, diff, branch, checkout, merge, rebase, remote (clone, push, pull, fetch), resolving conflicts, .gitignore",
+                "Testing: unit testing frameworks (CUnit, Check), test fixtures, assertions, test coverage, mocking, integration tests, regression tests",
+                "Debugging: gdb (breakpoints, watchpoints, step, next, continue, backtrace, print), valgrind (memory leak detection, profiling), core dumps",
+                "IDEs: VS Code, CLion, Eclipse, features (syntax highlighting, auto-completion, refactoring, integrated debugging, version control integration)",
+                "Build Automation: make, Makefiles (targets, dependencies, rules, variables, automatic variables), cmake, autotools, incremental builds"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 137",
+            "name": "Programming Principles",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Programming Concepts: C programming, procedural abstraction, modular design, information hiding, separation of concerns",
+                "Procedures & Parameter Passing: stack frames, call by value, call by reference (using pointers), parameter evaluation order, function prototypes",
+                "Arrays & Structures: array indexing, pointer arithmetic, multidimensional arrays, struct definitions, struct fields, alignment, padding, nested structures",
+                "Recursion: recursive functions, base cases, recursive cases, recursion depth, stack overflow, converting recursion to iteration, tail recursion optimization",
+                "Sorting: quicksort (in-place, pivot selection, partitioning), merge sort (external memory), heap sort (binary heap), radix sort (non-comparison)",
+                "Pointers: pointer variables, address-of (&), dereference (*), null pointers, pointer arithmetic, function pointers, void pointers, double pointers",
+                "Dynamic Structures: linked lists (singly, doubly, circular), trees (BST, AVL), hash tables (chaining, open addressing), graphs (adjacency list/matrix)",
+                "Space/Time Analysis: algorithm complexity, space complexity (stack, heap), time complexity, big-O notation, recurrence relations, master theorem",
+                "Design Methodologies: top-down design, bottom-up design, stepwise refinement, modular decomposition, interface design, invariants"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 138",
+            "name": "Introduction to Data Abstraction and Implementation",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Software Abstractions: abstraction layers, abstraction boundaries, opaque types, interface vs implementation, separation of concerns",
+                "Encapsulation & Modularity: C++ classes, access specifiers (public, private, protected), friend functions, modules (C++20), namespace",
+                "Classes & Interfaces: class definition, member functions, data members, constructors, destructors, copy/move semantics, interface classes (pure virtual)",
+                "Object Instantiation: stack vs heap allocation (new/delete), constructors (default, parameterized, copy, move), RAII, initialization lists",
+                "Recursion: recursive functions on ADTs, recursion depth, tail recursion, iterative alternatives, recursive data structures",
+                "ADTs (Sequences, Stacks, Queues, Trees): sequence ADT (vector, list), stack (LIFO), queue (FIFO), deque, priority queue, binary tree, BST",
+                "Linked Structures: singly linked lists, doubly linked lists, circular lists, sentinel nodes, list operations (insert, delete, search, reverse)",
+                "Arrays: static arrays, dynamic arrays, std::vector, amortized analysis, resizing strategies (geometric growth), array vs linked list trade-offs",
+                "Memory Models: stack memory (automatic storage), heap memory (dynamic storage), static storage, memory lifetimes, allocation/deallocation",
+                "Dynamic Memory Management: new, delete, new[], delete[], placement new, smart pointers (unique_ptr, shared_ptr, weak_ptr), custom allocators"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 145",
+            "name": "Designing Functional Programs (Advanced Level)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Advanced Functional Programming: pure functional paradigm, lazy evaluation, infinite data structures, monads, functors, applicative functors",
+                "Advanced Recursion: mutual recursion, nested recursion, higher-order recursion, primitive recursion, primitive recursive functions, Ackermann function",
+                "Continuations: continuation-passing style (CPS), call/cc, first-class continuations, coroutines, control flow reification, backtracking",
+                "Macros: define-syntax, syntax-rules, syntax-case, hygienic macros, macro expansion, compile-time metaprogramming, pattern matching",
+                "Type Systems: static typing, type inference, parametric polymorphism, algebraic data types, sum types, product types, type classes, dependent types",
+                "Program Verification: formal specification, preconditions, postconditions, loop invariants, termination proofs, Hoare logic, model checking"
+            ],
+            "has_coding": true,
+            "has_proofs": true,
+            "proof_types": [
+                "induction",
+                "program_equivalence",
+                "type_safety"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 146",
+            "name": "Elementary Algorithm Design and Data Abstraction (Advanced Level)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Advanced Algorithm Design: randomized algorithms, approximation algorithms, parallel algorithms, online algorithms, competitive analysis",
+                "Advanced Data Structures: red-black trees, B-trees, skip lists, Fibonacci heaps, disjoint-set union (union-find), segment trees, Fenwick trees, suffix trees",
+                "Algorithm Analysis: amortized analysis (aggregate, accounting, potential methods), recurrence solving (substitution, recursion tree, master theorem, Akra-Bazzi)",
+                "Memory Optimization: cache-oblivious algorithms, spatial/temporal locality, cache efficiency, false sharing, memory alignment, padding optimization",
+                "Advanced Recursion: divide and conquer optimization, recursion with memoization (dynamic programming), recursive backtracking with pruning, tail call optimization"
+            ],
+            "has_coding": true,
+            "has_proofs": true,
+            "proof_types": [
+                "complexity_analysis",
+                "correctness"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 200",
+            "name": "Concepts for Advanced Computer Usage",
+            "has_exam": true,
+            "exam_format": [
+                "final"
+            ],
+            "topics": [
+                "Operating Systems (User View): OS functions (process management, memory management, file systems, I/O), user interfaces (CLI, GUI), system calls, file organization, directories, permissions",
+                "Hardware Design: CPU components (ALU, CU, registers), memory hierarchy (cache, RAM, disk), I/O buses, interrupts, DMA, clock speed, Moore's Law",
+                "Social Media: platforms (Facebook, Twitter, Instagram, TikTok), algorithms (feed ranking, recommendation, trending), echo chambers, filter bubbles, misinformation",
+                "Technology & Society: digital divide, privacy concerns, surveillance capitalism, intellectual property (copyright, patents, open source), ethical computing, professional responsibility"
+            ],
+            "has_coding": false,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer"
+            ]
+        },
+        {
+            "code": "CS 230",
+            "name": "Introduction to Computers and Computer Systems",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Computer Architecture: von Neumann architecture, Harvard architecture, instruction set architecture (ISA), RISC vs CISC, addressing modes, instruction formats",
+                "Organization: datapath, control unit, ALU, registers (general purpose, special purpose, status), buses (data, address, control), clock, cycles",
+                "System Services: interrupts (hardware, software), exceptions, trap handlers, system calls, boot process, BIOS/UEFI, device drivers, firmware",
+                "Software: system software (OS, compilers, assemblers, linkers, loaders), application software, middleware, firmware, virtualization",
+                "Processors: pipelining (5-stage: IF, ID, EX, MEM, WB), hazards (structural, data, control), forwarding, stalling, branch prediction, superscalar, out-of-order execution",
+                "Memory: memory hierarchy (register, cache L1/L2/L3, RAM, disk), SRAM vs DRAM, cache mapping (direct, associative, set-associative), cache policies (write-through, write-back), virtual memory (paging, segmentation, TLB)",
+                "I/O Devices: polling, interrupt-driven I/O, DMA, memory-mapped I/O, port-mapped I/O, device controllers, storage devices (HDD, SSD), input devices (keyboard, mouse), output devices (display, printer)",
+                "Performance: execution time, throughput, CPI (cycles per instruction), IPC, MIPS, MFLOPS, Amdahl's Law, speedup, benchmarks (SPEC, Dhrystone)"
+            ],
+            "has_coding": false,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer"
+            ]
+        },
+        {
+            "code": "CS 231",
+            "name": "Algorithmic Problem Solving",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Problem Specification: input/output specification, preconditions, postconditions, edge cases, invariants, problem constraints, boundary conditions",
+                "Algorithmic Paradigms: brute force, divide and conquer, decrease and conquer, transform and conquer, greedy, dynamic programming, backtracking, branch and bound",
+                "Analysis: time complexity (best, worst, average), space complexity, asymptotic analysis (Big-O, Ω, Θ), recurrence relations, complexity classes (P, NP)",
+                "Implementation: algorithm to code translation, data structure selection, optimization techniques, trade-offs (time vs space, simplicity vs efficiency)",
+                "Exhaustive Search: brute force, generate and test, combinatorial generation (permutations, combinations, subsets), state space search",
+                "Divide & Conquer: splitting, recursive solving, combining, master theorem, examples (merge sort, quicksort, binary search, Karatsuba multiplication, Strassen's algorithm)",
+                "Greedy Algorithms: locally optimal choices, exchange argument, optimal substructure, matroids, examples (activity selection, fractional knapsack, Huffman coding, Dijkstra, Prim, Kruskal)",
+                "Dynamic Programming: overlapping subproblems, optimal substructure, memoization vs tabulation, state definition, transition function, examples (fibonacci, knapsack, LCS, matrix chain multiplication, edit distance, rod cutting)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 234",
+            "name": "Data Types and Structures",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Top-Down Design: problem decomposition, functional decomposition, stepwise refinement, modular design, interface specification, abstraction barriers",
+                "Representation-Independent Data Types: abstract data types, representation invariants, abstraction functions, implementation hiding, information encapsulation",
+                "Lists: sequence ADT, array-based lists (Python list), linked lists (singly, doubly), list operations (access, insert, delete, search, sort), iterator pattern",
+                "Sets: mathematical set ADT, operations (union, intersection, difference, subset), implementations (bit vectors, hash sets, tree sets), membership test",
+                "Mappings: dictionary ADT, key-value pairs, operations (lookup, insert, delete), implementations (hash tables, binary search trees, association lists)",
+                "Trees: tree ADT, terminology (root, leaf, parent, child, depth, height), binary trees, n-ary trees, tree traversal (DFS: pre/in/post-order, BFS: level-order), expression trees, parse trees",
+                "Data Representation Selection: trade-offs (time vs space, memory vs disk, sequential vs random access), representation choices based on operations, empirical evaluation"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 240",
+            "name": "Data Structures and Data Management",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Priority Queues: heap data structure (binary heap, binomial heap, Fibonacci heap), operations (insert, extract-min, decrease-key, merge), heapify, heapsort",
+                "Sorting: comparison-based sorts (insertion, selection, bubble, merge, quick, heap), non-comparison sorts (counting sort, radix sort, bucket sort), stability, in-place, adaptive",
+                "Dictionaries: hash tables (hash functions, collision resolution: chaining, open addressing, double hashing), binary search trees (unbalanced), self-balancing BSTs (AVL, red-black, treap, splay)",
+                "Data Structures for Text Processing: tries (prefix trees), suffix trees, suffix arrays, palindrome trees, Aho-Corasick automaton, Burrows-Wheeler transform",
+                "Algorithm Performance Analysis: worst-case, average-case, amortized analysis, recurrence relations, asymptotic notation, master theorem, lower bounds"
+            ],
+            "has_coding": true,
+            "has_proofs": true,
+            "proof_types": [
+                "algorithm_correctness",
+                "complexity_analysis"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 240E",
+            "name": "Data Structures and Data Management (Enriched)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Enriched Data Structures: van Emde Boas trees (priority queue for integer keys), fusion trees (integer search), y-fast tries, x-fast tries, persistent data structures (partial, full persistence)",
+                "Advanced Algorithm Analysis: lower bounds (decision trees, adversary arguments), information-theoretic bounds, average-case analysis with distributional assumptions, smoothed analysis",
+                "Data Management: external memory algorithms (B-trees, B+ trees, external sorting, merge sort with k-way merging), cache-oblivious algorithms (optimal cache complexity, matrix multiplication, scanning)",
+                "Amortized Analysis: aggregate method, accounting method (potential function), banker's view, physicist's view, examples (dynamic array resizing, splay trees, Fibonacci heaps, union-find)"
+            ],
+            "has_coding": true,
+            "has_proofs": true,
+            "proof_types": [
+                "algorithm_correctness",
+                "complexity_analysis",
+                "amortized_analysis"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 241",
+            "name": "Foundations of Sequential Programs",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Machine Architecture: CPU, registers (general purpose, special purpose: PC, SP, IR), memory (code, data, stack, heap), ALU, instruction cycle (fetch-decode-execute), data paths",
+                "Assemblers: assembly language syntax (labels, directives, opcodes, operands), one-pass assembler, two-pass assembler (symbol table, address resolution), macro assemblers, absolute vs relocatable code",
+                "Programming Language Specification & Translation: syntax (BNF, EBNF, parse trees), semantics (operational, denotational, axiomatic), translation phases (lexical analysis, parsing, semantic analysis, optimization, code generation)",
+                "Linkers & Loaders: object files (symbol tables, relocation entries), linking (static linking, dynamic linking), relocation (link-time, load-time), symbol resolution, address binding, library linking (static libraries (.a), shared libraries (.so, .dll)), position-independent code (PIC)",
+                "Block-Structured Languages: lexical scoping, nested scopes, visibility, name resolution, block syntax (begin/end, { }), declaration regions, scope rules (static vs dynamic scoping, lexical scoping, deep binding, shallow binding)",
+                "Parameter Passing: pass by value, pass by reference (C++ &), pass by value-result (copy-in/copy-out), pass by name (thunks, call-by-name, Algol), pass by need (lazy evaluation, thunks with memoization, Haskell), evaluation strategies (applicative vs normal order)",
+                "Language Comparison: C (imperative, manual memory management), C++ (multi-paradigm), Java (OOP, GC), Python (dynamic, interpreted), Scheme/OCaml/Haskell (functional), Ada (block-structured), Algol (nested functions)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 241E",
+            "name": "Foundations of Sequential Programs (Enriched)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Enriched Machine Architecture: out-of-order execution, speculative execution, branch prediction, SIMD (vector instructions), VLIW, superscalar architecture, instruction-level parallelism, Tomasulo's algorithm",
+                "Advanced Assemblers: macro processors (macro expansion, macro parameters, nested macros), conditional assembly, advanced directive handling, link-time optimization (LTO)",
+                "Compiler Fundamentals: intermediate representations (three-address code, SSA form, CFG, AST), basic blocks, control flow analysis, data flow analysis (reaching definitions, live variables, available expressions), register allocation (graph coloring, linear scan), instruction selection (tree rewriting, peephole optimization), optimization techniques (constant propagation, common subexpression elimination, loop invariant code motion, strength reduction, dead code elimination)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 245",
+            "name": "Logic and Computation",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Propositional Logic: syntax (atomic propositions, connectives: ∧, ∨, ⊕, →, ↔, ¬), semantics (truth tables), satisfiability, validity, entailment, equivalence, normal forms (CNF, DNF), resolution, Horn clauses",
+                "Predicate Logic: syntax (terms, predicates, quantifiers: ∀, ∃, functions), semantics (domains, interpretations, variable assignments), well-formed formulas, bound/free variables, prenex normal form, Skolemization",
+                "Formal Reasoning: natural deduction (introduction/elimination rules for each connective), sequent calculus, Hilbert systems, resolution (unification, factoring, paramodulation), soundness, completeness",
+                "Computability: Turing machines (deterministic, nondeterministic, multi-tape), Church-Turing thesis, decidability, semi-decidability, reduction, undecidable problems (halting problem, Entscheidungsproblem, Post correspondence problem), Rice's theorem",
+                "Godel's Incompleteness Theorem: first incompleteness theorem (consistency, ω-consistency, encoding of syntax), second incompleteness theorem (consistency statement), incompleteness consequences",
+                "Logic Applications: SAT solvers (DPLL, CDCL, conflict-driven learning, backtracking), SMT solvers (satisfiability modulo theories), theorem provers (Coq, Isabelle, HOL), logic programming (Prolog, Horn clauses, SLD resolution)"
+            ],
+            "has_coding": false,
+            "has_proofs": true,
+            "proof_types": [
+                "natural_deduction",
+                "resolution",
+                "induction",
+                "formal_logic"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CS 245E",
+            "name": "Logic and Computation (Enriched)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Enriched Logic: modal logic (Kripke semantics, necessity, possibility, modal axioms S4, S5, K), temporal logic (LTL, CTL, CTL*, always, eventually, next, until, release), intuitionistic logic (Brouwer-Heyting-Kolmogorov interpretation, no excluded middle, Heyting algebra), linear logic (resource-sensitive, exponential operators, linear implication)",
+                "Advanced Formal Reasoning: cut elimination, Craig interpolation theorem, Beth definability theorem, Herbrand's theorem, unification algorithms (Robinson's algorithm, Martelli-Montanari), resolution strategies (unit resolution, input resolution, linear resolution, SLD resolution), paramodulation, superposition",
+                "Computability Theory: recursion theory (primitive recursive functions, μ-recursive functions, partial recursive functions), arithmetical hierarchy (Σ_n, Π_n, Δ_n), oracle machines, Turing degrees, many-one reductions, truth-table reductions, Kleene's recursion theorem"
+            ],
+            "has_coding": false,
+            "has_proofs": true,
+            "proof_types": [
+                "natural_deduction",
+                "resolution",
+                "induction",
+                "formal_logic"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CS 246",
+            "name": "Object-Oriented Software Development",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Object-Oriented Programming: classes, objects, inheritance (single, multiple, virtual), polymorphism (compile-time: overloading, templates; runtime: virtual functions, overriding), encapsulation (access specifiers: public, protected, private), abstraction (abstract classes, pure virtual functions, interfaces)",
+                "Software Design: SOLID principles (Single responsibility, Open-closed, Liskov substitution, Interface segregation, Dependency inversion), design patterns (creational: Singleton, Factory, Builder; structural: Adapter, Composite, Decorator; behavioral: Observer, Strategy, Command, Iterator, State, Template Method), UML diagrams (class, sequence, activity, use case)",
+                "Coding: C++ features (templates, exceptions, STL containers: vector, list, map, set; STL algorithms: sort, find, transform; lambda expressions, auto keyword, range-based for loops, move semantics, perfect forwarding), RAII (Resource Acquisition Is Initialization), copy/move constructors/assignment operators, rule of three/five/zero",
+                "Debugging: GDB with C++ (displaying objects, stepping into virtual functions, watchpoints, breakpoints with conditions), valgrind (memcheck for memory leaks, cachegrind for profiling), address sanitizer, undefined behavior sanitizer, static analysis tools (clang-tidy, cppcheck)",
+                "Testing: Google Test, Catch2, unit testing (test fixtures, assertions: EXPECT_EQ, ASSERT_THROW), mock objects (gmock), test coverage (gcov, lcov), test-driven development (red-green-refactor), continuous integration (CI/CD)",
+                "Documentation: Doxygen (documentation comments, tags: @param, @return, @throws, @brief), inline comments, README files, API documentation, design documents",
+                "Reusable Code: generic programming (templates, template specialization, variadic templates), STL algorithms and containers, code reuse through inheritance (base classes) and composition (has-a relationship), libraries (static, dynamic, header-only)",
+                "Performance Issues: virtual function overhead (vtable, vptr), cache locality (contiguous memory: vector vs list), copy elision (RVO, NRVO), move semantics (std::move, move constructors), inlining, profiling (perf, gprof, valgrind callgrind), optimization levels (-O0, -O1, -O2, -O3, -Os)",
+                "Debuggers: GDB command-line debugging, LLDB, IDE-integrated debuggers (VS Code, CLion, Eclipse), core dump analysis, reverse debugging (rr, gdb reverse-step), watchpoints, conditional breakpoints",
+                "Test Suites: unit tests, integration tests, regression tests, smoke tests, performance tests, stress tests, test harnesses, test automation"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 246E",
+            "name": "Object-Oriented Software Development (Enriched)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Advanced OOP: multiple inheritance (diamond problem, virtual inheritance, base class initialization order), mixins, traits (policy-based design, CRTP: Curiously Recurring Template Pattern), SFINAE (substitution failure is not an error), concept (C++20 concepts, requires clauses), reflection (compile-time introspection using templates), metaprogramming (template metaprogramming, constexpr, if constexpr)",
+                "Design Patterns: advanced patterns (Visitor, Flyweight, Proxy, Chain of Responsibility, Mediator, Memento, Interpreter), pattern composition, anti-patterns (God object, Spaghetti code, Golden hammer), architectural patterns (MVC: Model-View-Controller, MVVM, Layered architecture, Repository, Dependency injection, Inversion of control containers)",
+                "Advanced C++: perfect forwarding (std::forward, universal references), variadic templates (parameter packs, fold expressions), lambda capture modes (by value, by reference, init-capture), std::optional, std::variant, std::any, std::tuple, std::function, std::bind, user-defined literals, attributes (nodiscard, maybe_unused, fallthrough, deprecated), C++20 features (ranges, coroutines, concepts, modules, spaceship operator <=>), C++23 features (std::expected, deducing this, multidimensional subscript operator)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 247",
+            "name": "Software Engineering Principles",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Abstraction: procedural abstraction (functions, methods), data abstraction (ADTs, classes, interfaces), control abstraction (loops, conditionals, exceptions), abstraction layers (operating system, hardware, software), separation of concerns, information hiding",
+                "Modularity: module decomposition, coupling (low coupling: data, stamp, control, common, content), cohesion (high cohesion: functional, sequential, communicational, procedural, temporal, logical, coincidental), interface design, API design, module encapsulation",
+                "Software Modeling: UML (class diagrams: inheritance, association, aggregation, composition; sequence diagrams: lifelines, messages, activation bars; activity diagrams: nodes, edges, forks, joins; state diagrams: states, transitions, events; use case diagrams: actors, use cases, system boundary), domain modeling, requirements modeling",
+                "Object-Oriented Design: class responsibility collaboration (CRC) cards, responsibility-driven design, GRASP patterns (information expert, creator, controller, low coupling, high cohesion, polymorphism, pure fabrication, indirection, protected variations), design by contract (preconditions, postconditions, invariants, contract enforcement)",
+                "Generic Programming: templates (function templates, class templates, template specialization, partial specialization), generic algorithms, type traits, iterator categories (input, output, forward, bidirectional, random access), policy-based design, compile-time polymorphism vs runtime polymorphism",
+                "Testing: unit testing (JUnit, Google Test), integration testing, system testing, acceptance testing, regression testing, black-box testing (equivalence partitioning, boundary value analysis), white-box testing (statement coverage, branch coverage, path coverage, MC/DC coverage), test-driven development (TDD), property-based testing (QuickCheck), fuzzing",
+                "Debugging: systematic debugging (binary search debugging, delta debugging), scientific method in debugging (hypothesis formulation, prediction, experimentation), logging strategies (log levels: DEBUG, INFO, WARN, ERROR, FATAL), assertion usage, debugging tools (gdb, valgrind, strace, ltrace, perf), post-mortem debugging (core dumps, crash logs)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 251",
+            "name": "Computer Organization and Design",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Computer Organization: data path components (ALU, registers, multiplexers, decoders, adders), control unit (hardwired vs microprogrammed), single-cycle datapath, multi-cycle datapath, clock cycles, timing diagrams",
+                "Performance: CPU execution time formula (instruction count × CPI × cycle time), measuring performance (benchmarks, SPEC, Dhrystone, Whetstone), performance metrics (throughput, latency, utilization), Amdahl's law, Gustafson's law",
+                "Digital Logic: Boolean algebra (AND, OR, NOT, NAND, NOR, XOR, XNOR), logic gates (transistor-level CMOS), combinational circuits (adders: half, full, ripple-carry, carry-lookahead; multiplexers, demultiplexers, decoders, encoders, comparators, ALU), sequential circuits (latches: SR, D; flip-flops: edge-triggered, master-slave; registers, shift registers, counters, finite state machines)",
+                "Data Representation: number systems (binary, octal, hexadecimal), integer representations (unsigned, sign-magnitude, one's complement, two's complement), fixed-point numbers, floating-point representation (IEEE 754: single precision 32-bit, double precision 64-bit, special values: ±0, ±∞, NaN, denormalized numbers), character encoding (ASCII, Unicode, UTF-8, UTF-16), error detection/correction (parity bits, Hamming codes, CRC)",
+                "Processor Design: instruction fetch, decode, execute, memory access, write-back stages, control signals, hazard detection (structural, data, control), forwarding/bypassing, stalling, branch prediction (static: always taken/not taken, backward taken forward not taken; dynamic: 1-bit/2-bit predictors, branch history table, branch target buffer), pipelining (pipeline stages, pipeline registers, pipeline depth, ideal speedup, pipeline hazards), superscalar design (multiple issue, in-order issue, out-of-order issue, Tomasulo's algorithm, register renaming, reorder buffer)",
+                "Pipelining: 5-stage classic RISC pipeline (IF, ID, EX, MEM, WB), pipeline hazards (structural: resource conflicts; data: RAW, WAR, WAW; control: branches, jumps, exceptions), hazard resolution (forwarding, stalling, branch prediction, delayed branch, speculative execution), pipeline performance (throughput, latency, CPI, speedup, efficiency)",
+                "Memory Hierarchies: memory technologies (SRAM, DRAM, ROM, flash), cache memory (L1, L2, L3), cache organization (fully associative, direct-mapped, set-associative), cache lines/blocks, tags, indices, offsets, cache policies (write-through, write-back, write-allocate, no-write-allocate, write-miss policies), replacement policies (LRU, FIFO, random, LFU, optimal/clairvoyant), virtual memory (paging: page table, TLB, page fault handling; segmentation), memory management unit (MMU), address translation (virtual to physical), page replacement algorithms (FIFO, LRU, optimal, clock, second-chance, NRU, working set)",
+                "Multiprocessors: symmetric multiprocessing (SMP), multicore processors, cache coherence (snooping protocols: MSI, MESI, MOESI, directory-based protocols), memory consistency models (sequential consistency, total store order, relaxed consistency, release consistency), parallel programming models (shared memory, message passing), Flynn's taxonomy (SISD, SIMD, MISD, MIMD), GPU architecture (CUDA cores, warp, thread blocks, global/shared memory, memory coalescing), SIMD instructions (MMX, SSE, AVX, NEON)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 251E",
+            "name": "Computer Organization and Design (Enriched)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Advanced Computer Organization: very long instruction word (VLIW), explicitly parallel instruction computing (EPIC), vector processors (Cray-1, vector registers, vector operations, chaining, strip mining), systolic arrays (matrix multiplication, convolution), dataflow architectures (dataflow graphs, dataflow tokens, static/dynamic dataflow), transport triggered architecture (TTA), reconfigurable computing (FPGAs, coarse-grained reconfigurable arrays), quantum computing architecture (qubits, quantum gates, quantum circuits, superposition, entanglement, quantum supremacy, Shor's algorithm, Grover's algorithm, quantum error correction, surface codes)",
+                "Digital Logic Design: advanced combinational circuits (carry-lookahead adder, carry-save adder, Wallace tree multiplier, Booth multiplier, array multiplier, barrel shifter, priority encoder), advanced sequential circuits (finite state machine design: Mealy vs Moore, state encoding: one-hot, binary, gray; state minimization, state assignment, asynchronous FSM, metastability, synchronizers), programmable logic devices (PLA: programmable logic array, PAL: programmable array logic, CPLD: complex programmable logic device, FPGA: field-programmable gate array, LUT: look-up table, CLB: configurable logic block, routing resources), hardware description languages (Verilog: modules, always blocks, initial blocks, wire vs reg, blocking vs non-blocking assignment, behavioral vs structural modeling; VHDL: entities, architectures, processes, signals vs variables, concurrent vs sequential statements), simulation vs synthesis, timing analysis (setup time, hold time, propagation delay, contamination delay, clock skew, jitter, timing closure), static timing analysis (STA), formal verification (model checking, equivalence checking)",
+                "Processor Architecture: advanced pipelining (superpipelining, deeper pipelines, pipeline balancing), out-of-order execution (Tomasulo's algorithm with precise exceptions, reservation stations, reorder buffer, load-store queue), register renaming (renaming via ROB, renaming via map table, physical vs architectural registers), speculative execution (branch prediction with tournament predictors, gshare, perceptron predictors, branch target buffer, return address stack, speculative loads/stores, memory disambiguation), value prediction, hardware prefetching (stride prefetcher, Markov prefetcher, content-directed prefetching), simultaneous multithreading (SMT, Hyper-Threading), chip multiprocessors (CMP, multicore, many-core), non-uniform cache access (NUCA), transactional memory (HTM, STM, hardware locks elision), advanced cache optimizations (victim cache, trace cache, prefetching, non-blocking cache, critical word first, early restart, sub-block caching, cache compression), memory controllers, DRAM scheduling, row buffer policies, 3D-stacked memory (HBM, HMC), non-volatile memory (NVM, PCM, ReRAM, Memristor)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 330",
+            "name": "Management Information Systems",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Information Systems: transaction processing systems (TPS), management information systems (MIS), decision support systems (DSS), executive information systems (EIS), office automation systems (OAS), knowledge management systems (KMS), enterprise resource planning (ERP), customer relationship management (CRM), supply chain management (SCM), business intelligence (BI), analytics",
+                "Strategic Role in Business: competitive advantage, Porter's five forces model, value chain analysis, business process reengineering (BPR), digital transformation, IT governance, IT strategy alignment, strategic information systems planning (SISP), disruptive technologies",
+                "System Development: system development life cycle (SDLC: planning, analysis, design, implementation, maintenance, testing), waterfall model, agile methodologies (Scrum: sprints, product backlog, sprint backlog, daily standup, sprint review, retrospective; Kanban, XP: extreme programming, pair programming, test-driven development, continuous integration), DevOps (continuous integration/continuous deployment, infrastructure as code, configuration management), prototyping (throwaway, evolutionary), rapid application development (RAD), end-user development, outsourcing, build vs buy decision",
+                "Decision Support Systems: data-driven DSS, model-driven DSS, knowledge-driven DSS, document-driven DSS, communication-driven DSS, business analytics (descriptive, predictive, prescriptive), OLAP (online analytical processing: slicing, dicing, pivoting, roll-up, drill-down, drill-through), data visualization, dashboards, scorecards, what-if analysis, sensitivity analysis, goal-seeking analysis",
+                "Data Management: master data management (MDM), data warehousing (ETL: extract, transform, load; star schema, snowflake schema, fact tables, dimension tables), data mart, data lake, metadata management, data quality (accuracy, completeness, consistency, timeliness, uniqueness, validity), data governance, data lineage, data catalog",
+                "IS Management & Control: IT portfolio management, IT service management (ITIL), COBIT (control objectives for information and related technologies), risk management (IT risk assessment, risk mitigation), security management (access control, authentication, authorization, auditing, compliance: GDPR, HIPAA, SOX, PCI-DSS), disaster recovery (backup strategies, RTO: recovery time objective, RPO: recovery point objective, failover, business continuity planning), change management, vendor management, contract management, SLA (service level agreements), KPI (key performance indicators), ROI (return on investment), TCO (total cost of ownership)"
+            ],
+            "has_coding": false,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer"
+            ]
+        },
+        {
+            "code": "CS 335",
+            "name": "Computational Methods in Business and Finance",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Floating-Point Arithmetic: IEEE 754 standard, precision (single, double), rounding modes (round to nearest, ties to even; round toward zero, round toward +∞, round toward -∞), floating-point errors (rounding error, cancellation error, absorption), machine epsilon, ulp (units in the last place), numerical stability (well-conditioned vs ill-conditioned problems), catastrophic cancellation, Kahan summation algorithm, compensated summation",
+                "Interpolation: polynomial interpolation (Lagrange form, Newton form, divided differences), Runge's phenomenon, Chebyshev nodes (minimize Runge's phenomenon), spline interpolation (linear spline, quadratic spline, cubic spline: natural, clamped, not-a-knot), Hermite interpolation, rational interpolation, barycentric interpolation",
+                "Portfolio Optimization: Markowitz mean-variance optimization (efficient frontier, minimum variance portfolio, tangency portfolio), risk-return trade-off, covariance matrix, expected returns, volatility, Sharpe ratio, capital asset pricing model (CAPM: beta, alpha, security market line, capital market line), diversification, constraints (long-only, leverage, cardinality constraints, sector constraints), quadratic programming, Black-Litterman model, robust optimization, risk budgeting, equal risk contribution",
+                "Contingent-Claims Valuation: options (call, put), derivatives (forwards, futures, swaps), Black-Scholes-Merton model (partial differential equation, closed-form solution for European options), Greeks (delta, gamma, vega, theta, rho), implied volatility, volatility smile/skew, exotic options (Asian options: arithmetic vs geometric averaging, lookback options: fixed vs floating strike, barrier options: knock-in, knock-out, binary/digital options, basket options), binomial options pricing model (Cox-Ross-Rubinstein, risk-neutral valuation, backward induction, early exercise for American options), trinomial tree, finite difference methods (explicit, implicit, Crank-Nicolson), Monte Carlo methods (variance reduction: antithetic variates, control variates, importance sampling, stratified sampling; quasi-Monte Carlo: low-discrepancy sequences, Sobol sequence, Halton sequence, Faure sequence; nested simulation, least squares Monte Carlo for American options: Longstaff-Schwartz)",
+                "Nonlinear Equations: root-finding algorithms (bisection method, Newton-Raphson method, secant method, false position/regula falsi, Brent's method), convergence analysis (linear, quadratic, superlinear convergence), stopping criteria, multiple roots, systems of nonlinear equations (Newton's method for systems, Jacobian matrix, Broyden's method, fixed-point iteration, Picard iteration)",
+                "Monte Carlo Methods: random number generation (pseudo-random generators: linear congruential generator, Mersenne Twister; true random generators), probability distributions (uniform, normal: Box-Muller transform, Marsaglia polar method, inverse CDF; lognormal, exponential, Poisson, binomial), variance reduction techniques (antithetic variates, control variates, importance sampling, stratified sampling, Latin hypercube sampling, moment matching), path generation (geometric Brownian motion, Euler-Maruyama discretization, Milstein method), simulation for risk measurement (value at risk: historical simulation, parametric VaR, Monte Carlo VaR; conditional value at risk/CVaR, expected shortfall), Markov chain Monte Carlo (MCMC: Metropolis-Hastings, Gibbs sampling)",
+                "Lattice Methods: binomial trees (Cox-Ross-Rubinstein, Jarrow-Rudd, Leisen-Reimer), trinomial trees, implied trees, adaptive mesh models, convergence analysis, early exercise handling (American options, Bermudan options), dividends handling (continuous, discrete), multi-asset trees"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 338",
+            "name": "Computer Applications in Business: Databases",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Data Management: data modeling (conceptual: entity-relationship diagrams, entities, attributes, relationships: one-to-one, one-to-many, many-to-many; logical: relational model, tables, rows, columns, keys: primary key, foreign key, candidate key, superkey; physical: storage, indexing, partitioning), data integrity (entity integrity: primary key not null, unique; referential integrity: foreign key constraints; domain integrity: data types, check constraints; user-defined integrity), normalization (1NF: atomic values, no repeating groups; 2NF: no partial dependencies; 3NF: no transitive dependencies; BCNF: Boyce-Codd normal form; 4NF: no multi-valued dependencies; 5NF: join dependencies, lossless decomposition), denormalization (performance optimization, redundancy management, materialized views)",
+                "Data Storage: database architecture (storage engine, query processor, transaction manager, lock manager), file organization (heap files, sequential files, hash files, clustered files), record storage (fixed-length records, variable-length records, record headers, slotted pages), data pages (page layout: free space map, page directory), buffer management (buffer pool, page replacement policies: LRU, MRU, clock, FIFO, LFU; dirty pages, forced flushing, checkpointing), storage media (primary: RAM, cache; secondary: HDD, SSD; tertiary: tape, optical), RAID (RAID 0: striping, RAID 1: mirroring, RAID 5: distributed parity, RAID 6: double parity, RAID 10: striped mirrors), storage hierarchy",
+                "Data Selection: relational algebra (selection σ, projection π, join ⨝: theta join, equijoin, natural join, outer join: left, right, full, cross join ×, set operations: union ∪, intersection ∩, difference −, division ÷, rename ρ), SQL SELECT statement (clauses: SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT/OFFSET), joins (INNER JOIN, LEFT/RIGHT/FULL OUTER JOIN, CROSS JOIN, SELF JOIN), subqueries (correlated, non-correlated, EXISTS, IN, ANY, ALL, scalar subqueries), aggregate functions (COUNT, SUM, AVG, MIN, MAX, GROUP_CONCAT), window functions (ROW_NUMBER, RANK, DENSE_RANK, LEAD, LAG, FIRST_VALUE, LAST_VALUE, NTILE, moving averages, cumulative sums), set operations (UNION, UNION ALL, INTERSECT, EXCEPT), query optimization (predicate pushdown, join reordering, subquery flattening, materialized view matching, cost-based optimization, index selection, statistics collection, query plan caching)",
+                "Data Presentation: views (virtual tables, updatable views, materialized views, view security, view dependencies), report generation (SQL reporting, reporting tools: Crystal Reports, JasperReports, SSRS), data visualization (charts: bar, line, pie, scatter, heatmap, treemap; dashboards, drill-down reports, pivot tables, pivot charts), OLAP (online analytical processing: cube, roll-up, drill-down, slice, dice, pivot), business intelligence tools (Power BI, Tableau, Looker), data storytelling",
+                "Database Management Systems: DBMS architecture (client-server: two-tier, three-tier; multi-tier), popular DBMS (relational: MySQL, PostgreSQL, Oracle, SQL Server, SQLite; NoSQL: MongoDB: document; Cassandra: wide-column; Redis: key-value; Neo4j: graph; Elasticsearch: search engine), DBMS components (query processor: parser, optimizer, executor; storage engine: buffer manager, transaction manager, lock manager; catalog manager: metadata, system tables), administration (user management: CREATE USER, GRANT, REVOKE, roles; backup and recovery: full backup, incremental backup, point-in-time recovery; performance tuning: indexing strategies, query rewriting, configuration tuning, monitoring, slow query log; security: authentication, authorization, encryption at rest and in transit, auditing), ACID properties (Atomicity: all or nothing, commit, rollback; Consistency: integrity constraints, invariants; Isolation: concurrency control, transaction isolation levels; Durability: persistence after commit), concurrency control (locking: shared locks S, exclusive locks X, lock escalation; two-phase locking: expanding phase, shrinking phase, strict 2PL, rigorous 2PL; deadlock detection: wait-for graph, timeout; deadlock prevention: wound-wait, wait-die, no-wait; timestamp ordering: basic T/O, multiversion concurrency control MVCC; optimistic concurrency control: validation, read/write sets), recovery (log-based: undo logging, redo logging, undo/redo logging, ARIES: analysis, redo, undo phases; checkpoints: fuzzy, sharp, consistent; shadow paging), isolation levels (READ UNCOMMITTED: dirty reads, READ COMMITTED: non-repeatable reads, REPEATABLE READ: phantom reads, SERIALIZABLE: full isolation, snapshot isolation)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 341",
+            "name": "Algorithms",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Divide & Conquer: recursion tree method, master theorem (case 1: f(n) = O(n^(log_b a - ε)), case 2: f(n) = Θ(n^(log_b a) * log^k n), case 3: f(n) = Ω(n^(log_b a + ε)) with regularity condition), Akra-Bazzi method (for non-uniform recurrences), examples (merge sort, quicksort, binary search, Karatsuba multiplication: O(n^log2 3), Strassen's matrix multiplication: O(n^log2 7), closest pair of points: O(n log n), fast Fourier transform FFT: O(n log n), maximum subarray sum: O(n log n) divide-and-conquer, convex hull: O(n log n), integer multiplication: Toom-Cook 3-way, integer multiplication: Schönhage-Strassen)",
+                "Recurrences: solving recurrences (substitution method, iteration method, recursion tree method, master theorem, Akra-Bazzi method), recurrence types (linear homogeneous: constant coefficients, characteristic equation; linear non-homogeneous: particular solution + homogeneous solution; divide-and-conquer: T(n) = aT(n/b) + f(n); subtract-and-conquer: T(n) = T(n-1) + f(n)), common recurrences (binary search: T(n) = T(n/2) + O(1) → O(log n), merge sort: T(n) = 2T(n/2) + O(n) → O(n log n), quicksort worst-case: T(n) = T(n-1) + O(n) → O(n^2), quicksort average: T(n) = T(n/2) + T(n/2) + O(n) → O(n log n), Fibonacci: T(n) = T(n-1) + T(n-2) + O(1) → O(φ^n), Karatsuba: T(n) = 3T(n/2) + O(n) → O(n^(log2 3)), Strassen: T(n) = 7T(n/2) + O(n^2) → O(n^(log2 7)))",
+                "Greedy Algorithms: exchange argument (swap adjacent, bubble sort proof), optimal substructure, matroid theory (hereditary property, exchange property, greedy choice property), examples (activity selection: sort by finish time, O(n log n), fractional knapsack: sort by value/weight ratio, O(n log n), Huffman coding: binary tree, prefix codes, optimal merge patterns, Dijkstra's algorithm: single-source shortest paths, non-negative weights, O((V+E) log V) with binary heap, O(V log V + E) with Fibonacci heap, Prim's algorithm: minimum spanning tree, O((V+E) log V) with binary heap, O(E + V log V) with Fibonacci heap, Kruskal's algorithm: minimum spanning tree, union-find, O(E log V), job sequencing with deadlines, Egyptian fraction representation, coin change with canonical coin systems, minimum number of coins: greedy works for standard denominations, minimum spanning tree: cut property, cycle property, Borůvka's algorithm, scheduling to minimize lateness: earliest due date first, scheduling to minimize completion time: shortest processing time first)",
+                "Dynamic Programming: optimal substructure (recursive optimal solution from subproblems), overlapping subproblems (memoization, tabulation), state definition (dimensions: 1D: fib, 2D: knapsack, LCS, edit distance, matrix chain; 3D: DP on intervals, DP on trees), transition function (recurrence relation, base cases, DP table filling order: bottom-up, top-down with memoization), examples (Fibonacci: O(n) time O(1) space, 0/1 knapsack: O(nW) time O(W) space, unbounded knapsack: O(nW) time, coin change (minimum coins): O(n * amount), coin change (number of ways): O(n * amount), longest common subsequence LCS: O(mn) time O(min(m,n)) space, edit distance Levenshtein: O(mn) time O(min(m,n)) space, matrix chain multiplication: O(n^3) time O(n^2) space, longest increasing subsequence LIS: O(n log n) with patience sorting, rod cutting: O(n^2) time, optimal BST: O(n^3) time O(n^2) space, palindrome partitioning: O(n^2) time, word break: O(n^2) time, maximum subarray Kadane: O(n) time 1D DP, traveling salesman problem TSP: O(n^2 * 2^n) time with bitmask DP, DP on trees: tree diameter, tree independent set, tree DP with rerooting, DP on intervals: matrix chain, stone game, burst balloons, DP with bitmask: TSP, set cover, DP on DAGs: longest path, shortest path, count paths, DP with state compression, DP with convex hull trick, DP with divide and conquer optimization, DP with Knuth optimization, DP with monotone queue optimization, DP with slope trick)",
+                "Graph Search: graph representations (adjacency matrix: O(V^2) space, adjacency list: O(V+E) space, edge list, incidence matrix), BFS (breadth-first search: queue, O(V+E) time, shortest paths in unweighted graphs, level order traversal, bipartite graph checking), DFS (depth-first search: stack/recursion, O(V+E) time, topological sort: DFS-based, Kahn's algorithm, cycle detection in directed/undirected graphs, connected components, strongly connected components SCC: Kosaraju's algorithm, Tarjan's algorithm, path finding, articulation points/cut vertices: DFS low-link values, bridges: DFS tree edges, biconnected components, 2-edge-connected components, Eulerian path/circuit: Hierholzer's algorithm, Fleury's algorithm, Hamiltonian path (NP-complete), graph coloring: greedy coloring, Welsh-Powell algorithm, graph isomorphism, A* search (heuristic search, admissible heuristic, consistent heuristic, open set, closed set, f = g + h, Dijkstra as A* with h=0, best-first search), bidirectional search, iterative deepening depth-first search (IDDFS), uniform cost search (UCS), branch and bound, backtracking (N-Queens, Sudoku solver, graph coloring, Hamiltonian cycle, subset sum, knight's tour, rat in maze, generating permutations/combinations, pruning techniques: forward checking, constraint propagation, AC-3 algorithm, constraint satisfaction problems CSP: backtracking search, heuristics: minimum remaining values MRV, degree heuristic, least constraining value, forward checking, constraint propagation, arc consistency, MAC, min-conflicts algorithm for N-Queens, local search for CSP)",
+                "Backtracking: state space tree, pruning (bounding functions, feasibility pruning, optimality pruning), branch and bound (bounding: upper bound, lower bound, best-first search, LC branch and bound, FIFO branch and bound, LIFO branch and bound), examples (N-Queens: O(N!) time, permutations generation, combinations generation, subsets generation, Sudoku solver: backtracking with forward checking, graph coloring, Hamiltonian cycle, subset sum: O(2^(n/2)) meet-in-the-middle, knapsack: branch and bound, traveling salesman problem TSP: branch and bound with reduced cost matrix, partition problem, crossword puzzle, word search, regex matching, maze solving)",
+                "NP-Completeness: decision problems vs optimization problems, P (polynomial time: problems solvable in O(n^k)), NP (nondeterministic polynomial time: problems verifiable in polynomial time), NP-complete (NP-hard and in NP: hardest problems in NP), NP-hard (as hard as any NP problem, may not be in NP), co-NP (complements of NP problems), polynomial-time reduction (many-one reduction/Karp reduction, Turing reduction/Cook reduction), NP-complete problems (SAT: boolean satisfiability, 3-SAT: 3-CNF satisfiability, vertex cover, clique, independent set, Hamiltonian cycle, traveling salesman problem TSP decision version, subset sum, partition, graph coloring, 3-coloring, exact cover, set cover, knapsack decision version, bin packing, integer linear programming, longest path, dominating set, feedback vertex set, steiner tree, graph isomorphism status unknown), NP-completeness proofs (reduction from known NP-complete problems: 3-SAT to vertex cover, vertex cover to clique, 3-SAT to Hamiltonian cycle, Hamiltonian cycle to TSP, 3-SAT to subset sum, subset sum to partition, vertex cover to dominating set, 3-coloring reduction from 3-SAT, independent set from vertex cover by complement graph), Cook-Levin theorem (SAT is NP-complete: SAT ∈ NP, SAT is NP-hard), approximation algorithms (vertex cover: 2-approximation via maximal matching, traveling salesman problem TSP metric: Christofides algorithm 1.5-approximation, set cover: ln n approximation via greedy, bin packing: first-fit decreasing 11/9 approximation, knapsack: FPTAS fully polynomial-time approximation scheme via dynamic programming, k-center: 2-approximation, MAX-SAT: 2-approximation, MAX-CUT: 0.878-approximation via Goemans-Williamson, submodular maximization: (1-1/e)-approximation via greedy), parameterized complexity (fixed-parameter tractable FPT: vertex cover O(2^k * n), kernelization, problem kernels, W hierarchy: W[1]-complete, W[2]-complete, FPT vs W-hardness), polynomial hierarchy (Σ_k^P, Π_k^P, PH), randomized complexity classes (RP, co-RP, ZPP, BPP, PP, #P), quantum complexity classes (BQP, QMA)"
+            ],
+            "has_coding": true,
+            "has_proofs": true,
+            "proof_types": [
+                "correctness",
+                "complexity",
+                "reductions"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 343",
+            "name": "Concurrent and Parallel Programming",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Concurrency fundamentals: threads vs processes, thread lifecycle, race conditions, data races",
+                "Synchronization primitives: mutexes, semaphores, condition variables, barriers, read-write locks",
+                "Atomic operations: compare-and-swap (CAS), fetch-and-add, memory ordering, lock-free programming",
+                "Deadlock: necessary conditions, prevention, avoidance (banker's algorithm), detection, recovery",
+                "Classic concurrency problems: producer-consumer, readers-writers, dining philosophers, sleeping barber",
+                "Parallel programming patterns: fork-join, map-reduce, divide and conquer, pipeline, task parallelism",
+                "Shared memory models: OpenMP, C++ threads, POSIX threads (pthreads), Java concurrency",
+                "Message passing models: MPI (point-to-point, collective operations), actor model, CSP",
+                "Memory models: sequential consistency, acquire-release semantics, happens-before relationship",
+                "Concurrent data structures: lock-free stacks/queues, concurrent hash maps, transactional memory"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 346",
+            "name": "Application Development",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Full-stack architecture: frontend, backend, database, API design (REST, GraphQL)",
+                "Web frameworks: React, Angular, Vue.js for frontend; Node.js, Django, Spring for backend",
+                "Mobile development: iOS (Swift), Android (Kotlin), cross-platform (React Native, Flutter)",
+                "Desktop applications: Electron, Qt, .NET, JavaFX",
+                "Database integration: ORM (Hibernate, SQLAlchemy, Entity Framework), connection pooling",
+                "Authentication and authorization: OAuth2, JWT, session management, role-based access control",
+                "Application deployment: containers (Docker), orchestration (Kubernetes), CI/CD pipelines",
+                "Testing strategies: unit testing, integration testing, end-to-end testing, test automation"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 348",
+            "name": "Introduction to Database Management",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Relational model: relations, attributes, tuples, keys (primary, foreign, candidate), integrity constraints",
+                "SQL: DDL (CREATE, ALTER, DROP), DML (SELECT, INSERT, UPDATE, DELETE), joins, subqueries, aggregation",
+                "Database design: entity-relationship (ER) modeling, normalization (1NF, 2NF, 3NF, BCNF), functional dependencies",
+                "Transaction management: ACID properties, concurrency control (locking, two-phase locking), isolation levels",
+                "Query processing and optimization: query plans, indexes (B+ trees, hash indexes), cost estimation",
+                "Storage and indexing: file organization, buffer management, index structures, data pages",
+                "NoSQL databases: document stores (MongoDB), key-value stores (Redis), column stores (Cassandra), graph databases (Neo4j)",
+                "Distributed databases: sharding, replication, consistency models (CAP theorem, eventual consistency)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 349",
+            "name": "User Interfaces",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Event-driven programming: event loop, callbacks, listeners, input handling (mouse, keyboard, touch)",
+                "UI components: widgets, layout managers, containers, dialogs, menus, toolbars",
+                "Model-View-Controller (MVC) architecture: separation of concerns, data binding, observers",
+                "Graphics and rendering: 2D graphics, vector vs raster, anti-aliasing, transformations, double buffering",
+                "Accessibility: screen readers, keyboard navigation, color contrast, ARIA attributes, inclusive design",
+                "User-centered design: prototyping, user testing, heuristic evaluation, usability metrics",
+                "Responsive design: flexible layouts, media queries, mobile-first design, adaptive vs responsive",
+                "UI toolkits: Swing/JavaFX, Qt, WPF, HTML/CSS, React, SwiftUI"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 350",
+            "name": "Operating Systems",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Process management: process states, context switching, process control block (PCB), creation and termination",
+                "Thread management: user-level vs kernel-level threads, threading models, thread pools, concurrency",
+                "CPU scheduling: FCFS, SJF, round-robin, priority scheduling, multi-level queues, real-time scheduling",
+                "Memory management: paging, segmentation, virtual memory, page tables, TLB, page replacement algorithms (LRU, FIFO, clock)",
+                "File systems: file organization, directory structures, free space management, file allocation (contiguous, linked, indexed)",
+                "Synchronization: mutexes, semaphores, monitors, condition variables, spinlocks, deadlock handling",
+                "Inter-process communication (IPC): pipes, message queues, shared memory, sockets, signals",
+                "Device management: device drivers, I/O scheduling, buffering, caching, interrupt handling, DMA"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 360",
+            "name": "Introduction to the Theory of Computing",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Finite automata: deterministic (DFA) and nondeterministic (NFA), equivalence, minimization, regular languages",
+                "Regular expressions: syntax, semantics, equivalence to finite automata, pumping lemma for regular languages",
+                "Context-free grammars: derivations, parse trees, ambiguity, Chomsky normal form, Greibach normal form",
+                "Pushdown automata: deterministic and nondeterministic, equivalence to context-free grammars",
+                "Turing machines: definition, variants (multi-tape, nondeterministic), equivalence, recursively enumerable languages",
+                "Decidability and undecidability: decidable vs undecidable problems, halting problem, reductions, Rice's theorem",
+                "Computability: recursive and recursively enumerable sets, Church-Turing thesis, oracle machines",
+                "Complexity classes: P, NP, NP-completeness, Cook-Levin theorem, polynomial-time reductions"
+            ],
+            "has_coding": false,
+            "has_proofs": true,
+            "proof_types": [
+                "automata_construction",
+                "language_proofs",
+                "undecidability"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CS 365",
+            "name": "Models of Computation",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Finite automata: DFA, NFA, epsilon-NFA, equivalence, product construction, state minimization",
+                "Regular languages: closure properties, decision properties, Myhill-Nerode theorem, pumping lemma",
+                "Context-free languages: closure properties, decision properties, pumping lemma for CFLs, Ogden's lemma",
+                "Pushdown automata: instantaneous descriptions, acceptance by final state and empty stack, deterministic PDA",
+                "Turing machines: variations (offline, multi-tape, nondeterministic, enumerators), time and space complexity",
+                "Recursive and recursively enumerable languages: hierarchy, closure, reducibility, Rice's theorem",
+                "Undecidability: halting problem, Post correspondence problem, validity problem, linear bounded automata",
+                "Complexity theory: time hierarchy, space hierarchy, P vs NP, PSPACE, EXPTIME, LOGSPACE"
+            ],
+            "has_coding": false,
+            "has_proofs": true,
+            "proof_types": [
+                "automata_construction",
+                "language_proofs",
+                "undecidability",
+                "complexity"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CS 370",
+            "name": "Numerical Computation",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Floating-point arithmetic: IEEE 754 representation, rounding errors, machine epsilon, catastrophic cancellation",
+                "Linear systems: Gaussian elimination, LU decomposition, pivoting, condition numbers, iterative methods (Jacobi, Gauss-Seidel)",
+                "Root finding: bisection, Newton's method, secant method, convergence rates, fixed-point iteration",
+                "Interpolation and approximation: polynomial interpolation, Lagrange form, Newton form, splines, least squares",
+                "Numerical integration: Newton-Cotes formulas (trapezoidal rule, Simpson's rule), Gaussian quadrature, adaptive quadrature",
+                "Ordinary differential equations: Euler's method, Runge-Kutta methods, multistep methods, stability and stiffness",
+                "Eigenvalue problems: power iteration, QR algorithm, singular value decomposition (SVD)",
+                "Fast Fourier Transform (FFT): DFT, Cooley-Tukey algorithm, applications in signal processing"
+            ],
+            "has_coding": true,
+            "has_proofs": true,
+            "proof_types": [
+                "convergence_analysis",
+                "error_bounds",
+                "stability_analysis"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 371",
+            "name": "Introduction to Computational Mathematics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Computational models: discrete vs continuous, floating-point arithmetic, error propagation, algorithm stability",
+                "Linear algebra computations: matrix operations, solving linear systems, least squares, eigenvalue computations",
+                "Interpolation: polynomial, piecewise polynomial (splines), rational interpolation, radial basis functions",
+                "Discrete Fourier transforms: DFT, FFT, spectral analysis, convolution, filtering",
+                "Numerical integration: Newton-Cotes, Gaussian quadrature, adaptive methods, multidimensional integration",
+                "Optimization: unconstrained (gradient descent, Newton), constrained (Lagrange multipliers, linear programming)",
+                "Monte Carlo methods: random number generation, variance reduction, importance sampling, MCMC"
+            ],
+            "has_coding": true,
+            "has_proofs": true,
+            "proof_types": [
+                "convergence_analysis",
+                "error_analysis"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 383",
+            "name": "Computational Digital Art Studio",
+            "has_exam": false,
+            "exam_format": [],
+            "topics": [
+                "Generative art: algorithmic composition, procedural generation, fractals, L-systems, noise functions (Perlin, simplex)",
+                "Interactive art: real-time graphics, sensor integration, audience participation, installation art",
+                "Data visualization as art: aesthetic representations of data, infographics, data sculpture",
+                "Digital image manipulation: pixel manipulation, filters, compositing, digital painting techniques",
+                "Animation: keyframe animation, motion graphics, particle systems, physics-based animation",
+                "Sound art: algorithmic composition, data sonification, interactive audio, synthesis",
+                "Creative coding frameworks: Processing, openFrameworks, p5.js, TouchDesigner",
+                "Cross-disciplinary projects: collaboration with visual arts, music, dance, theater"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 398",
+            "name": "Topics in Computer Science",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Varies by offering: emerging research areas, specialized topics not covered in regular courses"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 399",
+            "name": "Readings in Computer Science",
+            "has_exam": false,
+            "exam_format": [],
+            "topics": [
+                "Independent reading and research under faculty supervision"
+            ],
+            "has_coding": false,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "short_answer"
+            ]
+        },
+        {
+            "code": "CS 430",
+            "name": "Applications Software Engineering",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Requirements engineering: elicitation, analysis, specification, validation, traceability, requirements management",
+                "Software design: architectural design, detailed design, design patterns, UML, design documentation",
+                "Software development processes: waterfall, iterative, agile (Scrum, Kanban), DevOps",
+                "Software quality: quality attributes, metrics, code reviews, static analysis, technical debt",
+                "Software testing: test levels (unit, integration, system, acceptance), test design techniques, test automation",
+                "Software maintenance: corrective, adaptive, perfective, preventive maintenance, legacy systems, refactoring",
+                "Project management: planning, estimation (COCOMO, function points), risk management, team management",
+                "Software engineering ethics: professional responsibility, code of ethics, legal issues, intellectual property"
+            ],
+            "has_coding": false,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer"
+            ]
+        },
+        {
+            "code": "CS 431",
+            "name": "Data-Intensive Distributed Analytics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "MapReduce paradigm: map and reduce functions, shuffle/sort, combiners, partitioners, Hadoop ecosystem",
+                "Data partitioning: hash partitioning, range partitioning, round-robin, consistent hashing, skew handling",
+                "Replication and consistency: replication strategies, consistency models (strong, eventual, causal), CAP theorem",
+                "Data locality: data placement, rack awareness, task scheduling for locality, block replication",
+                "Stream processing: event time vs processing time, windowing (tumbling, sliding, session), watermarking",
+                "Stream processing frameworks: Apache Spark Streaming, Apache Flink, Kafka Streams, Apache Storm",
+                "Bulk-synchronous parallel (BSP): supersteps, synchronization, barriers, Pregel for graph processing",
+                "Distributed SQL engines: Hive, Presto, Impala, Spark SQL, query optimization on distributed data"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 436",
+            "name": "Networks and Distributed Computer Systems",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Network architecture: OSI model, TCP/IP stack, layering, encapsulation, protocol design principles",
+                "Application layer: HTTP/HTTPS, DNS, SMTP, FTP, WebSocket, REST, gRPC",
+                "Transport layer: UDP (connectionless, unreliable), TCP (connection-oriented, reliable, flow control, congestion control)",
+                "Network layer: IP addressing (IPv4, IPv6), routing (RIP, OSPF, BGP), forwarding, ARP, ICMP",
+                "Data link layer: Ethernet, Wi-Fi (802.11), MAC addressing, CSMA/CD, CSMA/CA, switching",
+                "Distributed systems fundamentals: time and clock synchronization (NTP), logical clocks (Lamport, vector clocks)",
+                "Distributed consensus: Paxos, Raft, Byzantine fault tolerance, leader election, replication",
+                "Distributed file systems: NFS, AFS, HDFS, Ceph, consistency and caching"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 442",
+            "name": "Principles of Programming Languages",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Programming paradigms: imperative, functional, logic, object-oriented, concurrent",
+                "Type systems: static vs dynamic typing, type inference, parametric polymorphism, subtyping, dependent types",
+                "Semantics: operational semantics, denotational semantics, axiomatic semantics (Hoare logic)",
+                "Lambda calculus: syntax, beta-reduction, alpha-conversion, Church encodings, fixed-point combinators",
+                "Functional programming: higher-order functions, lazy evaluation, purity, monads, algebraic data types",
+                "Logic programming: Horn clauses, unification, SLD resolution, backtracking, cut operator",
+                "Object-oriented programming: inheritance, polymorphism, encapsulation, multiple inheritance, mixins",
+                "Language design trade-offs: safety vs performance, expressiveness vs simplicity, compilation vs interpretation"
+            ],
+            "has_coding": true,
+            "has_proofs": true,
+            "proof_types": [
+                "type_safety",
+                "semantic_equivalence"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 444",
+            "name": "Compiler Construction",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Lexical analysis: regular expressions, finite automata, lexer generators (LEX, Flex), tokenization",
+                "Parsing: context-free grammars, LL parsing (recursive descent, table-driven), LR parsing (SLR, LALR, LR(1)), parser generators (YACC, Bison)",
+                "Syntax-directed translation: attribute grammars, inherited and synthesized attributes, abstract syntax trees (AST)",
+                "Semantic analysis: symbol tables, scope resolution, type checking, type inference, name binding",
+                "Intermediate representations: three-address code, static single assignment (SSA), control flow graphs (CFG)",
+                "Runtime environments: stack frames, activation records, heap management, garbage collection (mark-sweep, copying, generational)",
+                "Code generation: instruction selection (tree rewriting, peephole), register allocation (graph coloring, linear scan), instruction scheduling",
+                "Optimization: constant propagation, common subexpression elimination, loop optimization (invariant hoisting, unrolling, vectorization), inlining"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 445",
+            "name": "Software Requirements Specification and Analysis",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Requirements elicitation: interviews, surveys, observation, workshops, prototyping, use cases",
+                "Requirements analysis: conflict resolution, feasibility analysis, prioritization (MoSCoW, Kano model), risk analysis",
+                "Requirements specification: natural language, structured specifications, formal specifications (Z, VDM), user stories",
+                "Requirements validation: reviews, inspections, prototyping, acceptance testing, traceability matrices",
+                "Requirements management: change management, version control, requirements attributes, impact analysis",
+                "Cost estimation: COCOMO II, function points, use case points, expert judgment, Delphi technique"
+            ],
+            "has_coding": false,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer"
+            ]
+        },
+        {
+            "code": "CS 446",
+            "name": "Software Design and Architectures",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Software architecture: architectural patterns (layered, client-server, pipe-and-filter, event-driven, microservices)",
+                "Design patterns: creational (Singleton, Factory, Builder), structural (Adapter, Composite, Decorator), behavioral (Observer, Strategy, Command)",
+                "Architectural design decisions: modifiability, performance, security, scalability, deployment trade-offs",
+                "Architecture documentation: views (4+1 model), UML (component diagrams, deployment diagrams), C4 model",
+                "Service-oriented architecture (SOA): services, contracts, orchestration, choreography, ESB",
+                "Microservices: service decomposition, API gateways, service discovery, circuit breakers, distributed tracing",
+                "Model-driven architecture: platform-independent models, platform-specific models, model transformation",
+                "Architecture evaluation: ATAM (Architecture Trade-off Analysis Method), CBAM, scenarios, quality attributes"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 447",
+            "name": "Software Testing, Quality Assurance, and Maintenance",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Testing fundamentals: test objectives, test levels (unit, integration, system, acceptance), verification vs validation",
+                "Test case design: black-box techniques (equivalence partitioning, boundary value analysis, decision tables), white-box techniques (statement coverage, branch coverage, path coverage, MC/DC)",
+                "Test automation: test frameworks (JUnit, pytest, NUnit), test harnesses, mocking, stubs, drivers",
+                "Regression testing: test selection, test prioritization, test suite minimization, impact analysis",
+                "Quality assurance: quality metrics (defect density, mean time to failure), code reviews, static analysis (linting, formal verification)",
+                "Software maintenance: corrective, adaptive, perfective, preventive; legacy system evolution, re-engineering, refactoring",
+                "Reliability prediction: reliability models (exponential, Weibull), fault injection, operational profiles"
+            ],
+            "has_coding": false,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer"
+            ]
+        },
+        {
+            "code": "CS 448",
+            "name": "Database Systems Implementation",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Storage management: disk organization, page layouts, record formats (fixed-length, variable-length), slotted pages",
+                "Indexing: B+ trees (search, insert, delete, bulk loading), hash indexes (static, extendible, linear), bitmap indexes",
+                "Query processing: selection (scan, index scan), join algorithms (nested loop, hash join, merge join), sorting (external sort)",
+                "Query optimization: cost estimation, plan space exploration, dynamic programming, Selinger optimizer",
+                "Concurrency control: locking (shared/exclusive, intention locks), two-phase locking (2PL), multiversion concurrency control (MVCC)",
+                "Logging and recovery: write-ahead logging (WAL), undo/redo logging, checkpoints, ARIES algorithm",
+                "Buffer management: buffer pool, replacement policies (LRU, clock), pinned pages, prefetching",
+                "Parallel query execution: intra-query parallelism, inter-query parallelism, data partitioning, exchange operators"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 449",
+            "name": "Human-Computer Interaction",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "HCI foundations: cognitive models (GOMS, KLM), perception, memory, attention, affordances, signifiers",
+                "User research: contextual inquiry, interviews, surveys, personas, journey mapping, usability testing",
+                "Interaction design: design thinking, iterative design, prototyping (low-fidelity, high-fidelity), wireframing",
+                "Evaluation methods: heuristic evaluation, cognitive walkthrough, A/B testing, analytics, remote testing",
+                "Interface design principles: visibility, feedback, consistency, constraints, mapping, Fitts' law, Hick's law",
+                "User experience (UX): user satisfaction, emotional design, accessibility, inclusive design, internationalization",
+                "Interaction techniques: pointing, gestural, touch, voice, eye tracking, haptics, brain-computer interfaces",
+                "Collaboration and social computing: computer-supported cooperative work (CSCW), social media, crowdsourcing"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 450",
+            "name": "Computer Architecture",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Pipelining: 5-stage pipeline, hazards (structural, data, control), forwarding, stalling, branch prediction",
+                "Superscalar architectures: multiple issue, in-order vs out-of-order, Tomasulo's algorithm, register renaming",
+                "VLIW and EPIC: very long instruction word, explicitly parallel instruction computing, compiler scheduling",
+                "Memory hierarchy: cache design (associativity, block size, replacement), cache coherence (MESI, MOESI), prefetching",
+                "Virtual memory: page tables, TLBs, page replacement, memory management unit (MMU)",
+                "Multiprocessors: symmetric multiprocessing (SMP), non-uniform memory access (NUMA), cache coherence protocols",
+                "Vector processors: SIMD, vector registers, vector operations, chaining, gather/scatter",
+                "Performance measurement: benchmarks (SPEC, TPC), speedup, Amdahl's law, Gustafson's law, performance counter"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 451",
+            "name": "Data-Intensive Distributed Computing",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Distributed data processing: MapReduce, Spark (RDDs, DataFrames, transformations, actions), Flink",
+                "Data partitioning and distribution: hash partitioning, range partitioning, consistent hashing, data skew handling",
+                "Fault tolerance: checkpointing, lineage (Spark RDD lineage), replication, speculative execution",
+                "Distributed machine learning: parameter servers, gradient aggregation, model parallelism, data parallelism",
+                "Graph processing: Pregel, GraphX, Giraph (vertex-centric programming, supersteps, message passing)",
+                "Stream processing: time handling, state management, exactly-once semantics, backpressure, windowing",
+                "Data storage for analytics: columnar storage (Parquet, ORC), data lakes, object storage (S3, HDFS)",
+                "Query optimization for distributed data: predicate pushdown, partition pruning, broadcast joins, sort-merge joins"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 452",
+            "name": "Real-Time Programming",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Real-time concepts: hard vs soft real-time, deadlines, jitter, latency, determinism",
+                "Real-time scheduling: rate-monotonic scheduling (RMS), earliest deadline first (EDF), deadline monotonic",
+                "Schedulability analysis: utilization bounds, response time analysis, worst-case execution time (WCET)",
+                "Real-time operating systems (RTOS): VxWorks, QNX, FreeRTOS, task priorities, preemption, interrupt handling",
+                "Priority inversion: problem description, priority inheritance protocol, priority ceiling protocol",
+                "Real-time synchronization: priority inheritance mutexes, immediate ceiling protocol, lock-free techniques",
+                "Microcomputer architecture for real-time: timers, interrupt controllers, watchdog timers, memory protection",
+                "Real-time communication: controller area network (CAN), time-triggered protocol (TTP), real-time Ethernet"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 454",
+            "name": "Distributed Systems",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Distributed system models: synchronous vs asynchronous, failure models (crash, omission, Byzantine), partial failures",
+                "Time and coordination: clock synchronization (NTP), logical clocks (Lamport timestamps, vector clocks), causality",
+                "Distributed consensus: Paxos (preparations, promises, acceptances), Raft (leader election, log replication), Zab",
+                "Replication: state machine replication, primary-backup, quorum-based replication, chain replication",
+                "Distributed transactions: two-phase commit (2PC), three-phase commit (3PC), saga, compensation",
+                "Distributed naming and discovery: DNS, consistent hashing, distributed hash tables (Chord, Kademlia)",
+                "Distributed file systems: GFS, HDFS, Ceph (architecture, consistency, fault tolerance)",
+                "Failure detection: heartbeat protocols, gossip protocols, phi-accrual detection, suspicion levels"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 456",
+            "name": "Computer Networks",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Network architecture: OSI model, TCP/IP stack, encapsulation, protocol design",
+                "Application layer: HTTP/2, HTTP/3 (QUIC), WebSocket, DNS (resolution, caching), CDN, email (SMTP, IMAP)",
+                "Transport layer: UDP (datagram, multicast), TCP (connection management, flow control, congestion control: Reno, Cubic, BBR)",
+                "Network layer: IP routing (distance vector: RIP, link state: OSPF, path vector: BGP), IPv6, NAT, SDN",
+                "Data link layer: Ethernet (switching, VLAN), Wi-Fi (802.11: CSMA/CA, RTS/CTS), PPP, MAC protocols",
+                "Network security: TLS/SSL, VPN, IPSec, firewalls, intrusion detection, DDoS mitigation",
+                "Network programming: sockets (TCP/UDP), asynchronous I/O (select, epoll, kqueue), network monitoring (SNMP, NetFlow)",
+                "Multimedia networking: streaming protocols (HLS, DASH), VoIP (SIP, RTP), quality of service (QoS), traffic shaping"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 457",
+            "name": "System Performance Evaluation",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Performance metrics: throughput, latency, response time, utilization, scalability, speedup",
+                "Workload characterization: synthetic workloads, trace-driven simulation, benchmarks (SPEC, TPC), operational profiles",
+                "Discrete-event simulation: event scheduling, time advance, random number generation, simulation output analysis",
+                "Queueing theory: Little's law, M/M/1 queue, M/M/c queue, M/G/1 queue, queueing networks (open, closed)",
+                "Model verification and validation: face validity, sensitivity analysis, calibration, output validation",
+                "Experimental design: factorial design, fractional factorial, response surface methodology, design of experiments",
+                "Statistical analysis: confidence intervals, hypothesis testing, regression analysis, ANOVA",
+                "Measurement techniques: profiling, tracing, instrumentation, sampling, hardware performance counters"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 458",
+            "name": "Computer Security and Privacy",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Cryptography fundamentals: symmetric encryption (AES, ChaCha20), asymmetric encryption (RSA, ECC), hash functions (SHA-256, SHA-3), message authentication codes (HMAC)",
+                "Authentication: passwords (hashing, salting, PBKDF2, bcrypt), multi-factor authentication, biometrics, certificate authorities",
+                "Access control: DAC (discretionary), MAC (mandatory), RBAC (role-based), ABAC (attribute-based), capabilities",
+                "Program security: buffer overflows (stack, heap), format string vulnerabilities, code injection (SQL injection, XSS, command injection)",
+                "Network security: firewalls (packet filter, stateful, application), intrusion detection/prevention (signature-based, anomaly-based), VPNs",
+                "Web security: same-origin policy, CORS, CSRF, XSS, SQL injection, clickjacking, HTTPS (TLS, certificate validation)",
+                "Privacy: anonymity (Tor, mix networks), differential privacy, data anonymization (k-anonymity, l-diversity, t-closeness)",
+                "Security economics: risk assessment, threat modeling, security ROI, compliance (GDPR, HIPAA, PCI-DSS), ethical hacking"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 462",
+            "name": "Formal Languages and Parsing",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Chomsky hierarchy: regular, context-free, context-sensitive, recursively enumerable languages",
+                "Regular languages: finite automata (DFA, NFA, epsilon-NFA), regular expressions, pumping lemma, Myhill-Nerode theorem",
+                "Context-free grammars: derivations, parse trees, ambiguity, left recursion, left factoring, normal forms (CNF, GNF)",
+                "Pushdown automata: instantaneous descriptions, acceptance conditions, deterministic vs nondeterministic PDA",
+                "Parsing algorithms: LL parsing (FIRST, FOLLOW, parse tables), LR parsing (items, LR(0), SLR(1), LR(1), LALR(1))",
+                "Parsing ambiguities: dangling else, operator precedence, associativity, resolving with precedence and associativity declarations",
+                "Grammar transformations: eliminating left recursion, left factoring, eliminating unit productions, eliminating useless symbols",
+                "Applications: parser generators (YACC, Bison, ANTLR), language design, syntax-directed translation"
+            ],
+            "has_coding": false,
+            "has_proofs": true,
+            "proof_types": [
+                "automata_construction",
+                "language_proofs",
+                "undecidability"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CS 466",
+            "name": "Algorithm Design and Analysis",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Randomized algorithms: Las Vegas vs Monte Carlo, randomized quicksort, randomized selection, primality testing (Miller-Rabin)",
+                "Amortized analysis: aggregate method, accounting method, potential method, examples (dynamic arrays, union-find, splay trees)",
+                "Lower bounds: decision tree model, adversary arguments, information-theoretic bounds, comparison-based sorting lower bound (Ω(n log n))",
+                "Approximation algorithms: performance guarantees, approximation ratios, examples (vertex cover 2-approx, TSP metric 1.5-approx, set cover ln n-approx)",
+                "Online algorithms: competitive analysis, examples (paging: LRU, FIFO; ski rental; k-server problem)",
+                "Advanced data structures: Fibonacci heaps, van Emde Boas trees, disjoint set union (union-find) with path compression and union by rank",
+                "Graph algorithms: maximum flow (Ford-Fulkerson, Edmonds-Karp, Dinic), minimum cut, bipartite matching (Hopcroft-Karp)",
+                "Computational geometry: convex hull (Graham scan, Jarvis march), line segment intersection, closest pair, Voronoi diagrams"
+            ],
+            "has_coding": true,
+            "has_proofs": true,
+            "proof_types": [
+                "correctness",
+                "complexity",
+                "approximation_ratio"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 467",
+            "name": "Introduction to Quantum Information Processing",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Quantum mechanics fundamentals: qubits, superposition, measurement, Bloch sphere, density matrices",
+                "Quantum gates: Pauli gates (X, Y, Z), Hadamard (H), phase (S, T), controlled gates (CNOT, CZ, controlled-U)",
+                "Quantum circuits: quantum parallelism, No-Cloning theorem, Bell states, teleportation, superdense coding",
+                "Quantum algorithms: Deutsch-Jozsa, Bernstein-Vazirani, Simon's algorithm, Grover's search (quadratic speedup)",
+                "Quantum Fourier transform (QFT): phase estimation, order finding, Shor's factoring algorithm (exponential speedup)",
+                "Quantum error correction: bit-flip code, phase-flip code, Shor's 9-qubit code, surface codes, threshold theorem",
+                "Physical realizations: superconducting qubits (transmon), trapped ions, photonics, topological qubits",
+                "Quantum information: entropy (von Neumann), no-communication theorem, quantum key distribution (BB84, E91)"
+            ],
+            "has_coding": true,
+            "has_proofs": true,
+            "proof_types": [
+                "quantum_complexity",
+                "algorithm_correctness"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 475",
+            "name": "Computational Linear Algebra",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Direct methods for linear systems: Gaussian elimination, LU decomposition, Cholesky (symmetric positive definite), LDLT",
+                "Iterative methods: Jacobi, Gauss-Seidel, successive over-relaxation (SOR), conjugate gradient (CG) for SPD matrices",
+                "Sparse matrices: compressed sparse row (CSR) format, graph ordering (reverse Cuthill-McKee, nested dissection), fill-in reduction",
+                "Orthogonal factorizations: QR decomposition (Householder reflectors, Givens rotations, Gram-Schmidt), least squares problems",
+                "Singular value decomposition (SVD): computation (Golub-Kahan, divide-and-conquer), applications (pseudo-inverse, low-rank approximation)",
+                "Eigenvalue algorithms: power iteration, inverse iteration, Rayleigh quotient iteration, QR algorithm, divide-and-conquer",
+                "Sensitivity and conditioning: condition number, backward stability, forward stability, error analysis",
+                "High-performance linear algebra: BLAS (Level 1, 2, 3), LAPACK, cache efficiency, blocked algorithms"
+            ],
+            "has_coding": true,
+            "has_proofs": true,
+            "proof_types": [
+                "convergence_analysis",
+                "stability_analysis"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 476",
+            "name": "Numeric Computation for Financial Modeling",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Financial models: Black-Scholes-Merton, stochastic differential equations (SDEs), geometric Brownian motion, jump diffusion",
+                "Option pricing: European options, American options (early exercise), exotic options (barrier, Asian, lookback)",
+                "Finite difference methods: explicit, implicit, Crank-Nicolson for Black-Scholes PDE, stability (CFL condition), boundary conditions",
+                "Monte Carlo methods: path generation (Euler-Maruyama, Milstein), variance reduction (antithetic variates, control variates, importance sampling)",
+                "Binomial and trinomial trees: Cox-Ross-Rubinstein, risk-neutral valuation, convergence, early exercise for American options",
+                "Portfolio optimization: mean-variance optimization, efficient frontier, Sharpe ratio, Black-Litterman model",
+                "Risk management: value at risk (VaR), conditional VaR (CVaR), historical simulation, parametric VaR",
+                "Interest rate models: Vasicek, Cox-Ingersoll-Ross (CIR), Hull-White, Heath-Jarrow-Morton (HJM)"
+            ],
+            "has_coding": true,
+            "has_proofs": true,
+            "proof_types": [
+                "convergence_analysis",
+                "stability_analysis"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 479",
+            "name": "Neural Networks",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Neuron models: perceptron, sigmoid, tanh, ReLU, leaky ReLU, softmax, activation functions",
+                "Feedforward networks: architecture, universal approximation theorem, depth vs width, dropout, batch normalization",
+                "Backpropagation: chain rule, gradient computation, vanishing/exploding gradients, automatic differentiation",
+                "Training optimization: SGD, momentum, Adam, RMSprop, learning rate schedules, weight initialization",
+                "Convolutional neural networks (CNN): convolution layers, pooling (max, average), stride, padding, architectures (LeNet, AlexNet, ResNet, Inception)",
+                "Recurrent neural networks (RNN): LSTMs, GRUs, sequence modeling, vanishing gradients, teacher forcing",
+                "Unsupervised learning: autoencoders (vanilla, variational, denoising), self-organizing maps, contrastive learning",
+                "Adversarial learning: generative adversarial networks (GANs), training stability (Wasserstein GAN, spectral normalization)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 480",
+            "name": "Introduction to Machine Learning",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Supervised learning: regression (linear, polynomial, ridge, lasso), classification (logistic regression, k-NN, decision trees, SVMs)",
+                "Model selection: training/validation/test split, cross-validation, bias-variance trade-off, overfitting and underfitting",
+                "Ensemble methods: bagging (random forests), boosting (AdaBoost, gradient boosting, XGBoost), stacking",
+                "Unsupervised learning: clustering (k-means, hierarchical, DBSCAN, Gaussian mixture models), dimensionality reduction (PCA, t-SNE, UMAP)",
+                "Probabilistic methods: maximum likelihood estimation (MLE), maximum a posteriori (MAP), Bayesian inference, Gaussian processes",
+                "Kernel methods: kernel trick, support vector machines (linear, polynomial, RBF), kernel ridge regression",
+                "Evaluation metrics: accuracy, precision, recall, F1-score, ROC curves, AUC, confusion matrix",
+                "Deep learning foundations: neural networks, backpropagation, optimization, regularization (dropout, batch norm)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 482",
+            "name": "Computational Techniques in Biological Sequence Analysis",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Sequence alignment: Needleman-Wunsch (global alignment), Smith-Waterman (local alignment), affine gap penalties",
+                "Multiple sequence alignment: progressive alignment (ClustalW, MUSCLE), iterative methods, hidden Markov models (HMMs)",
+                "Database search: BLAST (Basic Local Alignment Search Tool), FASTA, E-value, scoring matrices (PAM, BLOSUM)",
+                "Sequence assembly: overlap-layout-consensus (OLC), de Bruijn graphs (for short reads), Eulerian paths",
+                "Phylogenetic tree reconstruction: distance-based (UPGMA, neighbor-joining), character-based (maximum parsimony, maximum likelihood, Bayesian)",
+                "Motif finding: consensus, position weight matrices (PWM), Gibbs sampling, expectation-maximization (EM)",
+                "Genome annotation: gene finding (ORF, splice sites), hidden Markov models for gene prediction (GENSCAN, Glimmer)",
+                "RNA secondary structure prediction: Nussinov algorithm, dynamic programming, free energy minimization, comparative methods"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 484",
+            "name": "Computational Vision",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Image formation: pinhole camera model, perspective projection, lens distortion, radiometry, color spaces (RGB, HSV, LAB)",
+                "Image processing: filtering (Gaussian, median, bilateral), edge detection (Sobel, Canny), morphological operations (erosion, dilation)",
+                "Feature detection: corners (Harris, FAST), blobs (LoG, DoG), SIFT, SURF, ORB, feature descriptors",
+                "Stereo vision: epipolar geometry, fundamental matrix, essential matrix, disparity estimation, depth from stereo",
+                "Motion analysis: optical flow (Lucas-Kanade, Horn-Schunck), motion segmentation, structure from motion",
+                "Object recognition: sliding window, HOG + SVM, R-CNN, YOLO, SSD, detection metrics (IoU, mAP)",
+                "Segmentation: thresholding, region growing, graph cuts, semantic segmentation (FCN, U-Net, Mask R-CNN)",
+                "3D reconstruction: structure from motion (SfM), multi-view stereo, SLAM (simultaneous localization and mapping)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 485",
+            "name": "Statistical and Computational Foundations of Machine Learning",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Statistical learning theory: PAC learning, VC-dimension, sample complexity, uniform convergence, Rademacher complexity",
+                "Generalization bounds: Hoeffding's inequality, McDiarmid's inequality, margin bounds, stability bounds",
+                "Regularization: L1 (lasso), L2 (ridge), elastic net, group lasso, sparsity, model selection",
+                "Kernel methods: reproducing kernel Hilbert spaces (RKHS), kernel trick, Mercer's theorem, kernel selection",
+                "Support vector machines: hard margin, soft margin, hinge loss, SMO algorithm, multi-class SVM",
+                "Boosting: AdaBoost (exponential loss, margin theory), gradient boosting, XGBoost, CatBoost",
+                "Neural network theory: universal approximation, depth efficiency, lottery ticket hypothesis, neural tangent kernel (NTK)",
+                "Data-dependent bounds: Rademacher complexity, local Rademacher complexity, PAC-Bayesian bounds"
+            ],
+            "has_coding": true,
+            "has_proofs": true,
+            "proof_types": [
+                "generalization_bounds",
+                "complexity_analysis"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 486",
+            "name": "Introduction to Artificial Intelligence",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Problem solving: state-space search (BFS, DFS, A*, IDA*), heuristics (admissible, consistent), constraint satisfaction (CSP, backtracking, AC-3)",
+                "Knowledge representation: propositional logic, first-order logic, ontologies, semantic networks, frames",
+                "Reasoning: inference (resolution, forward chaining, backward chaining), deduction, abduction, non-monotonic reasoning",
+                "Planning: STRIPS, PDDL, forward/backward search, partial-order planning, graphplan, hierarchical planning",
+                "Reasoning under uncertainty: probability, Bayesian networks (inference, learning, structure learning), hidden Markov models (HMMs), Kalman filters",
+                "Multi-agent systems: game theory (Nash equilibrium, minimax), cooperative vs competitive agents, negotiation, auctions, mechanism design",
+                "Natural language processing: parsing (CFG, dependency), part-of-speech tagging, named entity recognition, sentiment analysis, machine translation",
+                "AI ethics: fairness, bias, transparency, accountability, explainable AI (XAI), AI safety"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 487",
+            "name": "Introduction to Symbolic Computation",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Symbolic representation: expression trees, canonical forms, normal forms, simplification rules",
+                "Algebraic manipulation: polynomial arithmetic (addition, multiplication, division), Gröbner bases, Buchberger's algorithm",
+                "Symbolic differentiation: automatic differentiation (forward mode, reverse mode), differentiation rules, expression simplification",
+                "Symbolic integration: Risch algorithm, integration of rational functions, special functions (error function, elliptic integrals)",
+                "Equation solving: symbolic solution of linear systems (Gaussian elimination), polynomial equations (resultants, Gröbner bases)",
+                "Mathematical simplification: trigonometric identities, logarithmic identities, exponential simplification, algebraic simplification",
+                "Computer algebra systems: architecture of CAS (Maple, Mathematica, SymPy), term rewriting, pattern matching",
+                "Applications: automatic theorem proving, formal verification, scientific computing, education"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 488",
+            "name": "Introduction to Computer Graphics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "2D graphics: rasterization, line drawing (Bresenham), polygon filling (scanline, flood fill), anti-aliasing, clipping (Cohen-Sutherland, Liang-Barsky)",
+                "3D transformations: translation, rotation (Euler angles, quaternions), scaling, perspective and orthographic projection, homogeneous coordinates",
+                "Rendering pipeline: vertex processing, rasterization, fragment processing, framebuffer operations",
+                "Shading: illumination models (Lambertian, Phong, Blinn-Phong), materials, textures (mapping, filtering, mipmapping)",
+                "Hidden surface removal: painter's algorithm, Z-buffer (depth buffer), BSP trees, occlusion culling",
+                "Ray tracing: primary rays, intersection tests (sphere, triangle, plane), reflection, refraction, shadows, acceleration structures (BVH, kd-tree, grid)",
+                "Global illumination: path tracing, photon mapping, radiosity, Monte Carlo integration",
+                "Graphics APIs: OpenGL (shaders, buffers, textures), Vulkan, DirectX, WebGL"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 489",
+            "name": "Advanced Topics in Computer Science",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Varies by offering: specialized advanced topics in CS research areas"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 490",
+            "name": "Information Systems Management",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "IS strategy: alignment with business strategy, strategic information systems, competitive advantage through IT",
+                "IS planning and development: strategic planning, enterprise architecture, portfolio management, IT governance (COBIT, ITIL)",
+                "Decision support systems: business intelligence, analytics, data warehousing, OLAP, dashboards, data visualization",
+                "IT operations: service management (ITSM), incident management, problem management, change management, release management",
+                "IT security and risk management: risk assessment, compliance (SOX, GDPR, HIPAA), disaster recovery, business continuity",
+                "Enterprise systems: ERP (SAP, Oracle), CRM (Salesforce), SCM, knowledge management systems",
+                "IT outsourcing and vendor management: make vs buy, vendor selection, contract management, SLAs",
+                "Emerging technologies: cloud computing, big data, AI/ML in business, digital transformation, blockchain"
+            ],
+            "has_coding": false,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer"
+            ]
+        },
+        {
+            "code": "CS 492",
+            "name": "The Social Implications of Computing",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Privacy and surveillance: data collection, tracking, encryption, anonymity, de-anonymization, mass surveillance, GDPR",
+                "Security and cybercrime: hacking, malware, phishing, cyberterrorism, cyberwarfare, defense strategies",
+                "Intellectual property: software copyright, patents, open source licensing (GPL, MIT, Apache), Creative Commons",
+                "Professional ethics: ACM/IEEE code of ethics, whistleblowing, professional responsibility, conflicts of interest",
+                "AI and automation: job displacement, algorithmic bias, fairness, accountability, transparency (XAI), AI safety",
+                "Social media and society: echo chambers, filter bubbles, misinformation, fake news, content moderation, platform responsibility",
+                "Digital divide: access inequality, digital literacy, universal access, net neutrality",
+                "Computing and sustainability: energy consumption, e-waste, green computing, carbon footprint of data centers"
+            ],
+            "has_coding": false,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer"
+            ]
+        },
+        {
+            "code": "CS 493",
+            "name": "Team Project 1",
+            "has_exam": false,
+            "exam_format": [],
+            "topics": [
+                "Project management: team formation, roles (project manager, technical lead, QA, developer), communication, conflict resolution",
+                "Project definition: problem identification, requirements elicitation, feasibility study, project scope, success criteria",
+                "Goal setting: SMART goals, milestones, deliverables, success metrics, key performance indicators (KPIs)",
+                "Risk assessment: risk identification, risk analysis (probability × impact), mitigation strategies, contingency planning",
+                "Project planning: work breakdown structure (WBS), Gantt charts, task dependencies, critical path, resource allocation",
+                "Prototyping: low-fidelity prototypes, wireframes, mockups, proof-of-concept, iterative refinement",
+                "Ethical and legal issues: intellectual property, licensing, data privacy, ethical considerations, compliance requirements",
+                "Documentation: project charter, requirements document, design document, meeting minutes, progress reports"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 494",
+            "name": "Team Project 2",
+            "has_exam": false,
+            "exam_format": [],
+            "topics": [
+                "Project development: agile methodology (Scrum: sprints, daily standups, sprint planning, sprint review, retrospective), version control (Git)",
+                "Design alternatives: architectural decisions, technology selection, trade-off analysis, design reviews",
+                "Implementation: coding standards, code reviews, pair programming, continuous integration, documentation",
+                "Testing: unit testing, integration testing, system testing, acceptance testing, test automation, bug tracking",
+                "Results analysis: performance testing, usability testing, data analysis, comparison against requirements",
+                "Technical presentations: demo preparation, slide design, technical communication, stakeholder presentations",
+                "Project deliverables: final report, user manual, technical documentation, source code, deployment guide",
+                "Ethical/legal analysis: privacy impact assessment, security audit, licensing compliance, ethical review"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "short_answer",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 497",
+            "name": "Multidisciplinary Studies in Computer Science",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Varies by offering: cross-disciplinary topics combining CS with other fields (biology, physics, economics, psychology, etc.)"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof",
+                "coding"
+            ]
+        },
+        {
+            "code": "CS 499R",
+            "name": "Readings in Computer Science",
+            "has_exam": false,
+            "exam_format": [],
+            "topics": [
+                "Independent reading and literature review under faculty supervision"
+            ],
+            "has_coding": false,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "short_answer"
+            ]
+        },
+        {
+            "code": "CS 499T",
+            "name": "Honours Thesis",
+            "has_exam": false,
+            "exam_format": [],
+            "topics": [
+                "Independent research: research question formulation, literature review, hypothesis development",
+                "Methodology: experimental design, data collection, analysis techniques, validation methods",
+                "Implementation: software/hardware development, experimentation, data collection, iteration",
+                "Analysis and synthesis: results interpretation, discussion, conclusions, future work",
+                "Thesis writing: introduction, related work, methodology, results, discussion, conclusion, references",
+                "Presentation: thesis defense, research presentation, poster session, peer feedback"
+            ],
+            "has_coding": true,
+            "has_proofs": false,
+            "proof_types": [],
+            "question_types": [
+                "short_answer"
+            ]
+        }
+    ]
+}
