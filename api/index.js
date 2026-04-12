@@ -12,6 +12,15 @@ dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Global Error Handlers to prevent silent crashes
+process.on('uncaughtException', (err) => {
+    console.error('❌ UNCAUGHT EXCEPTION:', err);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('❌ UNHANDLED REJECTION at:', promise, 'reason:', reason);
+});
+
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -21,7 +30,7 @@ app.use(express.json());
 
 // Only serve static files in local development (not on Vercel)
 if (!process.env.VERCEL) {
-    app.use(express.static(process.cwd()));
+    app.use(express.static(path.join(__dirname, '..', 'public')));
 }
 
 // Initialize OpenAI client for Qwen-Max
@@ -114,15 +123,31 @@ app.get('/api/health', (req, res) => {
 // ==================== STATIC FILE SERVING ====================
 // Only for local development - Vercel handles this automatically
 if (!process.env.VERCEL) {
-    // Catch-all route to serve index.html for SPA routing
+    // Catch-all route to handle clean navigation for multi-page refactor
     app.get(/.*/, (req, res) => {
-        res.sendFile(path.join(process.cwd(), 'index.html'));
+        const url = req.url.toLowerCase();
+        if (url.includes('models')) {
+            res.sendFile(path.join(__dirname, '..', 'public', 'models.html'));
+        } else if (url.includes('help')) {
+            res.sendFile(path.join(__dirname, '..', 'public', 'help.html'));
+        } else {
+            res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+        }
     });
 
     // Start server
-    app.listen(port, () => {
+    const server = app.listen(port, () => {
         console.log(`✅ Server running at http://localhost:${port}`);
         console.log(`📝 API endpoint: http://localhost:${port}/api`);
+    });
+
+    server.on('error', (err) => {
+        if (err.code === 'EADDRINUSE') {
+            console.error(`❌ Port ${port} is already in use. Please kill the process or use a different port.`);
+        } else {
+            console.error('❌ Server startup error:', err);
+        }
+        process.exit(1);
     });
 }
 

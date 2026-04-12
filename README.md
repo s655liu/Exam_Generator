@@ -29,13 +29,16 @@ The application will be available at `http://localhost:3000`.
 
 ## 📂 Project Structure
 
-- `index.html`: The main user interface.
-- `main.js`: Frontend logic and custom searchable dropdown.
-- `style.css`: Premium glassmorphism styles.
-- `prompts.js`: AI prompting logic.
-- `api/`:
+- `public/`: The frontend distribution directory.
+  - `index.html`, `models.html`, `help.html`: Modular page views.
+  - `scripts/`: Frontend logic (`main.js`, `sidebar.js`, `prompts.js`).
+  - `styles/`: UI styling (`style.css`).
+  - `images/`: High-quality assets (logos, background).
+- `api/`: The backend server architecture.
   - `index.js`: Consolidated Express backend.
   - `data/`: Course information JSON databases (CS, MATH, AMATH, PMATH, STAT, CO).
+- `package.json`: Project dependencies and scripts.
+- `vercel.json`: Deployment configuration.
 
 ## 🛠️ Technology Stack
 - **Frontend**: Vanilla HTML/JS + CSS (Glassmorphism).

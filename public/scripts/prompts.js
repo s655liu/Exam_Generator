@@ -4,6 +4,7 @@ export const buildExamPrompt = (config) => {
         courseLevel,
         topics,
         isFinal,
+        difficulty,
         primaryLanguages,
         hasProofs,
         hasCoding
@@ -11,6 +12,7 @@ export const buildExamPrompt = (config) => {
 
     const duration = isFinal ? "2.5 hours" : "1.5 hours";
     const examType = isFinal ? "Final Exam" : "Midterm Exam";
+    const difficultyLabel = difficulty ? difficulty.toUpperCase() : "MEDIUM";
 
     // Distribution logic
     const mcCount = 5; // User requested at most 4 MC questions
@@ -20,7 +22,7 @@ export const buildExamPrompt = (config) => {
 
     const language = primaryLanguages && primaryLanguages.length > 0 ? primaryLanguages[0] : "Python";
 
-    let prompt = `Generate a high-quality ${examType} for ${courseCode} (${duration}).
+    let prompt = `Generate a high-quality ${difficultyLabel} difficulty ${examType} for ${courseCode} (${duration}).
 
 Topics to cover (including specific sub-topics/details):
 ${topics.map(t => `- ${t}`).join("\n")}

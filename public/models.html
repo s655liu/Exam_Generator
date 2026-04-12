@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Models | Waterloo Exam Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="app-background"></div>
+    <div class="overlay-math"></div>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <img src="images/uwaterloo-logo.jpg" alt="UW Logo" class="uw-logo-img">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">WATERLOO</span>
+                    <span class="logo-subtitle">EXAM GENERATOR</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-item" data-view="dashboard">
+                    <span class="nav-icon">📝</span>
+                    <span class="nav-label"><a href="index.html">Create New Exam</a></span>
+                </div>
+                <div class="nav-item active" data-view="models">
+                    <span class="nav-icon">🤖</span>
+                    <span class="nav-label"><a href="models.html">AI Models</a></span>
+                </div>
+                <div class="nav-item" data-view="help">
+                    <span class="nav-icon">❓</span>
+                    <span class="nav-label"><a href="help.html">Help</a></span>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="main-workspace">
+            <div class="content-scroll-area">
+                <div class="dashboard-grid">
+                    <section id="models-section" class="view-section">
+                        <section class="config-card glass">
+                            <h2 class="section-title">AI Engine Configuration</h2>
+                            <p class="section-desc">We leverage state-of-the-art Large Language Models to ensure academic rigor and curriculum alignment.</p>
+                            
+                            <div class="model-grid">
+                                <div class="model-card active">
+                                    <div class="model-badge">Active</div>
+                                    <h3>Qwen-Max (Alibaba)</h3>
+                                    <p>Our primary engine for Waterloo exams. Optimized for mathematical reasoning, complex coding, and structured output.</p>
+                                    <ul class="feature-list">
+                                        <li>✨ High Precision Reasoning</li>
+                                        <li>🧬 Advanced LaTeX Rendering</li>
+                                        <li>💻 Deep Code Synthesis</li>
+                                    </ul>
+                                </div>
+                                <div class="model-card">
+                                    <div class="model-badge secondary">Legacy</div>
+                                    <h3>DeepSeek-V3</h3>
+                                    <p>Alternative model for specialized Statistics and Applied Math problems. High efficiency in formulaic derivations.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts/sidebar.js"></script>
+</body>
+
+</html>
