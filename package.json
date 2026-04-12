@@ -2,11 +2,11 @@
   "name": "cs-exam-generator",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "api/index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "vercel dev",
+    "dev": "vercel dev"
   },
   "repository": {
     "type": "git",
