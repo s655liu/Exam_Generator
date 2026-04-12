@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve static files - works both locally and on Vercel
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(process.cwd()));
 
 const client = new OpenAI({
     apiKey: process.env.QWEN_API_KEY,
@@ -30,12 +30,12 @@ app.get('/api/courses', (req, res) => {
     try {
         // Define all course JSON files
         const courseFiles = [
-            { name: 'CS', path: path.join(__dirname, 'data/CS_course_info.json') },
-            { name: 'MATH', path: path.join(__dirname, 'data/MATH_course_info.json') },
-            { name: 'STAT', path: path.join(__dirname, 'data/STAT_course_info.json') },
-            { name: 'CO', path: path.join(__dirname, 'data/CO_course_info.json') },
-            { name: 'AMATH', path: path.join(__dirname, 'data/AMATH_course_info.json') },
-            { name: 'PMATH', path: path.join(__dirname, 'data/PMATH_course_info.json') }
+            { name: 'CS', path: path.join(process.cwd(), 'data/CS_course_info.json') },
+            { name: 'MATH', path: path.join(process.cwd(), 'data/MATH_course_info.json') },
+            { name: 'STAT', path: path.join(process.cwd(), 'data/STAT_course_info.json') },
+            { name: 'CO', path: path.join(process.cwd(), 'data/CO_course_info.json') },
+            { name: 'AMATH', path: path.join(process.cwd(), 'data/AMATH_course_info.json') },
+            { name: 'PMATH', path: path.join(process.cwd(), 'data/PMATH_course_info.json') }
         ];
 
         let allCourses = [];
@@ -75,7 +75,7 @@ app.get('/api/courses/:department', (req, res) => {
     const departmentUpper = department.toUpperCase();
 
     try {
-        const filePath = path.join(__dirname, `data/${departmentUpper}_course_info.json`);
+        const filePath = path.join(process.cwd(), `data/${departmentUpper}_course_info.json`);
 
         if (!fs.existsSync(filePath)) {
             return res.status(404).json({ error: `Department ${departmentUpper} not found` });
@@ -127,7 +127,7 @@ app.get('/api/health', (req, res) => {
 
 // Catch-all route to serve index.html for client-side routing
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(process.cwd(), 'index.html'));
 });
 
 // Only start server locally (not on Vercel)
