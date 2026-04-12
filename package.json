@@ -5,8 +5,8 @@
   "main": "api/index.js",
   "type": "module",
   "scripts": {
-    "start": "vercel dev",
-    "dev": "vercel dev"
+    "start": "npx vercel dev",
+    "dev": "npx vercel dev"
   },
   "repository": {
     "type": "git",
