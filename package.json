@@ -2,11 +2,11 @@
   "name": "cs-exam-generator",
   "version": "1.0.0",
   "description": "",
-  "main": "api/index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node api/index.js",
-    "dev": "node api/index.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "repository": {
     "type": "git",
