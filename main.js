@@ -1,7 +1,7 @@
 import { buildExamPrompt } from './prompts.js';
 
 const elements = {
-    courseSelect: document.getElementById('course-select'), // kept for compatibility if needed elsewhere but mostly unused now
+    // courseSelect: document.getElementById('course-select'), // kept for compatibility if needed elsewhere but mostly unused now
     examType: document.getElementById('exam-type'),
     topicsSection: document.getElementById('topics-section'),
     topicsGrid: document.getElementById('topics-grid'),
@@ -28,7 +28,7 @@ async function init() {
         const response = await fetch('/api/courses');
         const data = await response.json();
         allCourses = data.courses.filter(c => c.has_exam);
-        
+
         applyFilters();
     } catch (error) {
         console.error('Failed to load courses:', error);
@@ -38,19 +38,19 @@ async function init() {
 
 function applyFilters() {
     const searchTerm = elements.courseSearch.value.toLowerCase().trim();
-    
+
     const filteredCourses = allCourses.filter(course => {
         const matchesSubject = currentSubject === 'all' || course.code.toLowerCase().startsWith(currentSubject.toLowerCase());
         const matchesSearch = course.code.toLowerCase().includes(searchTerm);
         return matchesSubject && matchesSearch;
     });
-    
+
     renderCourseList(filteredCourses);
 }
 
 function renderCourseList(courses) {
     elements.courseDropdown.innerHTML = '';
-    
+
     if (courses.length === 0) {
         elements.courseDropdown.innerHTML = '<div class="dropdown-item"><span>No courses found</span></div>';
         return;
@@ -60,7 +60,7 @@ function renderCourseList(courses) {
         const item = document.createElement('div');
         item.className = 'dropdown-item';
         item.innerHTML = `<b>${course.code}</b><span>${course.name}</span>`;
-        
+
         item.onclick = () => selectCourse(course);
         elements.courseDropdown.appendChild(item);
     });
@@ -70,7 +70,7 @@ function selectCourse(course) {
     currentCourse = course;
     elements.courseSearch.value = course.code;
     elements.courseDropdown.classList.add('hidden');
-    
+
     renderTopics(course.topics);
     elements.topicsSection.classList.remove('hidden');
     elements.generateBtn.disabled = false;
@@ -105,18 +105,18 @@ function renderTopics(topics) {
     topics.forEach(topic => {
         const label = document.createElement('label');
         label.className = 'topic-checkbox';
-        
+
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.value = topic; // Keep full detailed topic as the value
         checkbox.checked = true;
-        
+
         label.appendChild(checkbox);
-        
+
         // Only display the category part before the colon
         const displayTopic = topic.split(':')[0];
         label.appendChild(document.createTextNode(displayTopic));
-        
+
         elements.topicsGrid.appendChild(label);
     });
 }
@@ -124,7 +124,7 @@ function renderTopics(topics) {
 // Handle Generation
 elements.generateBtn.addEventListener('click', async () => {
     const selectedTopics = Array.from(elements.topicsGrid.querySelectorAll('input:checked')).map(i => i.value);
-    
+
     if (selectedTopics.length === 0) {
         alert('Please select at least one topic.');
         return;
@@ -141,24 +141,24 @@ elements.generateBtn.addEventListener('click', async () => {
     };
 
     const prompt = buildExamPrompt(config);
-    
+
     // UI Loading State
     setLoading(true);
-    
+
     try {
         const response = await fetch('/api/generate', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ prompt })
         });
-        
+
         const data = await response.json();
         if (data.error) throw new Error(data.error);
-        
+
         displayResults(data.content);
         elements.resultsSection.classList.remove('hidden');
         elements.resultsSection.scrollIntoView({ behavior: 'smooth' });
-        
+
     } catch (error) {
         console.error('Generation Error:', error);
         alert('Failed to generate exam: ' + error.message);
@@ -180,7 +180,7 @@ function setLoading(isLoading) {
 
 function displayResults(content) {
     const [exam, key] = content.split('---ANSWER_KEY_START---');
-    
+
     // Render Markdown
     elements.examTab.innerHTML = exam ? marked.parse(exam.trim()) : '<p>Error generating exam paper.</p>';
     elements.keyTab.innerHTML = key ? marked.parse(key.trim()) : '<p>Answer key not found in response.</p>';
@@ -195,11 +195,11 @@ elements.printBtn.addEventListener('click', () => {
 elements.tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         const tab = btn.dataset.tab;
-        
+
         // Update buttons
         elements.tabBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        
+
         // Update panes
         document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
         document.getElementById(`${tab}-tab`).classList.add('active');
