@@ -1,23 +1,24 @@
-# 🎓 Waterloo CS Exam Generator
+# 🎓 Waterloo Exam Generator (CS, Math, Stat)
 
-An AI-powered application designed to generate mock Computer Science exams for University of Waterloo courses. It leverages GPT models to create realistic exam questions and answer keys based on specific course curricula.
+An AI-powered application designed to generate mock exams for University of Waterloo courses across Computer Science, Mathematics, and Statistics. It leverages high-performance AI models (Qwen-Max) to create realistic, rigorous exam questions and detailed answer keys.
 
 ![Premium Design Mockup](https://raw.githubusercontent.com/s655liu/Exam_Generator/main/screenshot.png) *(Note: Placeholder for actual screenshot)*
 
 ## ✨ Features
 
-- **Dynamic Course Selection**: Choose from a wide range of Waterloo CS courses.
-- **AI-Generated Content**: High-quality, context-aware exam questions.
-- **Answer Key Generation**: Automatically generates detailed solutions for every exam.
-- **Modern UI**: A sleek, responsive interface built with HTML, CSS, and Vanilla JavaScript.
-- **Express Backend**: Securely handles API requests and data processing.
+- **Multi-Department Support**: Support for courses in Computer Science, Mathematics, and Statistics.
+- **Dynamic Filtering**: Quickly find courses by subject or code using advanced UI filters.
+- **AI-Generated Content**: Context-aware questions that reflect the specific rigor of Waterloo's curriculum.
+- **Answer Key Generation**: Detailed solutions provided for every mock exam.
+- **Premium UI**: A sleek, high-end interface built with glassmorphism and modern aesthetics.
+- **Optimized Prompts**: Tailored instruction sets for different subject areas and course levels.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v16.0.0 or higher)
-- Qwen API Key
+- [Node.js](https://nodejs.org/) (v18.0.0 or higher)
+- Qwen API Key (Alibaba Cloud DashScope)
 
 ### Installation
 
@@ -33,32 +34,36 @@ An AI-powered application designed to generate mock Computer Science exams for U
    ```
 
 3. **Environment Setup:**
-   Create a `.env` file in the root directory and add your Qwen API key:
+   Create a `.env` file in the root directory:
    ```env
    QWEN_API_KEY=your_api_key_here
    ```
 
 4. **Run the application:**
    ```bash
-   npm start
+   npm run dev
    ```
-   The server will start, and you can view the application at `http://localhost:3000` (or the port specified in `server.js`).
+   The application will be available at `http://localhost:3000`.
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML5, Vanilla CSS3, JavaScript (ES6+)
+- **Frontend**: HTML5, Vanilla CSS3, JavaScript (ES6+), Marked.js (Markdown rendering)
 - **Backend**: Node.js, Express.js
-- **AI Integration**: OpenAI API
-- **Data**: JSON-based course information
+- **AI Models**: Qwen-Max (OpenAI compatible API)
+- **Data**: JSON-based course catalogs for CS, MATH, and STAT departments.
 
 ## 📂 Project Structure
 
-- `index.html`: Main entry point for the frontend.
-- `style.css`: Custom styling for a premium look and feel.
-- `main.js`: Frontend logic and API interaction.
-- `server.js`: Express server and backend routes.
-- `course_info.json`: Database of available CS courses.
-- `prompts.js`: Optimized AI prompt templates.
+- `data/`: Contains JSON catalogs for CS, MATH, and STAT courses.
+- `index.html`: Main frontend application.
+- `style.css`: Premium aesthetics and responsive layout.
+- `main.js`: Core frontend logic and API orchestration.
+- `server.js`: Node.js server handling course merging and AI requests.
+- `prompts.js`: Template engine for generating academically precise AI prompts.
+
+---
+
+Built with ❤️ for University of Waterloo Students.
 
 ## 🚀 Deployment
 

@@ -1,7 +1,7 @@
 import { buildExamPrompt } from './prompts.js';
 
 const elements = {
-    courseSelect: document.getElementById('course-select'),
+    courseSelect: document.getElementById('course-select'), // kept for compatibility if needed elsewhere but mostly unused now
     examType: document.getElementById('exam-type'),
     topicsSection: document.getElementById('topics-section'),
     topicsGrid: document.getElementById('topics-grid'),
@@ -12,44 +12,91 @@ const elements = {
     tabBtns: document.querySelectorAll('.tab-btn'),
     loader: document.querySelector('.loader'),
     btnText: document.querySelector('.btn-text'),
-    printBtn: document.getElementById('print-btn')
+    printBtn: document.getElementById('print-btn'),
+    subjectSelect: document.getElementById('subject-select'),
+    courseSearch: document.getElementById('course-search'),
+    courseDropdown: document.getElementById('course-dropdown')
 };
 
-let courses = [];
+let allCourses = [];
 let currentCourse = null;
+let currentSubject = 'all';
 
 // Initialize
 async function init() {
     try {
         const response = await fetch('/api/courses');
         const data = await response.json();
-        courses = data.courses.filter(c => c.has_exam);
+        allCourses = data.courses.filter(c => c.has_exam);
         
-        // Populate dropdown
-        courses.forEach(course => {
-            const option = document.createElement('option');
-            option.value = course.code;
-            option.textContent = `${course.code} - ${course.name}`;
-            elements.courseSelect.appendChild(option);
-        });
+        applyFilters();
     } catch (error) {
         console.error('Failed to load courses:', error);
         alert('Failed to load course data. Make sure the server is running.');
     }
 }
 
-// Handle course selection
-elements.courseSelect.addEventListener('change', (e) => {
-    const code = e.target.value;
-    currentCourse = courses.find(c => c.code === code);
+function applyFilters() {
+    const searchTerm = elements.courseSearch.value.toLowerCase().trim();
     
-    if (currentCourse) {
-        renderTopics(currentCourse.topics);
-        elements.topicsSection.classList.remove('hidden');
-        elements.generateBtn.disabled = false;
-    } else {
-        elements.topicsSection.classList.add('hidden');
-        elements.generateBtn.disabled = true;
+    const filteredCourses = allCourses.filter(course => {
+        const matchesSubject = currentSubject === 'all' || course.code.toLowerCase().startsWith(currentSubject.toLowerCase());
+        const matchesSearch = course.code.toLowerCase().includes(searchTerm);
+        return matchesSubject && matchesSearch;
+    });
+    
+    renderCourseList(filteredCourses);
+}
+
+function renderCourseList(courses) {
+    elements.courseDropdown.innerHTML = '';
+    
+    if (courses.length === 0) {
+        elements.courseDropdown.innerHTML = '<div class="dropdown-item"><span>No courses found</span></div>';
+        return;
+    }
+
+    courses.forEach(course => {
+        const item = document.createElement('div');
+        item.className = 'dropdown-item';
+        item.innerHTML = `<b>${course.code}</b><span>${course.name}</span>`;
+        
+        item.onclick = () => selectCourse(course);
+        elements.courseDropdown.appendChild(item);
+    });
+}
+
+function selectCourse(course) {
+    currentCourse = course;
+    elements.courseSearch.value = course.code;
+    elements.courseDropdown.classList.add('hidden');
+    
+    renderTopics(course.topics);
+    elements.topicsSection.classList.remove('hidden');
+    elements.generateBtn.disabled = false;
+}
+
+// No change needed for subject select, keep it
+elements.subjectSelect.addEventListener('change', (e) => {
+    currentSubject = e.target.value;
+    applyFilters();
+});
+
+// Search input logic for custom dropdown
+elements.courseSearch.addEventListener('input', () => {
+    elements.courseDropdown.classList.remove('hidden');
+    applyFilters();
+});
+
+elements.courseSearch.addEventListener('focus', () => {
+    elements.courseDropdown.classList.remove('hidden');
+    applyFilters();
+});
+
+// Close dropdown on outside click
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.searchable-select')) {
+        elements.courseDropdown.classList.add('hidden');
     }
 });
 
@@ -88,9 +135,9 @@ elements.generateBtn.addEventListener('click', async () => {
         courseLevel: currentCourse.code.split(' ')[1].charAt(0) + '00',
         topics: selectedTopics,
         isFinal: elements.examType.value === 'final',
-        primaryLanguages: currentCourse.primary_languages,
-        hasProofs: currentCourse.has_proofs,
-        hasCoding: currentCourse.has_coding
+        primaryLanguages: currentCourse.primary_languages || [],
+        hasProofs: currentCourse.has_proofs ?? currentCourse.question_types?.includes('proof'),
+        hasCoding: currentCourse.has_coding ?? currentCourse.question_types?.includes('coding')
     };
 
     const prompt = buildExamPrompt(config);

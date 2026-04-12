@@ -1,0 +1,455 @@
+{
+    "university": "University of Waterloo",
+    "calendar_year": "2023-2024",
+    "department": "Department of Statistics and Actuarial Science",
+    "courses": [
+        {
+            "code": "STAT 220",
+            "name": "Probability",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Basic probability: sample spaces, events, axioms of probability, counting rules",
+                "Conditional probability: Bayes' theorem, law of total probability, independence",
+                "Random variables: discrete and continuous, probability mass functions, probability density functions",
+                "Expectation and variance: moments, moment generating functions, covariance, correlation",
+                "Common discrete distributions: Bernoulli, binomial, geometric, negative binomial, hypergeometric, Poisson",
+                "Common continuous distributions: uniform, exponential, gamma, normal, beta"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 230",
+            "name": "Probability",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Basic probability: sample spaces, events, axioms, counting techniques (permutations, combinations)",
+                "Conditional probability: definition, Bayes' theorem, law of total probability, independence",
+                "Random variables: discrete and continuous, probability mass/density functions, cumulative distribution functions",
+                "Expectation and variance: definitions, properties, moments, moment generating functions",
+                "Discrete distributions: Bernoulli, binomial, geometric, negative binomial, hypergeometric, Poisson",
+                "Continuous distributions: uniform, exponential, gamma, normal (Gaussian), beta, Chi-squared"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 231",
+            "name": "Statistics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Data collection: sampling methods, experimental design, observational studies, sources of bias",
+                "Data summarization: numerical summaries (mean, median, variance, standard deviation), graphical summaries (histograms, boxplots, scatterplots)",
+                "Statistical models: parameters, likelihood functions, maximum likelihood estimation",
+                "Point estimation: properties of estimators (unbiasedness, consistency, efficiency), method of moments",
+                "Interval estimation: confidence intervals, pivotal quantities, likelihood-based intervals",
+                "Hypothesis testing: null and alternative hypotheses, test statistics, p-values, likelihood ratio tests",
+                "Chi-squared and t-distributions: properties, applications in inference",
+                "Simple linear regression: model formulation, least squares estimation, inference for regression parameters"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 241",
+            "name": "Statistics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Data collection and experimental design: sampling, randomization, blocking, factorial designs",
+                "Data exploration: summary statistics, visualization techniques, data cleaning",
+                "Probability models for data: Bernoulli, binomial, Poisson, normal, exponential models",
+                "Maximum likelihood estimation: likelihood functions, estimation, invariance property",
+                "Confidence intervals: construction using pivotal quantities, interpretation, bootstrap methods",
+                "Hypothesis testing: null hypothesis significance testing, p-values, Type I and Type II errors, power",
+                "Goodness-of-fit tests: Chi-squared tests for multinomial models, contingency tables",
+                "Gaussian response models: two-sample comparisons, simple linear regression"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 330",
+            "name": "Mathematical Statistics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Probability review: distributions, transformations, multivariate distributions",
+                "Sampling distributions: distributions of sample mean, sample variance, central limit theorem",
+                "Sufficiency and completeness: sufficient statistics, factorization theorem, minimal sufficient statistics",
+                "Point estimation: method of moments, maximum likelihood, unbiasedness, consistency, efficiency, Cramér-Rao lower bound",
+                "Interval estimation: pivotal methods, large-sample intervals, Bayesian credible intervals",
+                "Hypothesis testing: Neyman-Pearson lemma, uniformly most powerful tests, generalized likelihood ratio tests",
+                "Introduction to Bayesian inference: prior distributions, posterior distributions, conjugate priors"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 331",
+            "name": "Applied Linear Models",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Simple linear regression: least squares estimation, inference, prediction, residual analysis",
+                "Multiple linear regression: matrix formulation, parameter estimation, hypothesis testing, variable selection",
+                "Model diagnostics: residual plots, leverage, influence, multicollinearity, heteroscedasticity",
+                "Analysis of variance (ANOVA): one-way and two-way ANOVA, fixed and random effects, interaction",
+                "Analysis of covariance (ANCOVA): combining regression and ANOVA",
+                "Model selection criteria: AIC, BIC, adjusted R-squared, cross-validation",
+                "Generalized linear models: logistic regression, Poisson regression, link functions"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 332",
+            "name": "Sampling and Experimental Design",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Survey sampling: simple random sampling, stratified sampling, cluster sampling, systematic sampling",
+                "Estimation in surveys: unbiased estimation, ratio estimation, regression estimation",
+                "Sample size determination: precision requirements, cost constraints, optimal allocation",
+                "Experimental design principles: randomization, replication, blocking, factorial designs",
+                "Completely randomized designs: analysis, ANOVA, treatment comparisons",
+                "Randomized block designs: paired designs, Latin squares, incomplete block designs",
+                "Factorial designs: 2^k factorials, fractional factorials, confounding, response surface methodology"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 337",
+            "name": "Introduction to Biostatistics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Health data sources: clinical trials, observational studies, administrative data, registries",
+                "Measures of disease frequency: incidence, prevalence, mortality rates, standardized rates",
+                "Measures of association: risk ratios, odds ratios, risk differences, attributable risk",
+                "Confounding and bias: detection and control methods, stratification, standardization",
+                "Logistic regression for binary outcomes: odds ratios, model fitting, interpretation",
+                "Survival analysis: Kaplan-Meier curves, log-rank test, Cox proportional hazards model",
+                "Diagnostic testing: sensitivity, specificity, ROC curves, predictive values",
+                "Meta-analysis: fixed and random effects models, heterogeneity assessment"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 341",
+            "name": "Computational Statistics and Data Analysis",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Data manipulation and cleaning: handling missing data, outliers, data transformation",
+                "Exploratory data analysis: visualization techniques, summary statistics, dimension reduction",
+                "Simulation methods: Monte Carlo integration, bootstrap, permutation tests",
+                "Numerical optimization for statistics: gradient descent, Newton-Raphson, EM algorithm",
+                "Markov chain Monte Carlo (MCMC): Metropolis-Hastings, Gibbs sampling, convergence diagnostics",
+                "Density estimation: histograms, kernel density estimation, bandwidth selection",
+                "Resampling methods: jackknife, bootstrap for standard errors and confidence intervals",
+                "Statistical computing environments: R/Python for data analysis"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 430",
+            "name": "Experimental Design",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Factorial designs: 2^k and 3^k factorial designs, analysis, effect estimation",
+                "Blocking and confounding: confounding patterns, fractional factorial designs, resolution",
+                "Response surface methodology: central composite designs, Box-Behnken designs, steepest ascent",
+                "Random and mixed effects models: variance components, intraclass correlation",
+                "Nested and split-plot designs: hierarchical structures, analysis, applications",
+                "Repeated measures designs: within-subject factors, crossover designs, carryover effects",
+                "Designs for quality improvement: Taguchi methods, robust parameter designs"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 431",
+            "name": "Generalized Linear Models and their Applications",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Exponential family of distributions: canonical form, natural parameters, sufficient statistics",
+                "GLM components: random component, systematic component, link function",
+                "Estimation for GLMs: iteratively reweighted least squares, maximum likelihood",
+                "Model diagnostics for GLMs: deviance, Pearson residuals, influence measures",
+                "Logistic regression: binary, binomial, and multinomial responses, odds ratios, model assessment",
+                "Poisson regression: count data, rate models, overdispersion, negative binomial models",
+                "Gamma regression: skewed positive data, log link, applications",
+                "Model selection and validation for GLMs: AIC, BIC, cross-validation"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 436",
+            "name": "Introduction to the Analysis of Spatial Data in Health Research",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Spatial data types: point patterns, areal data, geostatistical data",
+                "Visualizing spatial data: choropleth maps, bubble plots, spatial smoothing",
+                "Point pattern analysis: intensity estimation, clustering tests, K-functions",
+                "Areal data analysis: spatial autocorrelation (Moran's I), spatial regression models",
+                "Geostatistics: variogram modeling, kriging, spatial prediction",
+                "Disease mapping: standardized incidence/mortality ratios, Bayesian spatial models",
+                "Spatial clustering of health events: scan statistics, cluster detection",
+                "GIS applications in health research: geocoding, spatial overlays"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 437",
+            "name": "Statistical Methods for Life History Analysis",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Survival data characteristics: censoring, truncation, competing risks",
+                "Kaplan-Meier estimator: product-limit method, confidence intervals, median survival",
+                "Comparison of survival curves: log-rank test, Wilcoxon test, stratified tests",
+                "Cox proportional hazards model: partial likelihood, hazard ratios, model checking",
+                "Time-dependent covariates: extended Cox model, time-varying effects",
+                "Parametric survival models: exponential, Weibull, log-normal, log-logistic models",
+                "Frailty models: shared frailty, correlated survival data",
+                "Recurrent event analysis: Andersen-Gill model, conditional and marginal models"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 440",
+            "name": "Computational Inference",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Monte Carlo methods: variance reduction techniques (antithetic, control variates, importance sampling)",
+                "Bootstrap methods: nonparametric bootstrap, parametric bootstrap, bootstrap confidence intervals",
+                "Permutation tests: exact tests, approximate tests, applications in linear models",
+                "Markov chain Monte Carlo (MCMC): Metropolis-Hastings, Gibbs sampling, Hamiltonian Monte Carlo",
+                "MCMC diagnostics: convergence assessment, effective sample size, Gelman-Rubin statistic",
+                "Approximate Bayesian computation (ABC): rejection sampling, ABC-MCMC",
+                "Numerical integration for inference: quadrature methods, Laplace approximation",
+                "EM algorithm and variants: expectation-maximization, ECM, Monte Carlo EM"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 441",
+            "name": "Statistical Learning - Classification",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Classification fundamentals: Bayes classifier, decision boundaries, loss functions",
+                "Linear discriminant analysis (LDA): Gaussian assumptions, pooled covariance, decision rules",
+                "Quadratic discriminant analysis (QDA): class-specific covariance matrices",
+                "Logistic regression for classification: binary and multinomial, probability calibration",
+                "k-Nearest neighbors: distance metrics, choice of k, curse of dimensionality",
+                "Decision trees: splitting criteria (Gini, entropy), pruning, tree interpretation",
+                "Ensemble methods: bagging, random forests, boosting (AdaBoost, gradient boosting)",
+                "Model evaluation: confusion matrix, ROC curves, AUC, cross-validation, precision-recall"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 442",
+            "name": "Data Visualization",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Visual perception and design principles: pre-attentive attributes, Gestalt principles, color theory",
+                "Exploratory data visualization: histograms, boxplots, scatterplots, density plots",
+                "Multivariate visualization: scatterplot matrices, parallel coordinates, heatmaps, correlation plots",
+                "Time series visualization: line plots, seasonal decomposition, interactive time series",
+                "Geospatial visualization: choropleth maps, bubble maps, cartograms, Web mapping",
+                "Interactive visualization: brushing, linking, zooming, panning, dashboards",
+                "Visualization for model diagnostics: residual plots, Q-Q plots, influence plots",
+                "Storytelling with data: narrative structure, annotation, dashboard design"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 443",
+            "name": "Forecasting",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Time series components: trend, seasonality, cyclicity, irregular variation",
+                "Smoothing methods: moving averages, exponential smoothing (Holt-Winters)",
+                "ARIMA models: autocorrelation, partial autocorrelation, stationarity, differencing",
+                "Model identification: ACF, PACF, information criteria (AIC, BIC)",
+                "Estimation and diagnostics: maximum likelihood, residual analysis, Ljung-Box test",
+                "Seasonal ARIMA: SARIMA models, seasonal differencing",
+                "Forecast evaluation: forecast accuracy measures (MSE, MAE, MAPE, MASE)",
+                "Advanced methods: state space models, dynamic regression, forecast reconciliation"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "STAT 444",
+            "name": "Statistical Learning - Advanced Regression",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Linear regression review: least squares, bias-variance tradeoff, model selection",
+                "Ridge regression: L2 regularization, shrinkage, closed-form solution, bias-variance",
+                "Lasso regression: L1 regularization, variable selection, sparsity, coordinate descent",
+                "Elastic net: combination of L1 and L2 penalties, grouping effect",
+                "Nonlinear regression: polynomial regression, splines, smoothing splines",
+                "Additive models: GAMs, backfitting algorithm, interpretability",
+                "Regression trees: CART, recursive partitioning, cost-complexity pruning",
+                "High-dimensional regression: regularization paths, cross-validation for tuning"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "BIOSTAT 437",
+            "name": "Statistical Methods for Life History Analysis",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Survival data: censoring types, truncation, competing risks, counting processes",
+                "Nonparametric estimation: Kaplan-Meier, Nelson-Aalen, cumulative hazard",
+                "Comparison of survival: log-rank test, weighted log-rank tests, stratified tests",
+                "Cox regression: proportional hazards assumption, partial likelihood, model diagnostics",
+                "Time-dependent covariates: internal vs external covariates, extended Cox model",
+                "Stratified and stratified Cox models: baseline hazard stratification",
+                "Parametric survival models: AFT models, accelerated failure time",
+                "Multivariate survival: frailty models, correlated survival data, cluster analysis"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        }
+    ]
+}

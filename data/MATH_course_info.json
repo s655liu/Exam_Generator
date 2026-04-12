@@ -1,0 +1,723 @@
+{
+    "university": "University of Waterloo",
+    "calendar_year": "2023-2024",
+    "department": "Faculty of Mathematics",
+    "courses": [
+        {
+            "code": "MATH 103",
+            "name": "Introductory Algebra for Arts and Social Science",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Linear equations",
+                "Systems of linear equations",
+                "Linear inequalities",
+                "Functions",
+                "Set theory",
+                "Permutations and combinations",
+                "Binomial theorem",
+                "Probability theory"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 104",
+            "name": "Introductory Calculus for Arts and Social Science",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Rate of change",
+                "Optimization",
+                "Growth and decay",
+                "Integration",
+                "Polynomial functions",
+                "Rational functions",
+                "Exponential functions",
+                "Logarithmic functions"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 106",
+            "name": "Applied Linear Algebra 1",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Systems of linear equations",
+                "Matrix algebra",
+                "Determinants",
+                "Introduction to vector spaces",
+                "Applications"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 114",
+            "name": "Linear Algebra for Science",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Vectors in 2- and 3-space",
+                "Linear equations",
+                "Matrices",
+                "Determinants",
+                "Introduction to vector spaces",
+                "Eigenvalues and diagonalization",
+                "Complex numbers"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 115",
+            "name": "Linear Algebra for Engineering",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Linear equations",
+                "Matrices and determinants",
+                "Introduction to vector spaces",
+                "Eigenvalues and diagonalization",
+                "Complex numbers"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 116",
+            "name": "Calculus 1 for Engineering",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Functions (polynomials, exponential, logarithmic, trigonometric)",
+                "Curve sketching",
+                "Derivatives and rules of differentiation",
+                "Mean Value Theorem",
+                "L'Hopital's rule",
+                "Riemann definite integral",
+                "Fundamental Theorems of Calculus"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 117",
+            "name": "Calculus 1 for Engineering",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Functions (polynomial, exponential, logarithmic, trigonometric)",
+                "Limits and continuity",
+                "Derivatives and rules of differentiation",
+                "Applications of the derivative",
+                "Mean Value Theorem",
+                "Riemann definite integral",
+                "Fundamental Theorems of Calculus",
+                "Methods of integration",
+                "Improper integrals"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 118",
+            "name": "Calculus 2 for Engineering",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Methods of integration (by parts, trigonometric substitutions, partial fractions)",
+                "Improper integrals",
+                "First order differential equations",
+                "Parametric curves and polar coordinates",
+                "Infinite sequences and series",
+                "Power series",
+                "Taylor polynomials and series"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 119",
+            "name": "Calculus 2 for Engineering",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Taylor polynomials and remainder",
+                "Infinite series",
+                "Power series",
+                "Partial derivatives",
+                "Gradient and directional derivative",
+                "Optimization and Lagrange multipliers",
+                "Parametric curves",
+                "Line integrals"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 124",
+            "name": "Calculus and Vector Algebra for Kinesiology",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Vectors in 2- and 3-space",
+                "Dot and cross products",
+                "Solving linear systems",
+                "Limits and continuity",
+                "Derivatives and derivative rules",
+                "Applications to curve sketching and optimization",
+                "Definite integral",
+                "Fundamental Theorem of Calculus"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 127",
+            "name": "Calculus 1 for the Sciences",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Functions (powers, rational, trigonometric, exponential, logarithmic)",
+                "Limits and continuity",
+                "Derivatives of elementary functions",
+                "Derivative rules and applications",
+                "Riemann sums",
+                "Fundamental Theorems of Calculus",
+                "Applications to area, rates, average value"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 128",
+            "name": "Calculus 2 for the Sciences",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Transforming and evaluating integrals",
+                "Applications to volumes and arc length",
+                "Improper integrals",
+                "First order differential equations",
+                "Sequences",
+                "Convergence of series",
+                "Taylor polynomials and series"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 135",
+            "name": "Algebra for Honours Mathematics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Proof techniques",
+                "Integers",
+                "Integers modulo n",
+                "Rational numbers",
+                "Real numbers",
+                "Complex numbers",
+                "Polynomials"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 136",
+            "name": "Linear Algebra 1 for Honours Mathematics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Systems of linear equations",
+                "Matrix algebra",
+                "Vector spaces and subspaces",
+                "Basis and dimension",
+                "Linear transformations",
+                "Determinants",
+                "Eigenvalues and diagonalization"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 137",
+            "name": "Calculus 1 for Honours Mathematics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Sequences and their limits",
+                "Limits of functions and continuity",
+                "Intermediate Value Theorem",
+                "Derivatives",
+                "Mean Value Theorem",
+                "Taylor polynomials and Taylor's theorem"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 138",
+            "name": "Calculus 2 for Honours Mathematics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Riemann integral",
+                "Fundamental theorem of calculus",
+                "Methods of integration",
+                "Improper integrals",
+                "Applications of integration",
+                "Sequences and series",
+                "Power series"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 145",
+            "name": "Algebra (Advanced Level)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Advanced proof techniques",
+                "Advanced algebraic structures",
+                "Integers and modular arithmetic (in-depth)",
+                "Complex numbers",
+                "Polynomials"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 146",
+            "name": "Linear Algebra 1 (Advanced Level)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Vector spaces (rigorous treatment)",
+                "Linear independence and basis",
+                "Linear transformations",
+                "Determinants",
+                "Eigenvalues and eigenvectors"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 147",
+            "name": "Calculus 1 (Advanced Level)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Rigorous treatment of limits",
+                "Continuity",
+                "Differentiability",
+                "Mean Value Theorem",
+                "Taylor's Theorem",
+                "Sequences and series"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 148",
+            "name": "Calculus 2 (Advanced Level)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Riemann integration",
+                "Improper integrals",
+                "Infinite series (rigorous treatment)",
+                "Power series",
+                "Uniform convergence"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 207",
+            "name": "Calculus 3 for Scientists and Engineers",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Vectors and geometry",
+                "Vector-valued functions",
+                "Partial derivatives",
+                "Gradient and directional derivatives",
+                "Lagrange multipliers",
+                "Multiple integrals",
+                "Vector calculus"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 213",
+            "name": "Advanced Mathematics for Engineers",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Ordinary differential equations",
+                "Laplace transforms",
+                "Systems of ODEs",
+                "Partial differential equations",
+                "Fourier series",
+                "Numerical methods"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 215",
+            "name": "Linear Algebra for Engineering",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Systems of linear equations",
+                "Matrix algebra",
+                "Vector spaces",
+                "Linear transformations",
+                "Determinants",
+                "Eigenvalues and eigenvectors"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 225",
+            "name": "Linear Algebra and Differential Equations for Engineering",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Matrix algebra and determinants",
+                "Eigenvalues and eigenvectors",
+                "First-order differential equations",
+                "Second-order linear ODEs",
+                "Systems of linear ODEs",
+                "Laplace transforms"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 227",
+            "name": "Calculus 3 for Engineering",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Vector geometry",
+                "Partial derivatives",
+                "Gradient and directional derivatives",
+                "Lagrange multipliers",
+                "Multiple integrals",
+                "Vector calculus theorems"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 228",
+            "name": "Differential Equations for Engineering",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "First-order ODEs",
+                "Second-order linear ODEs",
+                "Higher-order ODEs",
+                "Systems of linear ODEs",
+                "Laplace transforms",
+                "Series solutions"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 235",
+            "name": "Linear Algebra 2 for Honours Mathematics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Inner product spaces",
+                "Orthogonal and unitary matrices",
+                "Spectral theorem",
+                "Jordan canonical form",
+                "Positive definite matrices",
+                "Singular value decomposition (SVD)"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 237",
+            "name": "Calculus 3 for Honours Mathematics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Multivariable limits and continuity",
+                "Partial derivatives and differentiability",
+                "Gradient and directional derivatives",
+                "Implicit function theorem",
+                "Optimization and Lagrange multipliers",
+                "Multiple integrals"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 239",
+            "name": "Introduction to Combinatorics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Counting principles",
+                "Permutations and combinations",
+                "Recurrence relations",
+                "Generating functions",
+                "Graph theory (trees, bipartite graphs)",
+                "Graph algorithms"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 245",
+            "name": "Linear Algebra 2 (Advanced Level)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Advanced inner product spaces",
+                "Spectral theorem in depth",
+                "Jordan canonical form",
+                "Singular value decomposition (SVD)",
+                "Applications"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 247",
+            "name": "Calculus 3 (Advanced Level)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Advanced multivariable calculus",
+                "Inverse and implicit function theorems",
+                "Integration on manifolds",
+                "Differential forms",
+                "Stokes' theorem"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "MATH 249",
+            "name": "Introduction to Combinatorics (Advanced Level)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Advanced counting techniques",
+                "Recurrence relations (in-depth)",
+                "Generating functions (advanced)",
+                "Graph theory (advanced)",
+                "Additional topics tailored to student interests"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        }
+    ]
+}

@@ -26,9 +26,21 @@ const client = new OpenAI({
 // Endpoint to get courses
 app.get('/api/courses', (req, res) => {
     try {
-        const data = fs.readFileSync('course_info.json', 'utf8');
-        res.json(JSON.parse(data));
+        const files = ['data/CS_course_info.json', 'data/MATH_course_info.json', 'data/STAT_course_info.json'];
+        let allCourses = [];
+        
+        files.forEach(file => {
+            if (fs.existsSync(file)) {
+                const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+                if (data.courses) {
+                    allCourses = allCourses.concat(data.courses);
+                }
+            }
+        });
+        
+        res.json({ courses: allCourses });
     } catch (error) {
+        console.error('Error loading courses:', error);
         res.status(500).json({ error: 'Failed to read course info' });
     }
 });
@@ -51,7 +63,7 @@ app.post('/api/generate', async (req, res) => {
         const completion = await client.chat.completions.create({
             model: "qwen-max",
             messages: [
-                { role: "system", content: "You are an expert Computer Science professor at the University of Waterloo. Your goal is to generate high-quality, rigorous exams and answer keys. Always separate the Exam and the Answer Key clearly with a unique separator line: '---ANSWER_KEY_START---'." },
+                { role: "system", content: "You are an expert professor at the University of Waterloo, specializing in Computer Science, Mathematics, and Statistics. Your goal is to generate high-quality, rigorous exams and answer keys tailored to the specific course curriculum. Always separate the Exam and the Answer Key clearly with a unique separator line: '---ANSWER_KEY_START---'." },
                 { role: "user", content: prompt }
             ],
             temperature: 0.7,
