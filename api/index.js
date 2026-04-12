@@ -29,12 +29,12 @@ const client = new OpenAI({
 app.get('/api/courses', (req, res) => {
     try {
         const courseFiles = [
-            { name: 'CS', path: path.join(process.cwd(), 'api/data/CS_course_info.json') },
-            { name: 'MATH', path: path.join(process.cwd(), 'api/data/MATH_course_info.json') },
-            { name: 'STAT', path: path.join(process.cwd(), 'api/data/STAT_course_info.json') },
-            { name: 'CO', path: path.join(process.cwd(), 'api/data/CO_course_info.json') },
-            { name: 'AMATH', path: path.join(process.cwd(), 'api/data/AMATH_course_info.json') },
-            { name: 'PMATH', path: path.join(process.cwd(), 'api/data/PMATH_course_info.json') }
+            { name: 'CS', path: path.join(__dirname, 'data', 'CS_course_info.json') },
+            { name: 'MATH', path: path.join(__dirname, 'data', 'MATH_course_info.json') },
+            { name: 'STAT', path: path.join(__dirname, 'data', 'STAT_course_info.json') },
+            { name: 'CO', path: path.join(__dirname, 'data', 'CO_course_info.json') },
+            { name: 'AMATH', path: path.join(__dirname, 'data', 'AMATH_course_info.json') },
+            { name: 'PMATH', path: path.join(__dirname, 'data', 'PMATH_course_info.json') }
         ];
 
         let allCourses = [];
@@ -66,7 +66,7 @@ app.get('/api/courses', (req, res) => {
 // Endpoint to generate exam
 app.post('/api/generate', async (req, res) => {
     const { prompt } = req.body;
-    
+
     if (!process.env.QWEN_API_KEY) {
         return res.status(500).json({ error: 'Server configuration error: API key missing' });
     }
