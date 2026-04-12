@@ -1,19 +1,19 @@
 export const buildExamPrompt = (config) => {
-    const { 
-        courseCode, 
-        courseLevel, 
-        topics, 
-        isFinal, 
-        primaryLanguages, 
-        hasProofs, 
-        hasCoding 
+    const {
+        courseCode,
+        courseLevel,
+        topics,
+        isFinal,
+        primaryLanguages,
+        hasProofs,
+        hasCoding
     } = config;
 
     const duration = isFinal ? "2.5 hours" : "1.5 hours";
     const examType = isFinal ? "Final Exam" : "Midterm Exam";
-    
+
     // Distribution logic
-    const mcCount = 4; // User requested at most 4 MC questions
+    const mcCount = 5; // User requested at most 4 MC questions
     const saCount = isFinal ? 12 : 6;
     const proofCount = hasProofs ? (isFinal ? 3 : 2) : 0;
     const codingCount = hasCoding ? (isFinal ? 4 : 2) : 0;
