@@ -39,6 +39,18 @@ Requirements:
 - Provide 4 options (A, B, C, D)
 - Exactly one correct answer per question
 - Include plausible distractors that reflect common misconceptions
+- IMPORTANT: Use double newlines between the question and each option to ensure they appear on separate lines.
+
+FORMATTING FOR MULTIPLE CHOICE:
+Q[Number]. [Question text]
+
+A) [Option A text]
+
+B) [Option B text]
+
+C) [Option C text]
+
+D) [Option D text]
 
 2. Short Answer Questions (${saCount} questions)
 Requirements:
@@ -73,24 +85,32 @@ FORMATTING REQUIREMENTS (CRITICAL):
    - Never use parentheses ( ) or brackets [ ] for math formulas unless they are part of the equation itself.
 
 2. Multiple Choice Formatting:
-   - Each question and its options must be on separate lines.
+   - Each option must be preceded by a double newline to ensure it starts a new Markdown paragraph.
    - Format:
      Q[Number]. [Question text]
-     A) [Option 1]
-     B) [Option 2]
-     C) [Option 3]
-     D) [Option 4]
+
+     A) [Option A]
+
+     B) [Option B]
+
+     C) [Option C]
+
+     D) [Option D]
 
 3. Document Structure:
-   - Use Markdown headers (## Section Name) for exam sections (Multiple Choice, Short Answer, etc.).
+   - Use Markdown headers (## Section Name) for exam sections (## Multiple Choice Questions, ## Short Answer Questions, etc.).
    - Use double newlines between questions for proper Markdown rendering.
 
 FORMATTING FOR EXAM:
 ## Multiple Choice Questions
 Q[Number]. [Question text]
+
 A) [Option 1]
+
 B) [Option 2]
+
 C) [Option 3]
+
 D) [Option 4]
 
 ## Short Answer Questions
