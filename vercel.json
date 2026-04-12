@@ -1,7 +1,14 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
   "functions": {
     "server.js": {
+      "includeFiles": "data/*.json",
       "runtime": "nodejs20.x"
     }
   },
@@ -11,7 +18,11 @@
       "dest": "/server.js"
     },
     {
-      "src": "/(.*\\.(json|html|css|js))",
+      "src": "/data/(.*)",
+      "dest": "/data/$1"
+    },
+    {
+      "src": "/(.*\\.(html|js|css))",
       "dest": "/$1"
     },
     {
