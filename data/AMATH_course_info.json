@@ -1,0 +1,469 @@
+{
+    "university": "University of Waterloo",
+    "calendar_year": "2023-2024",
+    "department": "Department of Applied Mathematics",
+    "courses": [
+        {
+            "code": "AMATH 121",
+            "name": "Linear Algebra for Scientists and Engineers",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Systems of linear equations: Gaussian elimination, matrix form",
+                "Matrix algebra: addition, multiplication, inverse, transpose",
+                "Determinants: properties, computation, Cramer's rule",
+                "Vector spaces: subspaces, linear independence, basis, dimension",
+                "Eigenvalues and eigenvectors: characteristic polynomial, diagonalization",
+                "Applications in science and engineering"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 231",
+            "name": "Calculus 4 for Honours Mathematics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Vector fields: gradient, divergence, curl, Laplacian",
+                "Line integrals: work, circulation, path independence, potential functions",
+                "Surface integrals: flux, orientation, parametric surfaces",
+                "Green's theorem: statement, applications, area calculations",
+                "Divergence theorem: Gauss's theorem, applications to flux",
+                "Stokes' theorem: curl and circulation, applications"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 242",
+            "name": "Introduction to Computational Mathematics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Numerical linear algebra: LU decomposition, Cholesky, QR",
+                "Solving linear systems: direct and iterative methods",
+                "Eigenvalue problems: power iteration, QR algorithm",
+                "Numerical differentiation: finite differences, truncation error",
+                "Numerical integration: Newton-Cotes, Gaussian quadrature",
+                "Error analysis: rounding error, truncation error, stability"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 250",
+            "name": "Introduction to Differential Equations",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "First-order ODEs: separable, linear, exact, Bernoulli, Riccati",
+                "Applications: population models, mixing problems, radioactive decay",
+                "Second-order linear ODEs: homogeneous and non-homogeneous, undetermined coefficients, variation of parameters",
+                "Higher-order linear ODEs: characteristic equation, reduction of order",
+                "Systems of linear ODEs: matrix methods, eigenvalue method, phase portraits",
+                "Laplace transforms: definition, properties, solving IVPs, unit step and impulse functions"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 251",
+            "name": "Introduction to Differential Equations (Advanced Level)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "First-order ODEs: qualitative analysis, existence and uniqueness theorems",
+                "Linear ODEs: fundamental solutions, Wronskian, variation of parameters",
+                "Series solutions: ordinary points, regular singular points, Frobenius method",
+                "Systems of linear ODEs: fundamental matrix, matrix exponential",
+                "Nonlinear systems: phase plane analysis, linearization, stability",
+                "Boundary value problems: Sturm-Liouville theory, eigenfunction expansions"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 261",
+            "name": "Differential Equations for Engineering",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "First-order ODEs: separable, linear, exact, applications",
+                "Second-order linear ODEs: constant coefficients, undetermined coefficients, variation of parameters",
+                "Mechanical vibrations: free and forced vibrations, damping, resonance",
+                "Laplace transforms: solving IVPs, transfer functions, convolution",
+                "Systems of ODEs: eigenvalue method, phase portraits",
+                "Numerical methods: Euler's method, Runge-Kutta methods"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 271",
+            "name": "Differential Equations 2 for Engineering",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Series solutions: Frobenius method, Bessel functions",
+                "Boundary value problems: Sturm-Liouville theory, eigenvalues",
+                "Partial differential equations: heat equation, wave equation, Laplace's equation",
+                "Separation of variables: solution of PDEs on rectangular domains",
+                "Fourier series: expansion, convergence, applications to PDEs",
+                "Introduction to finite difference methods for PDEs"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 331",
+            "name": "Applied Real Analysis",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Metric spaces: convergence, continuity, completeness, compactness",
+                "Normed linear spaces: Banach spaces, Hilbert spaces",
+                "Function spaces: C[a,b], Lp spaces, inner product spaces",
+                "Linear operators: boundedness, norm, adjoint operators",
+                "Spectral theory: eigenvalues, resolvent, compact operators",
+                "Applications to integral equations and differential equations"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 332",
+            "name": "Applied Complex Analysis",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Complex functions: analytic functions, Cauchy-Riemann equations",
+                "Elementary functions: exponential, trigonometric, logarithmic, power functions",
+                "Complex integration: Cauchy's integral theorem, Cauchy's integral formula",
+                "Series representations: Taylor series, Laurent series",
+                "Residue theory: residues, residue theorem, evaluation of real integrals",
+                "Conformal mapping: transformations, applications to boundary value problems"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 342",
+            "name": "Computational Methods for Differential Equations",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Finite difference methods: discretization, stability, convergence",
+                "Finite element methods: weak formulation, basis functions, assembly",
+                "Spectral methods: Chebyshev polynomials, Fourier methods",
+                "Time-stepping methods: explicit and implicit schemes, Runge-Kutta",
+                "Solving PDEs: heat equation, wave equation, advection equation",
+                "Implementation using scientific computing libraries"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 343",
+            "name": "Introduction to Partial Differential Equations",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Classification of PDEs: hyperbolic, parabolic, elliptic",
+                "Heat equation: derivation, fundamental solution, maximum principle",
+                "Wave equation: d'Alembert's formula, characteristics, energy methods",
+                "Laplace's equation: harmonic functions, mean value property, Dirichlet problem",
+                "Separation of variables: eigenfunction expansions, Sturm-Liouville theory",
+                "Green's functions: method of images, representation formulas"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 351",
+            "name": "Ordinary Differential Equations 2",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Nonlinear ODEs: phase plane analysis, stability, bifurcation theory",
+                "Lyapunov functions: stability criteria, LaSalle's invariance principle",
+                "Perturbation methods: regular and singular perturbations, boundary layers",
+                "Asymptotic expansions: method of multiple scales, WKB method",
+                "Hamiltonian systems: conservation laws, integrability",
+                "Applications in physics and biology"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 353",
+            "name": "Partial Differential Equations 2",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "First-order PDEs: method of characteristics, shock waves",
+                "Conservation laws: weak solutions, Rankine-Hugoniot condition",
+                "Elliptic PDEs: regularity, variational formulation, Sobolev spaces",
+                "Parabolic PDEs: regularity, maximum principles, long-time behavior",
+                "Hyperbolic PDEs: characteristics, energy estimates",
+                "Introduction to nonlinear PDEs: solitons, KdV equation"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 382",
+            "name": "Advanced Computational Methods for Engineers",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Computational fluid dynamics: Navier-Stokes equations, discretization",
+                "Finite volume methods: conservation laws, flux calculations",
+                "Advanced finite element methods: hp-adaptivity, mixed methods",
+                "Multigrid methods: smoothing, coarse grid correction",
+                "Parallel computing: domain decomposition, MPI, OpenMP",
+                "High-performance computing for engineering applications"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 391",
+            "name": "Applied Mathematics in Biology and Medicine",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Population dynamics: Lotka-Volterra models, competition, predation",
+                "Epidemiology: SIR model, basic reproduction number, vaccination strategies",
+                "Neuroscience: Hodgkin-Huxley model, FitzHugh-Nagumo model",
+                "Pharmacokinetics: compartmental models, drug delivery",
+                "Pattern formation: Turing instability, reaction-diffusion systems",
+                "Tumor growth modeling: avascular and vascular growth"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 401",
+            "name": "Advanced Engineering Mathematics 1",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Vector calculus review: gradient, divergence, curl, integral theorems",
+                "Complex variables: analytic functions, contour integration, conformal mapping",
+                "Fourier analysis: Fourier series, Fourier transforms, applications",
+                "Laplace transforms: advanced applications, inverse transforms",
+                "Partial differential equations: separation of variables, eigenfunction expansions",
+                "Applications in electromagnetism and fluid mechanics"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 402",
+            "name": "Advanced Engineering Mathematics 2",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Special functions: Bessel functions, Legendre polynomials, spherical harmonics",
+                "Green's functions: PDEs with forcing, method of images",
+                "Integral equations: Fredholm and Volterra equations, solution methods",
+                "Calculus of variations: Euler-Lagrange equation, constrained optimization",
+                "Perturbation methods: boundary layers, multiple scales, WKB",
+                "Applications to continuum mechanics and wave propagation"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 463",
+            "name": "Fluid Mechanics 1",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Fluid kinematics: Lagrangian and Eulerian descriptions, streamlines",
+                "Conservation laws: mass, momentum, energy, Navier-Stokes equations",
+                "Inviscid flow: Euler equations, Bernoulli's equation, potential flow",
+                "Vorticity dynamics: vorticity equation, circulation, Kelvin's theorem",
+                "Viscous flow: Couette flow, Poiseuille flow, Stokes flow",
+                "Boundary layers: Prandtl's equations, separation, drag"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 464",
+            "name": "Fluid Mechanics 2",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Turbulence: Reynolds averaging, closure problem, turbulence models",
+                "Instability: hydrodynamic stability, Rayleigh-Bénard convection",
+                "Waves in fluids: surface gravity waves, internal waves, Rossby waves",
+                "Nonlinear waves: solitons, KdV equation, shallow water equations",
+                "Geophysical fluid dynamics: rotating flows, Coriolis effect",
+                "Computational fluid dynamics: numerical methods for complex flows"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 475",
+            "name": "Mathematical Biology",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Continuous population models: logistic growth, predator-prey, competition",
+                "Discrete population models: difference equations, chaos, bifurcations",
+                "Spatial models: reaction-diffusion equations, Turing patterns",
+                "Stochastic models: birth-death processes, branching processes",
+                "Evolutionary dynamics: replicator equation, evolutionary game theory",
+                "Case studies: infectious disease spread, ecosystem dynamics, cancer modeling"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "AMATH 481",
+            "name": "Numerical Differential Equations",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Numerical ODEs: Runge-Kutta methods, multistep methods, stability",
+                "Numerical PDEs: finite differences, finite elements, finite volumes",
+                "Consistency, stability, and convergence: Lax equivalence theorem",
+                "Stiff ODEs: implicit methods, BDF methods, stability regions",
+                "Adaptive methods: step size control, error estimation",
+                "Implementation and performance optimization"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        }
+    ]
+}

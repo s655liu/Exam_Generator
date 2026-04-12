@@ -4,24 +4,13 @@
     {
       "src": "server.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "style.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "main.js",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "data/*.json",
-      "use": "@vercel/static"
     }
   ],
+  "functions": {
+    "server.js": {
+      "includeFiles": "data/*.json"
+    }
+  },
   "routes": [
     {
       "src": "/api/(.*)",

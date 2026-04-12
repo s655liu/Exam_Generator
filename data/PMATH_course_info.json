@@ -1,0 +1,521 @@
+{
+    "university": "University of Waterloo",
+    "calendar_year": "2023-2024",
+    "department": "Department of Pure Mathematics",
+    "courses": [
+        {
+            "code": "PMATH 340",
+            "name": "Elementary Number Theory",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Divisibility: Euclidean algorithm, greatest common divisor, least common multiple",
+                "Prime numbers: infinitude of primes, prime number theorem, distribution of primes",
+                "Congruences: modular arithmetic, modular inverses, Chinese remainder theorem",
+                "Fermat's little theorem: statement, proofs, applications",
+                "Euler's theorem: Euler's totient function, generalization of Fermat",
+                "Wilson's theorem: statement, proof, applications",
+                "Quadratic residues: Legendre symbol, Jacobi symbol, quadratic reciprocity law",
+                "Diophantine equations: linear Diophantine equations, Pythagorean triples, Pell's equation"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 346",
+            "name": "Group Theory",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Groups: definition, examples (symmetric, dihedral, cyclic, matrix groups)",
+                "Subgroups: criteria, cyclic subgroups, center, normalizers",
+                "Cosets and Lagrange's theorem: index, applications",
+                "Normal subgroups and quotient groups: definition, properties, examples",
+                "Group homomorphisms: kernel, image, isomorphism theorems",
+                "Direct products: internal and external direct products",
+                "Group actions: orbit-stabilizer theorem, class equation",
+                "Sylow theorems: existence, conjugacy, number of Sylow p-subgroups"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 347",
+            "name": "Ring Theory",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Rings: definition, examples (Z, Q, R, C, polynomial rings, matrix rings)",
+                "Subrings and ideals: definition, properties, generation of ideals",
+                "Ring homomorphisms: kernel, image, isomorphism theorems",
+                "Quotient rings: construction, universal property",
+                "Prime and maximal ideals: definitions, characterizations, examples",
+                "Integral domains: zero divisors, fields of fractions",
+                "Polynomial rings: irreducibility, Eisenstein's criterion, Gauss's lemma",
+                "Unique factorization domains (UFDs): definition, examples, properties"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 348",
+            "name": "Fields and Galois Theory",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Field extensions: algebraic and transcendental extensions, degree",
+                "Splitting fields: existence, uniqueness, algebraic closure",
+                "Finite fields: construction, properties, primitive elements",
+                "Separable and inseparable extensions: perfect fields",
+                "Galois groups: definition, fundamental theorem of Galois theory",
+                "Solvability by radicals: Galois groups of polynomials, solvable groups",
+                "Cyclotomic fields: cyclotomic polynomials, Galois groups",
+                "Classical problems: impossibility of angle trisection, doubling the cube, squaring the circle"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 351",
+            "name": "Real Analysis",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Real numbers: completeness axiom, supremum and infimum, Archimedean property",
+                "Sequences: convergence, limit theorems, monotone convergence, Cauchy sequences",
+                "Series: convergence tests, absolute vs conditional convergence, rearrangement theorems",
+                "Limits of functions: epsilon-delta definition, limit laws",
+                "Continuity: epsilon-delta, intermediate value theorem, uniform continuity",
+                "Differentiability: definition, mean value theorem, Taylor's theorem",
+                "Riemann integral: definition, properties, fundamental theorem of calculus",
+                "Improper integrals: convergence criteria, comparison tests"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 352",
+            "name": "Complex Analysis",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Complex numbers: algebra, geometry, polar form, roots of unity",
+                "Analytic functions: Cauchy-Riemann equations, harmonic functions",
+                "Elementary functions: exponential, trigonometric, logarithmic, power functions",
+                "Complex integration: line integrals, Cauchy's integral theorem",
+                "Cauchy's integral formula: derivatives, maximum modulus principle",
+                "Series representations: Taylor series, Laurent series",
+                "Residue theory: residues, residue theorem, evaluation of real integrals",
+                "Conformal mapping: Möbius transformations, applications"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 353",
+            "name": "Advanced Calculus",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Metric spaces: open and closed sets, convergence, continuity, compactness, connectedness",
+                "Multivariable differentiation: partial derivatives, total derivative, chain rule",
+                "Inverse and implicit function theorems: statements, proofs, applications",
+                "Multivariable integration: Riemann integral on Rn, Fubini's theorem",
+                "Change of variables: Jacobian, applications",
+                "Line and surface integrals: parametric representations",
+                "Vector calculus theorems: Green's theorem, divergence theorem, Stokes' theorem",
+                "Differential forms: exterior derivative, wedge product, generalized Stokes' theorem"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 360",
+            "name": "Geometry",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Euclidean geometry: axioms, congruence, similarity, circles",
+                "Transformational geometry: isometries, similarities, affine transformations",
+                "Projective geometry: homogeneous coordinates, projective transformations, duality",
+                "Non-Euclidean geometry: hyperbolic geometry, Poincaré disk model",
+                "Spherical geometry: great circles, spherical triangles, area formulas",
+                "Curves and surfaces: curvature, geodesics, Gauss-Bonnet theorem",
+                "Introduction to differential geometry: manifolds, tangent spaces"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 365",
+            "name": "Measure and Integration",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Lebesgue measure: outer measure, measurable sets, properties",
+                "Measurable functions: definition, properties, approximations",
+                "Lebesgue integral: definition for simple functions, nonnegative functions, integrable functions",
+                "Convergence theorems: monotone convergence, dominated convergence, Fatou's lemma",
+                "Lp spaces: definition, completeness, inequalities (Hölder, Minkowski)",
+                "Fubini's theorem: product measures, iterated integrals",
+                "Absolutely continuous functions: Lebesgue differentiation theorem",
+                "Signed measures: Hahn decomposition, Jordan decomposition, Radon-Nikodym theorem"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 366",
+            "name": "Functional Analysis",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Normed linear spaces: Banach spaces, examples (ℓp, Lp, C[a,b])",
+                "Bounded linear operators: norm, examples, operator spaces",
+                "Hahn-Banach theorem: extensions of linear functionals, separation theorems",
+                "Uniform boundedness principle: Banach-Steinhaus theorem",
+                "Open mapping theorem: closed graph theorem, applications",
+                "Hilbert spaces: inner products, orthonormal bases, Riesz representation theorem",
+                "Spectral theory: spectrum of operators, compact operators",
+                "Applications to integral equations and differential equations"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 367",
+            "name": "Introduction to Partial Differential Equations",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Classification of PDEs: hyperbolic, parabolic, elliptic",
+                "First-order PDEs: method of characteristics, Cauchy problem",
+                "Heat equation: derivation, fundamental solution, maximum principle, energy methods",
+                "Wave equation: d'Alembert's formula, characteristics, energy conservation",
+                "Laplace's equation: harmonic functions, mean value property, Dirichlet problem",
+                "Separation of variables: eigenfunction expansions, Sturm-Liouville theory",
+                "Green's functions: representation formulas, method of images",
+                "Sobolev spaces: weak derivatives, existence of weak solutions"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 432",
+            "name": "Algebraic Number Theory",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Algebraic integers: rings of integers, integral bases, discriminants",
+                "Dedekind domains: unique factorization of ideals, ideal class group",
+                "Splitting of primes: ramification, inertia, decomposition groups",
+                "Minkowski's theorem: geometry of numbers, finiteness of class number",
+                "Dirichlet's unit theorem: structure of unit groups",
+                "Zeta functions: Dedekind zeta function, class number formula",
+                "Applications to Diophantine equations: Fermat's last theorem for regular primes"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 440",
+            "name": "Analytic Number Theory",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Dirichlet series: Riemann zeta function, Euler product, analytic continuation",
+                "Prime number theorem: statement, proof using complex analysis",
+                "Dirichlet characters: orthogonality, L-functions, Dirichlet's theorem on primes in arithmetic progressions",
+                "Sieve methods: Brun's sieve, Selberg sieve, applications",
+                "Additive number theory: Goldbach's conjecture, Waring's problem",
+                "Distribution of primes: Chebyshev functions, Riemann hypothesis"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 441",
+            "name": "Algebraic Geometry",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Affine varieties: algebraic sets, Zariski topology, Hilbert's Nullstellensatz",
+                "Projective varieties: homogeneous ideals, projective space",
+                "Morphisms of varieties: regular functions, rational maps",
+                "Dimension theory: Krull dimension, transcendence degree",
+                "Nonsingularity: tangent spaces, smooth varieties",
+                "Sheaf theory: presheaves, sheaves, structure sheaf",
+                "Schemes: affine schemes, spectrum of a ring",
+                "Applications: elliptic curves, Riemann-Roch theorem"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 445",
+            "name": "Topics in Number Theory",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Elliptic curves: Weierstrass form, group law, discriminant, j-invariant",
+                "Modular forms: definition, examples, Hecke operators, L-functions",
+                "Fermat's last theorem: Frey curves, modularity theorem, proof outline",
+                "Computational number theory: primality testing, factorization algorithms",
+                "Cryptographic applications: elliptic curve cryptography, RSA",
+                "Advanced topics: p-adic numbers, local fields, class field theory overview"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 450",
+            "name": "Topics in Analysis",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Fourier analysis: Fourier series, Fourier transforms, convergence",
+                "Wavelet theory: multiresolution analysis, Haar wavelets, Daubechies wavelets",
+                "Harmonic analysis: convolution, Calderón-Zygmund theory",
+                "Operator theory: bounded operators, spectral theorem",
+                "Banach algebras: Gelfand theory, C*-algebras",
+                "Probability theory: measure-theoretic foundations, stochastic processes"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 451",
+            "name": "Introduction to Differential Geometry",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Smooth manifolds: charts, atlases, smooth functions",
+                "Tangent spaces: tangent vectors, differentials, pushforward",
+                "Vector fields: Lie bracket, flows, integral curves",
+                "Differential forms: wedge product, exterior derivative, pullback",
+                "Integration on manifolds: orientation, Stokes' theorem",
+                "Riemannian geometry: metrics, connections, curvature",
+                "Geodesics: length, energy, geodesic completeness",
+                "Applications: general relativity, minimal surfaces"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 452",
+            "name": "Introduction to Topology",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Topological spaces: open sets, closed sets, continuity, convergence",
+                "Compactness: Heine-Borel theorem, Bolzano-Weierstrass property",
+                "Connectedness: path connectedness, components",
+                "Separation axioms: Hausdorff, regular, normal spaces",
+                "Product and quotient topologies: Tychonoff's theorem",
+                "Metric spaces: metrizability, completeness, uniform continuity",
+                "Homotopy theory: homotopy equivalence, fundamental group",
+                "Covering spaces: lifting properties, classification of coverings"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 454",
+            "name": "Introduction to Algebraic Topology",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Simplicial complexes: simplicial homology, chain complexes",
+                "Singular homology: definition, properties, computation",
+                "Homotopy groups: higher homotopy groups, Hurewicz theorem",
+                "Cohomology: cochain complexes, cup product, Poincaré duality",
+                "Exact sequences: Mayer-Vietoris, long exact sequence of a pair",
+                "Fixed point theorems: Brouwer fixed point theorem, Lefschetz fixed point theorem",
+                "Applications: Borsuk-Ulam theorem, classification of surfaces"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 464",
+            "name": "Functional Analysis 2",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Banach algebras: spectrum, Gelfand transform, maximal ideals",
+                "C*-algebras: involution, GNS construction, representations",
+                "Von Neumann algebras: weak operator topology, double commutant theorem",
+                "Spectral theory: spectral theorem for unbounded operators",
+                "Semigroups of operators: strongly continuous semigroups, Hille-Yosida theorem",
+                "Applications: quantum mechanics, partial differential equations"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 466",
+            "name": "Mathematical Logic",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Propositional logic: syntax, semantics, completeness, compactness",
+                "Predicate logic: first-order languages, structures, satisfaction",
+                "Gödel's completeness theorem: Henkin construction",
+                "Gödel's incompleteness theorems: representability, fixed point lemma",
+                "Model theory: ultraproducts, Löwenheim-Skolem theorem",
+                "Set theory: ZFC axioms, ordinal and cardinal numbers",
+                "Computability theory: recursive functions, Turing machines"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "PMATH 480",
+            "name": "Topics in Pure Mathematics",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Variable topics: offered depending on faculty research interests",
+                "Possible topics: representation theory, Lie algebras, homological algebra",
+                "Advanced number theory: class field theory, modular forms",
+                "Advanced geometry: symplectic geometry, complex manifolds",
+                "Advanced analysis: harmonic analysis, PDE theory",
+                "Reading and discussion of research papers"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        }
+    ]
+}

@@ -33,7 +33,9 @@ app.get('/api/courses', (req, res) => {
             { name: 'CS', path: path.join(__dirname, 'data/CS_course_info.json') },
             { name: 'MATH', path: path.join(__dirname, 'data/MATH_course_info.json') },
             { name: 'STAT', path: path.join(__dirname, 'data/STAT_course_info.json') },
-            { name: 'CO', path: path.join(__dirname, 'data/CO_course_info.json') }
+            { name: 'CO', path: path.join(__dirname, 'data/CO_course_info.json') },
+            { name: 'AMATH', path: path.join(__dirname, 'data/AMATH_course_info.json') },
+            { name: 'PMATH', path: path.join(__dirname, 'data/PMATH_course_info.json') }
         ];
 
         let allCourses = [];
@@ -105,7 +107,7 @@ app.post('/api/generate', async (req, res) => {
         const completion = await client.chat.completions.create({
             model: "qwen-max",
             messages: [
-                { role: "system", content: "You are an expert professor at the University of Waterloo, specializing in Computer Science, Mathematics, Statistics, and Combinatorics & Optimization. Your goal is to generate high-quality, rigorous exams and answer keys tailored to the specific course curriculum. Always separate the Exam and the Answer Key clearly with a unique separator line: '---ANSWER_KEY_START---'." },
+                { role: "system", content: "You are an expert professor at the University of Waterloo, specializing in Computer Science, Mathematics (Pure and Applied), Statistics, and Combinatorics & Optimization. Your goal is to generate high-quality, rigorous exams and answer keys tailored to the specific course curriculum. Always separate the Exam and the Answer Key clearly with a unique separator line: '---ANSWER_KEY_START---'." },
                 { role: "user", content: prompt }
             ],
             temperature: 0.7,
