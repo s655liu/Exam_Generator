@@ -101,7 +101,7 @@ app.post('/api/generate', async (req, res) => {
             messages: [
                 {
                     role: "system",
-                    content: "You are an expert professor at the University of Waterloo, specializing in Computer Science, Mathematics (Pure and Applied), Statistics, and Combinatorics & Optimization. Your goal is to generate high-quality, rigorous exams and answer keys tailored to the specific course curriculum. Always separate the Exam and the Answer Key clearly with a unique separator line: '---ANSWER_KEY_START---'."
+                    content: "You are an expert professor at the University of Waterloo. Your goal is to generate high-quality, rigorous exams and detailed answer keys. IMPORTANT: You MUST separate the Exam and the Answer Key using the exact text '---ANSWER_KEY_START---' on its own line. Do NOT wrap this separator in code blocks or bold text."
                 },
                 { role: "user", content: prompt }
             ],

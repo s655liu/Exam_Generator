@@ -212,7 +212,24 @@ function setLoading(isLoading) {
 // Navigation Interactivity handled by sidebar.js in multi-page mode
 
 function displayResults(content) {
-    const [exam, key] = content.split('---ANSWER_KEY_START---');
+    // Robust splitting: Try primary separator first, then fallback patterns
+    const separatorRegex = /---ANSWER_KEY_START---/i;
+    const fallbackRegex = /(?=\n#+ .*Answer Key.*|(?:\r?\n){2}Answer Key(?:\r?\n))/i;
+
+    let exam, key;
+
+    if (separatorRegex.test(content)) {
+        [exam, key] = content.split(separatorRegex);
+    } else if (fallbackRegex.test(content)) {
+        // Fallback: Split before the "Answer Key" header
+        const splitIndex = content.search(fallbackRegex);
+        exam = content.substring(0, splitIndex);
+        key = content.substring(splitIndex);
+    } else {
+        // Absolute Fallback: Everything to Exam, warn user
+        exam = content;
+        key = "# Answer Key\n\n*The AI model did not provide a separate answer key in this response. It may have been included at the bottom of the main exam paper.*";
+    }
     
     // Render Markdown
     elements.examTab.innerHTML = exam ? marked.parse(exam.trim()) : '<p>Error generating exam paper.</p>';

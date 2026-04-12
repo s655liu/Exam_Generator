@@ -434,7 +434,9 @@ select {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--glass-border);
 }
 
 .tab-header {
@@ -465,7 +467,7 @@ select {
 .tab-content {
     border-radius: 24px;
     padding: 40px;
-    min-height: 500px;
+    min-height: 1000px; /* Taller area for 'extending' feel */
 }
 
 .print-btn {
