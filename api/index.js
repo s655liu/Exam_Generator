@@ -6,6 +6,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+// Load environment variables
 dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
@@ -14,18 +15,24 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const port = process.env.PORT || 3000;
 
+// Middleware
 app.use(cors());
 app.use(express.json());
 
-// Serve static files from the project root
-app.use(express.static(process.cwd()));
+// Only serve static files in local development (not on Vercel)
+if (!process.env.VERCEL) {
+    app.use(express.static(process.cwd()));
+}
 
+// Initialize OpenAI client for Qwen-Max
 const client = new OpenAI({
     apiKey: process.env.QWEN_API_KEY,
     baseURL: 'https://dashscope-intl.aliyuncs.com/compatible-mode/v1'
 });
 
-// Endpoint to get courses
+// ==================== API ENDPOINTS ====================
+
+// Endpoint to get all courses
 app.get('/api/courses', (req, res) => {
     try {
         const courseFiles = [
@@ -53,6 +60,8 @@ app.get('/api/courses', (req, res) => {
                 } catch (fileError) {
                     console.error(`Error parsing ${name} course file:`, fileError.message);
                 }
+            } else {
+                console.warn(`Course file not found: ${filePath}`);
             }
         });
 
@@ -67,7 +76,9 @@ app.get('/api/courses', (req, res) => {
 app.post('/api/generate', async (req, res) => {
     const { prompt } = req.body;
 
+    // Check for API key
     if (!process.env.QWEN_API_KEY) {
+        console.error('QWEN_API_KEY is missing');
         return res.status(500).json({ error: 'Server configuration error: API key missing' });
     }
 
@@ -79,7 +90,10 @@ app.post('/api/generate', async (req, res) => {
         const completion = await client.chat.completions.create({
             model: "qwen-max",
             messages: [
-                { role: "system", content: "You are an expert professor at the University of Waterloo, specializing in Computer Science, Mathematics (Pure and Applied), Statistics, and Combinatorics & Optimization. Your goal is to generate high-quality, rigorous exams and answer keys tailored to the specific course curriculum. Always separate the Exam and the Answer Key clearly with a unique separator line: '---ANSWER_KEY_START---'." },
+                {
+                    role: "system",
+                    content: "You are an expert professor at the University of Waterloo, specializing in Computer Science, Mathematics (Pure and Applied), Statistics, and Combinatorics & Optimization. Your goal is to generate high-quality, rigorous exams and answer keys tailored to the specific course curriculum. Always separate the Exam and the Answer Key clearly with a unique separator line: '---ANSWER_KEY_START---'."
+                },
                 { role: "user", content: prompt }
             ],
             temperature: 0.7,
@@ -92,21 +106,25 @@ app.post('/api/generate', async (req, res) => {
     }
 });
 
-// Health check
+// Health check endpoint
 app.get('/api/health', (req, res) => {
     res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// Catch-all route to serve index.html
-app.get(/.*/, (req, res) => {
-    res.sendFile(path.join(process.cwd(), 'index.html'));
-});
-
-// Check if running on Vercel
+// ==================== STATIC FILE SERVING ====================
+// Only for local development - Vercel handles this automatically
 if (!process.env.VERCEL) {
+    // Catch-all route to serve index.html for SPA routing
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(process.cwd(), 'index.html'));
+    });
+
+    // Start server
     app.listen(port, () => {
-        console.log(`Server running at http://localhost:${port}`);
+        console.log(`✅ Server running at http://localhost:${port}`);
+        console.log(`📝 API endpoint: http://localhost:${port}/api`);
     });
 }
 
+// Export for Vercel serverless function
 export default app;

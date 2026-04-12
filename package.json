@@ -1,19 +1,26 @@
 {
   "name": "cs-exam-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "AI-powered exam generator for University of Waterloo courses",
   "main": "api/index.js",
   "type": "module",
   "scripts": {
     "start": "node api/index.js",
-    "dev": "node api/index.js"
+    "dev": "node api/index.js",
+    "vercel-build": "echo Hello"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/s655liu/Exam_Generator.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "exam",
+    "generator",
+    "waterloo",
+    "ai",
+    "qwen"
+  ],
+  "author": "Shawn Liu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/s655liu/Exam_Generator/issues"
