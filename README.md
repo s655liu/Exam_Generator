@@ -1,4 +1,4 @@
-# 🎓 Waterloo Exam Generator (CS, Math, Stat)
+# 🎓 Waterloo Exam Generator (CS and Math Courses)
 
 An AI-powered application designed to generate mock exams for University of Waterloo courses across Computer Science, Mathematics, and Statistics. It leverages high-performance AI models (Qwen-Max) to create realistic, rigorous exam questions and detailed answer keys.
 
