@@ -115,7 +115,7 @@ app.get('/api/health', (req, res) => {
 // Only for local development - Vercel handles this automatically
 if (!process.env.VERCEL) {
     // Catch-all route to serve index.html for SPA routing
-    app.get('*', (req, res) => {
+    app.get(/.*/, (req, res) => {
         res.sendFile(path.join(process.cwd(), 'index.html'));
     });
 

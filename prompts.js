@@ -13,10 +13,10 @@ export const buildExamPrompt = (config) => {
     const examType = isFinal ? "Final Exam" : "Midterm Exam";
     
     // Distribution logic
-    const mcCount = isFinal ? 25 : 15;
-    const saCount = isFinal ? 8 : 4;
-    const proofCount = hasProofs ? (isFinal ? 2 : 1) : 0;
-    const codingCount = hasCoding ? (isFinal ? 3 : 1) : 0;
+    const mcCount = 4; // User requested at most 4 MC questions
+    const saCount = isFinal ? 12 : 6;
+    const proofCount = hasProofs ? (isFinal ? 3 : 2) : 0;
+    const codingCount = hasCoding ? (isFinal ? 4 : 2) : 0;
 
     const language = primaryLanguages && primaryLanguages.length > 0 ? primaryLanguages[0] : "Python";
 
@@ -60,19 +60,54 @@ Requirements:
 - Avoid requiring external libraries
 - For CS 136: include memory management considerations
 
+5. Graph/Plot Generation (Especially for STAT courses)
+- If a question would benefit from a visual graph (e.g., probability distribution, scatter plot, bar chart):
+- Provide a Chart.js JSON configuration inside a code block marked with \`\`\`chart
+- The configuration should be a valid JSON object suitable for the second argument of \`new Chart(ctx, config)\`.
+- Use translucent colors (rgba) to match the dark theme and include proper labels and titles.
+
+FORMATTING REQUIREMENTS (CRITICAL):
+1. Math Notation: 
+   - Use $ ... $ for all inline mathematical expressions (e.g., $n^2$).
+   - Use $$ ... $$ for all block/centered mathematical formulas (e.g., $$S_n = \frac{n(n+1)}{2}$$).
+   - Never use parentheses ( ) or brackets [ ] for math formulas unless they are part of the equation itself.
+
+2. Multiple Choice Formatting:
+   - Each question and its options must be on separate lines.
+   - Format:
+     Q[Number]. [Question text]
+     A) [Option 1]
+     B) [Option 2]
+     C) [Option 3]
+     D) [Option 4]
+
+3. Document Structure:
+   - Use Markdown headers (## Section Name) for exam sections (Multiple Choice, Short Answer, etc.).
+   - Use double newlines between questions for proper Markdown rendering.
+
 FORMATTING FOR EXAM:
-For Multiple Choice:
+## Multiple Choice Questions
 Q[Number]. [Question text]
 A) [Option 1]
 B) [Option 2]
 C) [Option 3]
 D) [Option 4]
 
+## Short Answer Questions
+Q[Number]. [Question text]
+
+## Proof Questions
+Q[Number]. [Question text]
+
+## Coding Questions
+Q[Number]. [Question text]
+
 FORMATTING FOR ANSWER KEY:
-For Multiple Choice: Provide the correct letter and a brief explanation.
-For Short Answer: Provide a model 2-4 sentence answer.
-For Proofs: Provide a detailed proof sketch.
-For Coding: Provide a model solution and explain the test case results.
+Use Markdown headers for each question type.
+- Multiple Choice: Provide the correct letter and a brief explanation in $ math notation $ where applicable.
+- Short Answer: Provide a model 2-4 sentence answer.
+- Proofs: Provide a detailed proof sketch using $$ block math $$ for complex steps.
+- Coding: Provide a model solution in a Markdown code block.
 
 Ensure the combined difficulty of these questions is appropriate for a ${duration} exam.
 `;

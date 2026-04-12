@@ -180,10 +180,71 @@ function setLoading(isLoading) {
 
 function displayResults(content) {
     const [exam, key] = content.split('---ANSWER_KEY_START---');
-
+    
     // Render Markdown
     elements.examTab.innerHTML = exam ? marked.parse(exam.trim()) : '<p>Error generating exam paper.</p>';
     elements.keyTab.innerHTML = key ? marked.parse(key.trim()) : '<p>Answer key not found in response.</p>';
+
+    // Trigger KaTeX rendering
+    if (window.renderMathInElement) {
+        renderMathInElement(elements.examTab, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true},
+                {left: '[ ', right: ' ]', display: true},
+                {left: '( ', right: ' )', display: false}
+            ],
+            throwOnError: false
+        });
+        renderMathInElement(elements.keyTab, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true},
+                {left: '[ ', right: ' ]', display: true},
+                {left: '( ', right: ' )', display: false}
+            ],
+            throwOnError: false
+        });
+    }
+
+    // Trigger Chart rendering
+    renderCharts(elements.examTab);
+    renderCharts(elements.keyTab);
+}
+
+function renderCharts(container) {
+    const chartBlocks = container.querySelectorAll('code.language-chart');
+    
+    chartBlocks.forEach((block, index) => {
+        try {
+            const config = JSON.parse(block.textContent.trim());
+            const preElement = block.parentElement;
+            
+            // Create canvas
+            const canvasWrapper = document.createElement('div');
+            canvasWrapper.className = 'chart-container';
+            canvasWrapper.style.position = 'relative';
+            canvasWrapper.style.height = '300px';
+            canvasWrapper.style.margin = '2rem 0';
+            
+            const canvas = document.createElement('canvas');
+            canvas.id = `chart-${Date.now()}-${index}`;
+            canvasWrapper.appendChild(canvas);
+            
+            // Replace the <pre> block with the canvas
+            preElement.parentNode.replaceChild(canvasWrapper, preElement);
+            
+            // Initialize Chart
+            new Chart(canvas, config);
+        } catch (e) {
+            console.error('Failed to render chart:', e);
+            block.textContent = 'Error rendering chart: ' + e.message;
+        }
+    });
 }
 
 // Print Functionality
