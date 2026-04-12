@@ -27,9 +27,9 @@ const client = new OpenAI({
 app.get('/api/courses', (req, res) => {
     try {
         const files = [
-            path.join(__dirname, 'data/CS_course_info.json'),
-            path.join(__dirname, 'data/MATH_course_info.json'),
-            path.join(__dirname, 'data/STAT_course_info.json')
+            path.join(process.cwd(), 'data/CS_course_info.json'),
+            path.join(process.cwd(), 'data/MATH_course_info.json'),
+            path.join(process.cwd(), 'data/STAT_course_info.json')
         ];
         let allCourses = [];
         
@@ -80,7 +80,7 @@ app.post('/api/generate', async (req, res) => {
     }
 });
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'production' && !process.env.VERCEL) {
     app.listen(port, () => {
         console.log(`Server running at http://localhost:${port}`);
     });
