@@ -1,14 +1,8 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "server.js",
-      "use": "@vercel/node"
-    }
-  ],
   "functions": {
     "server.js": {
-      "includeFiles": "data/*.json"
+      "runtime": "nodejs20.x"
     }
   },
   "routes": [
@@ -17,20 +11,8 @@
       "dest": "/server.js"
     },
     {
-      "src": "/style.css",
-      "dest": "/style.css"
-    },
-    {
-      "src": "/main.js",
-      "dest": "/main.js"
-    },
-    {
-      "src": "/data/(.*)",
-      "dest": "/data/$1"
-    },
-    {
-      "src": "/",
-      "dest": "/index.html"
+      "src": "/(.*\\.(json|html|css|js))",
+      "dest": "/$1"
     },
     {
       "src": "/(.*)",
