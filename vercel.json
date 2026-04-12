@@ -1,11 +1,5 @@
 {
   "version": 2,
-  "functions": {
-    "api/index.js": {
-      "includeFiles": "api/data/**/*.json",
-      "runtime": "@vercel/node@2"
-    }
-  },
   "rewrites": [
     {
       "source": "/api/(.*)",
