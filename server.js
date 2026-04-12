@@ -26,12 +26,16 @@ const client = new OpenAI({
 // Endpoint to get courses
 app.get('/api/courses', (req, res) => {
     try {
-        const files = ['data/CS_course_info.json', 'data/MATH_course_info.json', 'data/STAT_course_info.json'];
+        const files = [
+            path.join(__dirname, 'data/CS_course_info.json'),
+            path.join(__dirname, 'data/MATH_course_info.json'),
+            path.join(__dirname, 'data/STAT_course_info.json')
+        ];
         let allCourses = [];
         
-        files.forEach(file => {
-            if (fs.existsSync(file)) {
-                const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+        files.forEach(filePath => {
+            if (fs.existsSync(filePath)) {
+                const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
                 if (data.courses) {
                     allCourses = allCourses.concat(data.courses);
                 }
