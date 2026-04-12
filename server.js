@@ -29,7 +29,8 @@ app.get('/api/courses', (req, res) => {
         const files = [
             path.join(process.cwd(), 'data/CS_course_info.json'),
             path.join(process.cwd(), 'data/MATH_course_info.json'),
-            path.join(process.cwd(), 'data/STAT_course_info.json')
+            path.join(process.cwd(), 'data/STAT_course_info.json'),
+            path.join(process.cwd(), 'data/CO_course_info.json')
         ];
         let allCourses = [];
         

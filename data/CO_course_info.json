@@ -1,0 +1,447 @@
+{
+    "university": "University of Waterloo",
+    "calendar_year": "2023-2024",
+    "department": "Department of Combinatorics and Optimization",
+    "courses": [
+        {
+            "code": "CO 227",
+            "name": "Introduction to Optimization (Non-Specialist Level)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Linear programming: formulation, graphical solution, simplex method",
+                "Duality: dual problem formulation, weak and strong duality theorems",
+                "Sensitivity analysis: shadow prices, range analysis",
+                "Integer programming: branch and bound, cutting planes",
+                "Network flows: shortest paths, maximum flow, minimum cut",
+                "Applications in business, engineering, and operations research"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 250",
+            "name": "Introduction to Optimization",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Linear programming: convex polyhedra, basic feasible solutions, simplex method",
+                "Duality theory: dual simplex, complementary slackness, Farkas' lemma",
+                "Sensitivity analysis: parametric programming, shadow prices",
+                "Network flow theory: max-flow min-cut theorem, transportation problem",
+                "Integer linear programming: total unimodularity, cutting plane methods",
+                "Computational complexity of optimization problems"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 327",
+            "name": "Deterministic OR Models (Non-Specialist Level)",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Linear programming review: simplex method, duality",
+                "Network models: shortest paths, minimum spanning tree, maximum flow",
+                "Integer programming: modeling with binary variables, branch and bound",
+                "Dynamic programming: deterministic DP, Bellman's principle",
+                "Inventory models: EOQ, newsvendor problem",
+                "Project scheduling: CPM, PERT"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 342",
+            "name": "Introduction to Graph Theory",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Graph fundamentals: vertices, edges, degrees, isomorphism",
+                "Trees: properties, spanning trees, Cayley's formula",
+                "Connectivity: vertex connectivity, edge connectivity, Menger's theorem",
+                "Eulerian and Hamiltonian graphs: Euler tours, Hamiltonian cycles, Dirac's theorem",
+                "Graph coloring: vertex coloring, edge coloring, chromatic number",
+                "Planar graphs: Euler's formula, Kuratowski's theorem, planar duality"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 351",
+            "name": "Network Flow Theory",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Maximum flow: Ford-Fulkerson algorithm, Edmonds-Karp algorithm",
+                "Minimum cut: max-flow min-cut theorem, global minimum cut",
+                "Circulations: feasible circulations, lower bounds on flows",
+                "Minimum cost flow: successive shortest path algorithm, cycle canceling",
+                "Applications: bipartite matching, assignment problem, transportation problem",
+                "Multicommodity flows: problem formulation, complexity"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 352",
+            "name": "Mathematical Programming",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Convex analysis: convex sets, convex functions, separation theorems",
+                "Linear programming revisited: polyhedral theory, extreme points",
+                "Nonlinear programming: optimality conditions, KKT conditions",
+                "Lagrangian duality: Lagrange multipliers, dual problem",
+                "Quadratic programming: convex QP, Wolfe's method",
+                "Semidefinite programming: SDP formulation, applications"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 353",
+            "name": "Computational Discrete Optimization",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Branch and bound: search strategies, bounding techniques",
+                "Cutting plane methods: Gomory cuts, lift-and-project",
+                "Column generation: Dantzig-Wolfe decomposition",
+                "Lagrangian relaxation: subgradient optimization",
+                "Metaheuristics: simulated annealing, tabu search, genetic algorithms",
+                "Implementation using optimization solvers (CPLEX, Gurobi)"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 370",
+            "name": "Deterministic Optimization Models",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Linear programming modeling: real-world problem formulation",
+                "Integer programming modeling: binary variables, logical constraints",
+                "Network optimization: facility location, vehicle routing",
+                "Robust optimization: uncertainty modeling",
+                "Multi-objective optimization: Pareto optimality, goal programming",
+                "Case studies from logistics, finance, and telecommunications"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 372",
+            "name": "Portfolio Optimization Models",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Mean-variance optimization: Markowitz model, efficient frontier",
+                "Risk measures: VaR, CVaR, downside risk",
+                "Constraints: cardinality constraints, sector constraints, transaction costs",
+                "Black-Litterman model: incorporating investor views",
+                "Robust portfolio optimization: uncertainty in returns",
+                "Implementation using quadratic programming"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 430",
+            "name": "Algebraic Enumeration",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Generating functions: ordinary, exponential, rational",
+                "Pólya's enumeration theorem: group actions, cycle index",
+                "Species theory: combinatorial species, operations on species",
+                "Asymptotic enumeration: singularity analysis, saddle point method",
+                "q-analogues: Gaussian binomial coefficients, q-series",
+                "Applications to graph enumeration and permutation statistics"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 442",
+            "name": "Graph Theory",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Matchings: Hall's marriage theorem, Tutte's theorem, Edmonds' algorithm",
+                "Graph connectivity: Menger's theorem, network reliability",
+                "Graph minors: Wagner's theorem, Robertson-Seymour theory",
+                "Extremal graph theory: Turán's theorem, Ramsey theory",
+                "Spectral graph theory: adjacency matrix, Laplacian eigenvalues",
+                "Algebraic graph theory: automorphism groups, Cayley graphs"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 452",
+            "name": "Integer Programming",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Polyhedral theory: convex hull of integer points, lattice points",
+                "Cutting planes: Chvátal-Gomory cuts, split cuts",
+                "Branch and cut: integration of cutting planes with branch and bound",
+                "Total unimodularity: network matrices, applications",
+                "Integer programming duality: superadditive dual functions",
+                "Advanced methods: branch and price, branch and cut and price"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 454",
+            "name": "Large-Scale Optimization",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Decomposition methods: Dantzig-Wolfe decomposition, Benders decomposition",
+                "Column generation: pricing problems, stabilization techniques",
+                "Lagrangian relaxation: dual ascent, bundle methods",
+                "Interior point methods: barrier functions, primal-dual methods",
+                "Parallel and distributed optimization: ADMM",
+                "Applications to large-scale linear and integer programs"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 456",
+            "name": "Introduction to Game Theory",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Normal form games: Nash equilibrium, best response dynamics",
+                "Zero-sum games: minimax theorem, linear programming formulation",
+                "Extensive form games: subgame perfect equilibrium, backward induction",
+                "Cooperative games: core, Shapley value, bargaining solutions",
+                "Evolutionary game theory: replicator dynamics, evolutionary stable strategies",
+                "Auction theory: revenue equivalence, winner's curse"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 463",
+            "name": "Convex Optimization and Analysis",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Convex analysis: convex sets, convex functions, subgradients",
+                "Convex optimization: optimality conditions, duality theory",
+                "Gradient methods: steepest descent, conjugate gradient",
+                "Proximal algorithms: proximal gradient, ADMM",
+                "Second-order methods: Newton's method, quasi-Newton methods",
+                "Applications in machine learning and signal processing"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 466",
+            "name": "Continuous Optimization",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Unconstrained optimization: line search, trust region methods",
+                "Constrained optimization: penalty methods, augmented Lagrangian",
+                "Sequential quadratic programming (SQP)",
+                "Interior point methods for nonlinear programming",
+                "Derivative-free optimization: Nelder-Mead, pattern search",
+                "Global optimization: branch and bound, Lipschitz optimization"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 480",
+            "name": "History of Combinatorics and Optimization",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Historical development of combinatorial mathematics",
+                "Origins of graph theory: Euler, Hamilton, Kirkman",
+                "Development of linear programming: Kantorovich, Dantzig, von Neumann",
+                "The simplex method and its impact",
+                "Integer programming and combinatorial optimization milestones",
+                "Key figures: Edmonds, Gomory, Cook, Karp"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 485",
+            "name": "Introduction to Mathematical Cryptography",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Classical ciphers: substitution, transposition, Vigenère",
+                "Symmetric key cryptography: AES, DES, modes of operation",
+                "Public key cryptography: RSA, ElGamal, elliptic curve cryptography",
+                "Cryptographic hash functions: SHA-2, SHA-3, applications",
+                "Digital signatures: RSA signatures, DSA, ECDSA",
+                "Cryptographic protocols: key exchange, authentication, zero-knowledge proofs"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 487",
+            "name": "Applied Cryptography",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Number theory for cryptography: primality testing, discrete logarithms",
+                "RSA and its variants: padding schemes, attacks",
+                "Elliptic curve cryptography: ECDH, ECDSA",
+                "Post-quantum cryptography: lattice-based, code-based, multivariate cryptography",
+                "Protocol security: TLS, SSH, IPsec",
+                "Implementation issues: side-channel attacks, timing attacks, fault injection"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        },
+        {
+            "code": "CO 739",
+            "name": "Combinatorial Quantum Field Theory",
+            "has_exam": true,
+            "exam_format": [
+                "final",
+                "midterm"
+            ],
+            "topics": [
+                "Analytic combinatorics techniques for graph enumeration",
+                "Feynman diagrams and combinatorial structures in QFT",
+                "Perturbative expansions and their combinatorial aspects",
+                "Lorentzian polynomials and generalized permutahedra",
+                "Connections between algebraic geometry, topology, and statistical models",
+                "Applications to quantum field theory and particle physics"
+            ],
+            "question_types": [
+                "multiple_choice",
+                "short_answer",
+                "proof"
+            ]
+        }
+    ]
+}
