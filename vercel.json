@@ -6,18 +6,20 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [
+  "functions": {
+    "server.js": {
+      "includeFiles": "data/*.json",
+      "runtime": "nodejs20.x"
+    }
+  },
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "/server.js"
+      "source": "/api/(.*)",
+      "destination": "/server.js"
     },
     {
-      "src": "/data/(.*\\.json)",
-      "dest": "/data/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/((?!api|data).*)",
+      "destination": "/index.html"
     }
   ]
 }
