@@ -235,20 +235,16 @@ function displayResults(content) {
     elements.examTab.innerHTML = exam ? marked.parse(exam.trim()) : '<p>Error generating exam paper.</p>';
     elements.keyTab.innerHTML = key ? marked.parse(key.trim()) : '<p>Answer key not found in response.</p>';
 
-    // Trigger KaTeX rendering
+    // Trigger Multi-Stage Rendering
+    renderMathContent(elements.examTab);
+    renderMathContent(elements.keyTab);
+    renderCharts(elements.examTab);
+    renderCharts(elements.keyTab);
+}
+
+function renderMathContent(container) {
     if (window.renderMathInElement) {
-        renderMathInElement(elements.examTab, {
-            delimiters: [
-                {left: '$$', right: '$$', display: true},
-                {left: '$', right: '$', display: false},
-                {left: '\\(', right: '\\)', display: false},
-                {left: '\\[', right: '\\]', display: true},
-                {left: '[ ', right: ' ]', display: true},
-                {left: '( ', right: ' )', display: false}
-            ],
-            throwOnError: false
-        });
-        renderMathInElement(elements.keyTab, {
+        renderMathInElement(container, {
             delimiters: [
                 {left: '$$', right: '$$', display: true},
                 {left: '$', right: '$', display: false},
@@ -260,10 +256,6 @@ function displayResults(content) {
             throwOnError: false
         });
     }
-
-    // Trigger Chart rendering
-    renderCharts(elements.examTab);
-    renderCharts(elements.keyTab);
 }
 
 function renderCharts(container) {

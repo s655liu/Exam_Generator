@@ -30,8 +30,14 @@ ${topics.map(t => `- ${t}`).join("\n")}
 IMPORTANT: Ensure the questions specifically address the sub-topics and details listed above. For Enriched or Advanced courses, ensure the questions reflect the increased difficulty and deeper theoretical depth characteristic of those versions.
 
 
-The exam must be divided into two sections: the EXAM itself and the ANSWER KEY.
-Use the exact separator '---ANSWER_KEY_START---' between them.
+UNCONDITIONAL REQUIREMENT: You MUST divide the output into two sections: the EXAM and the ANSWER KEY.
+You MUST place the separator '---ANSWER_KEY_START---' on its own line, with NO other text or formatting.
+
+LATEX MATHEMATICAL REQUIREMENTS (STRICT):
+- You MUST use standard LaTeX notation for ALL mathematical expressions.
+- Inline Math: Use $ ... $ (e.g., $f(x) = \sigma(x)$).
+- Block Math: Use $$ ... $$ (e.g., $$\int_{0}^{\infty} e^{-x^2} dx = \frac{\sqrt{\pi}}{2}$$).
+- Ensure all variables like n, x, y, i are wrapped in LaTeX $ markers.
 
 Here are the requirements for each question type:
 
