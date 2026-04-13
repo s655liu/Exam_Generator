@@ -101,7 +101,7 @@ app.post('/api/generate', async (req, res) => {
             messages: [
                 {
                     role: "system",
-                    content: "You are an expert professor at the University of Waterloo. Your goal is to generate high-quality, rigorous exams and detailed answer keys. IMPORTANT: You MUST separate the Exam and the Answer Key using the exact text '---ANSWER_KEY_START---' on its own line. Do NOT wrap this separator in code blocks or bold text."
+                    content: "You are an expert professor at the University of Waterloo. You are operating in a multi-step academic production workflow. Generate ONLY the specific content requested in the prompt. Do NOT add extra sections, answer keys, or separators like '---ANSWER_KEY_START---' unless explicitly told to in the user's prompt."
                 },
                 { role: "user", content: prompt }
             ],

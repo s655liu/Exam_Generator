@@ -29,9 +29,8 @@ ${topics.map(t => `- ${t}`).join("\n")}
 
 IMPORTANT: Ensure the questions specifically address the sub-topics and details listed above. For Enriched or Advanced courses, ensure the questions reflect the increased difficulty and deeper theoretical depth characteristic of those versions.
 
-
-UNCONDITIONAL REQUIREMENT: You MUST divide the output into two sections: the EXAM and the ANSWER KEY.
-You MUST place the separator '---ANSWER_KEY_START---' on its own line, with NO other text or formatting.
+CRITICAL INSTRUCTION: Generate ONLY the EXAM QUESTIONS. Do NOT include any answers, solutions, marking schemes, or the "---ANSWER_KEY_START---" separator. 
+The answer key will be requested separately. If you include answers here, the generation will be considered FAILED.
 
 LATEX MATHEMATICAL REQUIREMENTS (STRICT):
 - You MUST use standard LaTeX notation for ALL mathematical expressions.
@@ -130,15 +129,35 @@ Q[Number]. [Question text]
 ## Coding Questions
 Q[Number]. [Question text]
 
-FORMATTING FOR ANSWER KEY:
-Use Markdown headers for each question type.
-- Multiple Choice: Provide the correct letter and a brief explanation in $ math notation $ where applicable.
-- Short Answer: Provide a model 2-4 sentence answer.
-- Proofs: Provide a detailed proof sketch using $$ block math $$ for complex steps.
-- Coding: Provide a model solution in a Markdown code block.
-
 Ensure the combined difficulty of these questions is appropriate for a ${duration} exam.
 `;
 
     return prompt;
 };
+
+/**
+ * Builds a prompt for solving a generated exam
+ * @param {string} examContent - The content of the generated exam
+ * @returns {string} The formatted prompt
+ */
+function buildAnswerKeyPrompt(examContent) {
+    return `You are an expert examiner at the University of Waterloo.
+Below is an exam that was just generated for a student. 
+Your task is to provide a COMPLETE, DETAILED, and ACCURATE Answer Key for this exam.
+
+RULES:
+1. Provide solutions for EVERY SINGLE question listed.
+2. For Multiple Choice: Include the letter AND a brief explanation of why it is correct.
+3. For Coding: Provide working, optimized, and well-commented code.
+4. For Proofs: Provide a rigorous mathematical proof.
+5. Use LaTeX for ALL mathematical notation (e.g., $...$ or $$...$$).
+6. Format your output as Markdown with a clear "# Answer Key" header.
+
+EXAM CONTENT TO SOLVE:
+---
+${examContent}
+---`;
+}
+
+window.buildExamPrompt = buildExamPrompt;
+window.buildAnswerKeyPrompt = buildAnswerKeyPrompt;

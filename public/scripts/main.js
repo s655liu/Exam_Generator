@@ -16,8 +16,9 @@ const elements = {
     subjectSelect: document.getElementById('subject-select'),
     courseSearch: document.getElementById('course-search'),
     courseDropdown: document.getElementById('course-dropdown'),
+    clearSearchBtn: document.getElementById('clear-search'),
     difficultySelect: document.getElementById('difficulty-select')
-};
+}
 
 let allCourses = [];
 let currentCourse = null;
@@ -32,15 +33,15 @@ async function init() {
         console.log('ℹ️ Non-dashboard page detected. Skipping generation logic.');
         return;
     }
-    
+
     // Tiny delay to ensure browser has settled
     await new Promise(r => setTimeout(r, 100));
-    
+
     try {
         console.log('📡 Fetching courses from API...');
         const response = await fetch('/api/courses');
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        
+
         const data = await response.json();
         allCourses = data.courses.filter(c => c.has_exam);
         console.log(`✅ Loaded ${allCourses.length} exam-ready courses.`);
@@ -63,7 +64,7 @@ function applyFilters(shouldShow = false) {
     });
 
     renderCourseList(filteredCourses);
-    
+
     // Show dropdown if requested (on focus or input)
     // Hide if no results or specifically not requested
     if (shouldShow && filteredCourses.length > 0) {
@@ -97,6 +98,9 @@ function selectCourse(course) {
     elements.courseSearch.value = course.code;
     elements.courseDropdown.classList.add('hidden');
 
+    // Show clear button when choice is locked
+    elements.clearSearchBtn?.classList.remove('hidden');
+
     renderTopics(course.topics);
     elements.topicsSection.classList.remove('hidden');
     elements.generateBtn.disabled = false;
@@ -110,10 +114,31 @@ elements.subjectSelect.addEventListener('change', (e) => {
 
 // Search input logic for custom dropdown
 elements.courseSearch.addEventListener('input', () => {
+    const value = elements.courseSearch.value;
+
+    // Show/Hide clear button
+    if (value.length > 0) {
+        elements.clearSearchBtn?.classList.remove('hidden');
+    } else {
+        elements.clearSearchBtn?.classList.add('hidden');
+    }
+
     // If user starts typing again, reset the 'lastSelected' lock
-    if (elements.courseSearch.value !== lastSelectedCode) {
+    if (value !== lastSelectedCode) {
         applyFilters(true);
     }
+});
+
+// Clear button logic
+elements.clearSearchBtn?.addEventListener('click', () => {
+    elements.courseSearch.value = '';
+    elements.clearSearchBtn.classList.add('hidden');
+    elements.courseDropdown.classList.add('hidden');
+    currentCourse = null;
+    lastSelectedCode = "";
+    elements.topicsSection.classList.add('hidden');
+    elements.generateBtn.disabled = true;
+    elements.courseSearch.focus();
 });
 
 elements.courseSearch.addEventListener('focus', () => {
@@ -170,28 +195,66 @@ if (elements.generateBtn) {
             hasCoding: currentCourse.has_coding ?? currentCourse.question_types?.includes('coding')
         };
 
-        const prompt = buildExamPrompt(config);
+        const examPrompt = buildExamPrompt(config);
 
         // UI Loading State
         setLoading(true);
 
         try {
-            const response = await fetch('/api/generate', {
+            // STEP 1: Generate Exam Questions
+            const examResponse = await fetch('/api/generate', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ prompt })
+                body: JSON.stringify({ prompt: examPrompt })
             });
 
-            const data = await response.json();
-            if (data.error) throw new Error(data.error);
+            const examData = await examResponse.json();
+            if (examData.error) throw new Error(examData.error);
+            const examContent = examData.content;
 
-            displayResults(data.content);
+            // Display Exam Immediately
+            elements.examTab.innerHTML = marked.parse(examContent.trim());
+            renderMathContent(elements.examTab);
+            renderCharts(elements.examTab);
+            
             elements.resultsSection.classList.remove('hidden');
             elements.resultsSection.scrollIntoView({ behavior: 'smooth' });
+            
+            // Switch to exam tab visually
+            elements.tabBtns.forEach(btn => btn.classList.remove('active'));
+            elements.tabBtns[0].classList.add('active');
+            
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+            elements.examTab.classList.add('active');
+
+            // STEP 2: Generate Answer Key in Background
+            elements.keyTab.innerHTML = `
+                <div style="padding: 2rem; text-align: center; color: var(--text-dim);">
+                    <div class="loader" style="margin: 0 auto 1.5rem auto;"></div>
+                    <p style="font-size: 1.1rem; letter-spacing: 0.05em;">SOLVING EXAM QUESTIONS...</p>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.7;">Generating detailed solutions and marking scheme.</p>
+                </div>
+            `;
+            
+            const keyPrompt = buildAnswerKeyPrompt(examContent);
+            const keyResponse = await fetch('/api/generate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ prompt: keyPrompt })
+            });
+
+            const keyData = await keyResponse.json();
+            if (keyData.error) throw new Error(keyData.error);
+            const keyContent = keyData.content;
+
+            // Display Answer Key
+            elements.keyTab.innerHTML = marked.parse(keyContent.trim());
+            renderMathContent(elements.keyTab);
+            renderCharts(elements.keyTab);
 
         } catch (error) {
             console.error('Generation Error:', error);
-            alert('Failed to generate exam: ' + error.message);
+            alert('Failed to generate: ' + error.message);
         } finally {
             setLoading(false);
         }
@@ -211,47 +274,17 @@ function setLoading(isLoading) {
 
 // Navigation Interactivity handled by sidebar.js in multi-page mode
 
-function displayResults(content) {
-    // Robust splitting: Try primary separator first, then fallback patterns
-    const separatorRegex = /---ANSWER_KEY_START---/i;
-    const fallbackRegex = /(?=\n#+ .*Answer Key.*|(?:\r?\n){2}Answer Key(?:\r?\n))/i;
-
-    let exam, key;
-
-    if (separatorRegex.test(content)) {
-        [exam, key] = content.split(separatorRegex);
-    } else if (fallbackRegex.test(content)) {
-        // Fallback: Split before the "Answer Key" header
-        const splitIndex = content.search(fallbackRegex);
-        exam = content.substring(0, splitIndex);
-        key = content.substring(splitIndex);
-    } else {
-        // Absolute Fallback: Everything to Exam, warn user
-        exam = content;
-        key = "# Answer Key\n\n*The AI model did not provide a separate answer key in this response. It may have been included at the bottom of the main exam paper.*";
-    }
-    
-    // Render Markdown
-    elements.examTab.innerHTML = exam ? marked.parse(exam.trim()) : '<p>Error generating exam paper.</p>';
-    elements.keyTab.innerHTML = key ? marked.parse(key.trim()) : '<p>Answer key not found in response.</p>';
-
-    // Trigger Multi-Stage Rendering
-    renderMathContent(elements.examTab);
-    renderMathContent(elements.keyTab);
-    renderCharts(elements.examTab);
-    renderCharts(elements.keyTab);
-}
 
 function renderMathContent(container) {
     if (window.renderMathInElement) {
         renderMathInElement(container, {
             delimiters: [
-                {left: '$$', right: '$$', display: true},
-                {left: '$', right: '$', display: false},
-                {left: '\\(', right: '\\)', display: false},
-                {left: '\\[', right: '\\]', display: true},
-                {left: '[ ', right: ' ]', display: true},
-                {left: '( ', right: ' )', display: false}
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+                { left: '\\(', right: '\\)', display: false },
+                { left: '\\[', right: '\\]', display: true },
+                { left: '[ ', right: ' ]', display: true },
+                { left: '( ', right: ' )', display: false }
             ],
             throwOnError: false
         });
@@ -260,26 +293,26 @@ function renderMathContent(container) {
 
 function renderCharts(container) {
     const chartBlocks = container.querySelectorAll('code.language-chart');
-    
+
     chartBlocks.forEach((block, index) => {
         try {
             const config = JSON.parse(block.textContent.trim());
             const preElement = block.parentElement;
-            
+
             // Create canvas
             const canvasWrapper = document.createElement('div');
             canvasWrapper.className = 'chart-container';
             canvasWrapper.style.position = 'relative';
             canvasWrapper.style.height = '300px';
             canvasWrapper.style.margin = '2rem 0';
-            
+
             const canvas = document.createElement('canvas');
             canvas.id = `chart-${Date.now()}-${index}`;
             canvasWrapper.appendChild(canvas);
-            
+
             // Replace the <pre> block with the canvas
             preElement.parentNode.replaceChild(canvasWrapper, preElement);
-            
+
             // Initialize Chart
             new Chart(canvas, config);
         } catch (e) {

@@ -319,6 +319,35 @@ select {
     position: relative;
 }
 
+.clear-search-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: var(--text-dim);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.clear-search-btn:hover {
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.clear-search-btn.hidden {
+    display: none;
+}
+
 .dropdown-list {
     position: absolute;
     top: calc(100% + 10px);
@@ -611,7 +640,12 @@ select {
 
 /* Exam Content Spacing */
 .tab-pane {
+    display: none;
     line-height: 1.8; /* More space between lines */
+}
+
+.tab-pane.active {
+    display: block;
 }
 
 .tab-pane p, .tab-pane li {

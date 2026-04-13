@@ -381,11 +381,16 @@
                 "midterm"
             ],
             "topics": [
+                "Proof techniques",
+                "Integers",
+                "Integers modulo n",
+                "Rational numbers",
+                "Real numbers",
+                "Complex numbers",
+                "Polynomials",
                 "Advanced proof techniques",
                 "Advanced algebraic structures",
-                "Integers and modular arithmetic (in-depth)",
-                "Complex numbers",
-                "Polynomials"
+                "Integers and modular arithmetic (in-depth)"
             ],
             "question_types": [
                 "multiple_choice",
@@ -402,10 +407,15 @@
                 "midterm"
             ],
             "topics": [
-                "Vector spaces (rigorous treatment)",
-                "Linear independence and basis",
+                "Systems of linear equations",
+                "Matrix algebra",
+                "Vector spaces and subspaces",
+                "Basis and dimension",
                 "Linear transformations",
                 "Determinants",
+                "Eigenvalues and diagonalization",
+                "Vector spaces (rigorous treatment)",
+                "Linear independence and basis",
                 "Eigenvalues and eigenvectors"
             ],
             "question_types": [
@@ -423,10 +433,15 @@
                 "midterm"
             ],
             "topics": [
+                "Sequences and their limits",
+                "Limits of functions and continuity",
+                "Intermediate Value Theorem",
+                "Derivatives",
+                "Mean Value Theorem",
+                "Taylor polynomials and Taylor's theorem",
                 "Rigorous treatment of limits",
                 "Continuity",
                 "Differentiability",
-                "Mean Value Theorem",
                 "Taylor's Theorem",
                 "Sequences and series"
             ],
@@ -445,10 +460,15 @@
                 "midterm"
             ],
             "topics": [
-                "Riemann integration",
+                "Riemann integral",
+                "Fundamental theorem of calculus",
+                "Methods of integration",
                 "Improper integrals",
-                "Infinite series (rigorous treatment)",
+                "Applications of integration",
+                "Sequences and series",
                 "Power series",
+                "Riemann integration",
+                "Infinite series (rigorous treatment)",
                 "Uniform convergence"
             ],
             "question_types": [
@@ -665,10 +685,14 @@
                 "midterm"
             ],
             "topics": [
+                "Inner product spaces",
+                "Orthogonal and unitary matrices",
+                "Spectral theorem",
+                "Jordan canonical form",
+                "Positive definite matrices",
+                "Singular value decomposition (SVD)",
                 "Advanced inner product spaces",
                 "Spectral theorem in depth",
-                "Jordan canonical form",
-                "Singular value decomposition (SVD)",
                 "Applications"
             ],
             "question_types": [
@@ -686,6 +710,12 @@
                 "midterm"
             ],
             "topics": [
+                "Multivariable limits and continuity",
+                "Partial derivatives and differentiability",
+                "Gradient and directional derivatives",
+                "Implicit function theorem",
+                "Optimization and Lagrange multipliers",
+                "Multiple integrals",
                 "Advanced multivariable calculus",
                 "Inverse and implicit function theorems",
                 "Integration on manifolds",
@@ -707,6 +737,12 @@
                 "midterm"
             ],
             "topics": [
+                "Counting principles",
+                "Permutations and combinations",
+                "Recurrence relations",
+                "Generating functions",
+                "Graph theory (trees, bipartite graphs)",
+                "Graph algorithms",
                 "Advanced counting techniques",
                 "Recurrence relations (in-depth)",
                 "Generating functions (advanced)",
