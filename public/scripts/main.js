@@ -195,8 +195,6 @@ if (elements.generateBtn) {
             hasCoding: currentCourse.has_coding ?? currentCourse.question_types?.includes('coding')
         };
 
-        const examPrompt = buildExamPrompt(config);
-
         // UI Loading State
         setLoading(true);
 
@@ -205,7 +203,7 @@ if (elements.generateBtn) {
             const examResponse = await fetch('/api/generate', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ prompt: examPrompt })
+                body: JSON.stringify({ config, mode: 'exam' })
             });
 
             const examData = await examResponse.json();
@@ -236,11 +234,10 @@ if (elements.generateBtn) {
                 </div>
             `;
             
-            const keyPrompt = buildAnswerKeyPrompt(examContent);
             const keyResponse = await fetch('/api/generate', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ prompt: keyPrompt })
+                body: JSON.stringify({ config: { examContent }, mode: 'key' })
             });
 
             const keyData = await keyResponse.json();

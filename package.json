@@ -5,8 +5,8 @@
   "main": "api/index.js",
   "type": "module",
   "scripts": {
-    "start": "node api/index.js",
-    "dev": "node api/index.js",
+    "start": "python api/index.py",
+    "dev": "pip install -r requirements.txt && python api/index.py",
     "vercel-build": "echo Hello"
   },
   "repository": {
